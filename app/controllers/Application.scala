@@ -6,11 +6,11 @@ import maserati.Util.isMobile
 
 object Application extends Controller {
 
-  def index = Action { implicit request =>
+  def mobiles = Action { implicit request =>
     if (isMobile(request)) {
-      Ok("Hello mobile")
+      Ok(views.html.classic.mobiles("Hello"))
     } else {
-      Ok("Hello")
+      Ok(views.html.classic.mobiles("Hello"))
     }
   }
 }

@@ -1,13 +1,13 @@
-package filter
+package maserati.filter
 
 import play.api.mvc.{Result, RequestHeader, Filter}
 import scala.concurrent.Future
+import maserati.logging.Logging
 
-class UserAgentFilter extends Filter {
+class LoggingFilter extends Filter with Logging {
 
   override def apply(f: (RequestHeader) => Future[Result])(rh: RequestHeader): Future[Result] = {
-    println("Filtered")
-    println(rh.headers.get("User-Agent"))
+    logger.info("{} {} from {}", rh.method, rh.path, rh.remoteAddress)
     f(rh)
   }
 }

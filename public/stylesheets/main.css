@@ -1,0 +1,26 @@
+.logo {
+    background-image: url(/assets/images/logo.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 299px;
+    margin: 0 auto;
+}
+
+.menu-bar {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.menu-bar .menu {
+    display: inline-block;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    color: blue;
+    background-color: grey;
+}
+
+.menu-bar .menu:hover {
+    color: grey;
+    background-color: blue;
+}

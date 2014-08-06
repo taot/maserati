@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .logo {
     background-image: url(/assets/images/logo.jpg);
     background-repeat: no-repeat;
@@ -7,8 +11,7 @@
 }
 
 .menu-bar {
-    margin: 0 auto;
-    width: 800px;
+    text-align: center;
 }
 
 .menu-bar .menu {
@@ -23,4 +26,29 @@
 .menu-bar .menu:hover {
     color: grey;
     background-color: blue;
+}
+
+.content .mobiles-content {
+    background-image: url(/assets/images/mobiles/background.jpg);
+    height: 400px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.mobiles-content .box {
+    display: inline-block;
+    background-color: grey;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+    //margin-top: 100px;
+    opacity: 0.7;
+}
+
+.mobiles-content .car-icon {
+    background-image: url(/assets/images/mobiles/car1.jpg);
+    display: inline-block;
+    width: inherit;
+    height: 200px;
+    background-repeat: no-repeat;
 }

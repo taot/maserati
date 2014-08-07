@@ -46,6 +46,32 @@ a {
     color: grey;
 }
 
+.footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .item {
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    margin-left: -6px;
+    padding: 5px 5px;
+}
+
+.footer .text {
+    width: 150px;
+}
+
+.footer .icon {
+
+}
+
+.copyright {
+    color: blue;
+    text-align: center;
+}
 
 /*
  * 360车型体验
@@ -95,3 +121,24 @@ a {
     background-color: black;
 }
 
+.mobiles-menu-bar {
+    text-align: center;
+}
+
+.mobiles-menu-bar .menu {
+    background-color: grey;
+    color: blue;
+    display: inline-block;
+    font-size: 0.8em;
+    height: 24px;
+    margin-left: -7px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+.mobiles-menu-bar .menu:hover {
+    background-color: blue;
+    color: grey;
+}

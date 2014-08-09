@@ -17,11 +17,11 @@ a {
  */
 
 .logo {
-    background-image: url(/assets/images/logo.jpg);
+    background-image: url(/assets/images/logo.png);
     background-repeat: no-repeat;
-    height: 100px;
+    height: 59px;
     margin: 0 auto;
-    width: 299px;
+    width: 130px;
 }
 
 .menu-bar {

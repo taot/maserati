@@ -3,9 +3,9 @@
  */
 
 * {
-    border:0;
-    margin:0;
-    padding:0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -26,13 +26,14 @@ a {
 
 .menu-bar-line {
     height: 1px;
+    /* generated gradients */
     background-image: -webkit-gradient(
-    	linear,
-    	left top,
-    	right top,
-    	color-stop(0, #FFFFFF),
-    	color-stop(0.53, #DBDCE0),
-    	color-stop(1, #FFFFFF)
+        linear,
+        left top,
+        right top,
+        color-stop(0, #FFFFFF),
+        color-stop(0.53, #DBDCE0),
+        color-stop(1, #FFFFFF)
     );
     background-image: -o-linear-gradient(right, #FFFFFF 0%, #DBDCE0 53%, #FFFFFF 100%);
     background-image: -moz-linear-gradient(right, #FFFFFF 0%, #DBDCE0 53%, #FFFFFF 100%);
@@ -66,13 +67,14 @@ a {
 
 .menu-bar .menu.current {
     color: #f8f8f8;
+    /* generated gradients */
     background-image: -webkit-gradient(
-    	linear,
-    	left top,
-    	left bottom,
-    	color-stop(0, #8D8D8D),
-    	color-stop(0.53, #999999),
-    	color-stop(1, #8D8D8D)
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #8D8D8D),
+        color-stop(0.53, #999999),
+        color-stop(1, #8D8D8D)
     );
     background-image: -o-linear-gradient(bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
     background-image: -moz-linear-gradient(bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
@@ -157,23 +159,36 @@ a {
 }
 
 .mobiles-menu-bar {
+    height: 46px;
     text-align: center;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0, #FAFAFA),
+        color-stop(0.5, #E1E1E1),
+        color-stop(1, #FAFAFA)
+    );
+    background-image: -o-linear-gradient(right, #FAFAFA 0%, #E1E1E1 50%, #FAFAFA 100%);
+    background-image: -moz-linear-gradient(right, #FAFAFA 0%, #E1E1E1 50%, #FAFAFA 100%);
+    background-image: -webkit-linear-gradient(right, #FAFAFA 0%, #E1E1E1 50%, #FAFAFA 100%);
+    background-image: -ms-linear-gradient(right, #FAFAFA 0%, #E1E1E1 50%, #FAFAFA 100%);
+    background-image: linear-gradient(to right, #FAFAFA 0%, #E1E1E1 50%, #FAFAFA 100%);
 }
 
 .mobiles-menu-bar .menu {
-    background-color: grey;
-    color: blue;
+    color: #555555;
     display: inline-block;
     font-size: 0.8em;
-    height: 24px;
+    height: 26px;
     margin-left: -7px;
-    overflow: hidden;
     padding: 10px;
     text-align: center;
+    vertical-align: middle;
     width: 120px;
 }
 
 .mobiles-menu-bar .menu:hover {
-    background-color: blue;
-    color: grey;
+    background-color: #deddd9;
 }

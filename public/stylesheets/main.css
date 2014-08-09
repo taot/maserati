@@ -44,6 +44,7 @@ a {
 
 .menu-bar {
     text-align: center;
+    word-spacing: -7px;
 }
 
 .menu-bar .menu {
@@ -54,7 +55,6 @@ a {
     border-width: 1px;
     color: #7d7d7d;
     display: inline-block;
-    margin-left: -7px;
     padding: 10px;
     text-align: center;
     width: 120px;
@@ -83,18 +83,37 @@ a {
     background-image: linear-gradient(to bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
 }
 
+.footer-shadow {
+    background-image: radial-gradient(400px 25px at center -10px, #e1e1e1, #ffffff);
+    height: 30px;
+    margin-bottom: 30px;
+}
+
 .footer {
-    margin: 0 auto;
+    margin: 0px auto 33px auto;
     text-align: center;
+    word-spacing: -7px;
 }
 
 .footer .item {
-    border-color: grey;
+    border-color: #d6d6d6;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     display: inline-block;
-    margin-left: -6px;
-    padding: 5px 5px;
+    padding: 7px 7px;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #F1F1F1),
+        color-stop(0.61, #F7F7F7)
+    );
+    background-image: -o-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
+    background-image: -moz-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
+    background-image: -webkit-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
+    background-image: -ms-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
+    background-image: linear-gradient(to bottom, #F1F1F1 0%, #F7F7F7 61%);
 }
 
 .footer .text {
@@ -105,8 +124,29 @@ a {
 
 }
 
+.footer-line {
+    height: 1px;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0, #FFFFFF),
+        color-stop(0.25, #FFFFFF),
+        color-stop(0.5, #DBDCE0),
+        color-stop(0.75, #FFFFFF),
+        color-stop(1, #FFFFFF)
+    );
+    background-image: -o-linear-gradient(right, #FFFFFF 0%, #FFFFFF 25%, #DBDCE0 50%, #FFFFFF 75%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(right, #FFFFFF 0%, #FFFFFF 25%, #DBDCE0 50%, #FFFFFF 75%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #FFFFFF 25%, #DBDCE0 50%, #FFFFFF 75%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(right, #FFFFFF 0%, #FFFFFF 25%, #DBDCE0 50%, #FFFFFF 75%, #FFFFFF 100%);
+    background-image: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 25%, #DBDCE0 50%, #FFFFFF 75%, #FFFFFF 100%);
+}
+
 .copyright {
-    color: blue;
+    color: #555555;
+    margin-top: 33px;
     text-align: center;
 }
 
@@ -144,6 +184,8 @@ a {
 }
 
 .mobiles-content .btn {
+    border: 2px;
+    border-style: solid;
     color: white;
     margin: 5px auto;
     padding: 7px 0;
@@ -151,11 +193,37 @@ a {
 }
 
 .mobiles-content .discover-more-btn {
-    background-color: blue;
+    border-color: #001a33;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #213F61),
+        color-stop(0.6, #001A35)
+    );
+    background-image: -o-linear-gradient(bottom, #213F61 0%, #001A35 60%);
+    background-image: -moz-linear-gradient(bottom, #213F61 0%, #001A35 60%);
+    background-image: -webkit-linear-gradient(bottom, #213F61 0%, #001A35 60%);
+    background-image: -ms-linear-gradient(bottom, #213F61 0%, #001A35 60%);
+    background-image: linear-gradient(to bottom, #213F61 0%, #001A35 60%);
 }
 
 .mobiles-content .test-drive-btn {
-    background-color: black;
+    border-color: #363636;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #454545),
+        color-stop(0.76, #6C6C6C)
+    );
+    background-image: -o-linear-gradient(bottom, #454545 0%, #6C6C6C 76%);
+    background-image: -moz-linear-gradient(bottom, #454545 0%, #6C6C6C 76%);
+    background-image: -webkit-linear-gradient(bottom, #454545 0%, #6C6C6C 76%);
+    background-image: -ms-linear-gradient(bottom, #454545 0%, #6C6C6C 76%);
+    background-image: linear-gradient(to bottom, #454545 0%, #6C6C6C 76%);
 }
 
 .mobiles-menu-bar {
@@ -194,6 +262,7 @@ a {
 }
 
 .mobiles-menu-bar-shadow {
+    background-image: radial-gradient(800px 40px at center -10px, #cacaca, #ffffff);
     height: 30px;
-    background-image: radial-gradient(800px 40px at center -10px, #cacaca, #ffffff)
+    margin-bottom: 40px;
 }

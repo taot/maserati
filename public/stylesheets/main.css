@@ -192,3 +192,8 @@ a {
 .mobiles-menu-bar .menu:hover {
     background-color: #deddd9;
 }
+
+.mobiles-menu-bar-shadow {
+    height: 30px;
+    background-image: radial-gradient(800px 40px at center -10px, #cacaca, #ffffff)
+}

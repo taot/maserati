@@ -20,8 +20,25 @@ a {
     background-image: url(/assets/images/logo.png);
     background-repeat: no-repeat;
     height: 59px;
-    margin: 0 auto;
+    margin: 33px auto;
     width: 130px;
+}
+
+.menu-bar-line {
+    height: 1px;
+    background-image: -webkit-gradient(
+    	linear,
+    	left top,
+    	right top,
+    	color-stop(0, #FFFFFF),
+    	color-stop(0.53, #DBDCE0),
+    	color-stop(1, #FFFFFF)
+    );
+    background-image: -o-linear-gradient(right, #FFFFFF 0%, #DBDCE0 53%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(right, #FFFFFF 0%, #DBDCE0 53%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #DBDCE0 53%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(right, #FFFFFF 0%, #DBDCE0 53%, #FFFFFF 100%);
+    background-image: linear-gradient(to right, #FFFFFF 0%, #DBDCE0 53%, #FFFFFF 100%);
 }
 
 .menu-bar {
@@ -29,11 +46,12 @@ a {
 }
 
 .menu-bar .menu {
-    background-color: grey;
-    border-color: black;
+    background-color: #ececec;
+    border-color: #bbbbbb;
     border-style: solid;
+    border-top-color: #f8f8f8;
     border-width: 1px;
-    color: blue;
+    color: #7d7d7d;
     display: inline-block;
     margin-left: -7px;
     padding: 10px;
@@ -42,8 +60,25 @@ a {
 }
 
 .menu-bar .menu:hover {
-    background-color: blue;
-    color: grey;
+    background-color: #e0e0e0;
+    border-top-color: #f8f8f8;
+}
+
+.menu-bar .menu.current {
+    color: #f8f8f8;
+    background-image: -webkit-gradient(
+    	linear,
+    	left top,
+    	left bottom,
+    	color-stop(0, #8D8D8D),
+    	color-stop(0.53, #999999),
+    	color-stop(1, #8D8D8D)
+    );
+    background-image: -o-linear-gradient(bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
+    background-image: -moz-linear-gradient(bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
+    background-image: -webkit-linear-gradient(bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
+    background-image: -ms-linear-gradient(bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
+    background-image: linear-gradient(to bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
 }
 
 .footer {

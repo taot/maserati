@@ -187,7 +187,7 @@ a {
     left: 75px;
     top: 30px;
     width: 60px;
-    z-index: 2;
+    /*z-index: 2;*/
 }
 
 .mobiles-content .text {
@@ -309,4 +309,71 @@ a {
     background-image: radial-gradient(800px 40px at center -10px, #cacaca, #ffffff);
     height: 30px;
     margin-bottom: 40px;
+}
+
+.mobiles-360-container {
+    background-color: white;
+    display: none;
+    height: 480px;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 600px;
+}
+
+.mobiles-360-header {
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    width: inherit;
+    word-spacing: -5px;
+}
+
+.mobiles-360-header .btn {
+    border: 2px;
+    border-color: #d2d2d2;
+    border-style: solid;
+    color: #012c59;
+    margin: 0 3px 0 0;
+    padding: 8px;
+    width: 105px;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FCFCFC),
+        color-stop(1, #EEEEEE)
+    );
+    background-image: -o-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: -moz-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: -webkit-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: -ms-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: linear-gradient(to bottom, #FCFCFC 0%, #EEEEEE 100%);
+}
+
+.mobiles-360-header .btn:hover {
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #EEEEEE),
+        color-stop(1, #FCFCFC)
+    );
+    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: linear-gradient(to bottom, #EEEEEE 0%, #FCFCFC 100%);
+}
+
+.mobiles-360-header .close-360-btn {
+    float: right;
+}
+
+.mobiles-360-body {
+    /*background-color: blue;*/
+    height: inherit;
+    width: inherit;
 }

@@ -1,17 +1,31 @@
 @(message: String)
 
 @layout("360°车型体验") {
+    <style type="text/css">
+        .mobiles-content .mobile-thumbnail.quottro {
+            background-image: url(/assets/images/mobiles/maserati-granturismo-sport.png);
+        }
+
+        .mobiles-content .mobile-thumbnail.quottro:hover {
+            background-image: url(/assets/images/mobiles/maserati-granturismo-sport_dark.png);
+        }
+    </style>
+
     <div class="mobiles-content">
         <div class="box">
-            <a class="car-icon"></a>
+            <div class="mobile-thumbnail quottro">
+                <div class="arrow"></div>
+            </div>
             <div class="text">Quottroporte<br>杰尼亚限量版</div>
-            <div class="btn discover-more-btn">发现更多</div>
+            <button class="btn discover-more-btn">发现更多</button>
         </div>
         <div class="box">
-            <a class="car-icon"></a>
+            <div class="mobile-thumbnail" style="background-image: url(/assets/images/mobiles/Bianco.png);">
+                <div class="arrow"></div>
+            </div>
             <div class="text">Quottroporte V8</div>
-            <div class="btn discover-more-btn">发现更多</div>
-            <div class="btn test-drive-btn">预约试驾</div>
+            <button class="btn discover-more-btn">发现更多</button>
+            <button class="btn test-drive-btn">预约试驾</button>
         </div>
     </div>
 

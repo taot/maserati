@@ -162,32 +162,43 @@ a {
 }
 
 .mobiles-content .box {
-    background-color: grey;
+    background-color: #dddcd8;
     background-repeat: no-repeat;
     display: inline-block;
-    height: 300px;
-    opacity: 0.7;
+    height: 240px;
+    opacity: 1;
     overflow: hidden;
-    width: 250px;
+    width: 220px;
 }
 
-.mobiles-content .car-icon {
-    background-image: url(/assets/images/mobiles/car1.jpg);
+.mobiles-content .mobile-thumbnail {
     background-repeat: no-repeat;
     display: inline-block;
-    height: 150px;
+    height: 86px;
+    margin-top: 20px;
     width: inherit;
 }
 
+.mobile-thumbnail .arrow {
+    background-image: url("/assets/images/mobiles/360_arrow.png");
+    position: relative;
+    height: 20px;
+    left: 75px;
+    top: 30px;
+    width: 60px;
+    z-index: 2;
+}
+
 .mobiles-content .text {
-    margin: 15px auto;
+    color: #565656;
+    margin: 15px auto 10px auto;
 }
 
 .mobiles-content .btn {
     border: 2px;
     border-style: solid;
     color: white;
-    margin: 5px auto;
+    margin: 2px auto;
     padding: 7px 0;
     width: 150px;
 }

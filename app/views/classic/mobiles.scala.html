@@ -1,34 +1,36 @@
 @(message: String)
 
 @layout("360°车型体验") {
+
     <style type="text/css">
         .mobiles-content .mobile-thumbnail.quottro {
-            background-image: url(/assets/images/mobiles/maserati-granturismo-sport.png);
+            background-image: url(/assets/images/models_qpzegna.png);
         }
 
         .mobiles-content .mobile-thumbnail.quottro:hover {
-            background-image: url(/assets/images/mobiles/maserati-granturismo-sport_dark.png);
+            background-image: url(/assets/images/models_qpzegna_onclick.png);
+        }
+
+        .mobiles-content .mobile-thumbnail.quottro-v8 {
+            background-image: url(/assets/images/models_qpv8.png);
+        }
+
+        .mobiles-content .mobile-thumbnail.quottro-v8:hover {
+            background-image: url(/assets/images/models_qpv8_onclick.png);
         }
     </style>
 
     <div class="mobiles-content">
         <div class="box">
-            <div class="mobile-thumbnail quottro"
-                 interior="/assets/360/ghibli_interior/html/4-2.html">
-
-                <div class="arrow"></div>
-
-            </div>
+            <div class="mobile-thumbnail quottro" interior="/assets/360/ghibli_interior/html/4-2.html"></div>
             <div class="text">Quottroporte<br>杰尼亚限量版</div>
-            <button class="btn discover-more-btn">发现更多</button>
+            <button class="btn discover-more-btn"></button>
         </div>
         <div class="box">
-            <div class="mobile-thumbnail" style="background-image: url(/assets/images/mobiles/Bianco.png);">
-                <div class="arrow"></div>
-            </div>
+            <div class="mobile-thumbnail quottro-v8"></div>
             <div class="text">Quottroporte V8</div>
-            <button class="btn discover-more-btn">发现更多</button>
-            <button class="btn test-drive-btn">预约试驾</button>
+            <button class="btn discover-more-btn"></button>
+            <button class="btn test-drive-btn"></button>
         </div>
     </div>
 

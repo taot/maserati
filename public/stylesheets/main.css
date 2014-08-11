@@ -162,7 +162,7 @@ a {
 }
 
 .mobiles-content .box {
-    background-color: #dddcd8;
+    background-color: rgba(221, 221, 221, 0.5); /*#dddcd8;*/
     background-repeat: no-repeat;
     display: inline-block;
     height: 240px;
@@ -335,7 +335,7 @@ a {
     border-style: solid;
     color: #012c59;
     margin: 0 3px 0 0;
-    padding: 8px;
+    padding: 6px;
     width: 105px;
     /* generated gradients */
     background-image: -webkit-gradient(

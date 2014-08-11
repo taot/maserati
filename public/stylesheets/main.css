@@ -5,6 +5,7 @@
 * {
     border: 0;
     margin: 0;
+    outline: none;
     padding: 0;
 }
 
@@ -158,7 +159,7 @@ a {
 
 .copyright {
     color: #555555;
-    margin-top: 33px;
+    margin: 33px 0 20px;
     text-align: center;
 }
 
@@ -202,7 +203,7 @@ a {
     margin: 0 auto;
     height: 42px;
     width: 141px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .mobiles-content .discover-more-btn {
@@ -280,12 +281,12 @@ a {
 
 .mobiles-360-header {
     display: inline-block;
-    padding-bottom: 15px;
-    padding-top: 30px;
+    /*padding-bottom: 15px;*/
+    margin-top: 30px;
     width: inherit;
     word-spacing: -5px;
 }
-
+/*
 .mobiles-360-header .btn {
     border: 2px;
     border-color: #d2d2d2;
@@ -294,7 +295,7 @@ a {
     margin: 0 3px 0 0;
     padding: 6px;
     width: 105px;
-    /* generated gradients */
+    *//* generated gradients *//*
     background-image: -webkit-gradient(
         linear,
         left top,
@@ -310,7 +311,7 @@ a {
 }
 
 .mobiles-360-header .btn:hover {
-    /* generated gradients */
+    *//* generated gradients *//*
     background-image: -webkit-gradient(
         linear,
         left top,
@@ -323,10 +324,33 @@ a {
     background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
     background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
     background-image: linear-gradient(to bottom, #EEEEEE 0%, #FCFCFC 100%);
+}*/
+
+.mobiles-360-header .btn {
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 34px;
+    width: 110px;
+    margin: 0 4px 0 0;
+}
+
+.mobiles-360-header .exterior-btn {
+    background-image: url(/assets/images/btn_exterior.png);
+}
+
+.mobiles-360-header .interior-btn {
+    background-image: url(/assets/images/btn_interior.png);
 }
 
 .mobiles-360-header .close-360-btn {
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/images/btn_layer_close.png);
     float: right;
+    height: 36px;
+    width: 60px;
 }
 
 .mobiles-360-body {

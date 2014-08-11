@@ -90,42 +90,54 @@ a {
 }
 
 .footer {
-    margin: 0px auto 33px auto;
+/*    margin: 0px auto 33px auto;
+    */
     text-align: center;
     word-spacing: -7px;
 }
 
 .footer .item {
-    border-color: #d6d6d6;
-    border-style: solid;
-    border-width: 2px;
+    background-repeat: no-repeat;
+    background-size: contain;
     display: inline-block;
-    padding: 7px 7px;
-    /* generated gradients */
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #F1F1F1),
-        color-stop(0.61, #F7F7F7)
-    );
-    background-image: -o-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
-    background-image: -moz-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
-    background-image: -webkit-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
-    background-image: -ms-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
-    background-image: linear-gradient(to bottom, #F1F1F1 0%, #F7F7F7 61%);
+    height: 33px;
 }
 
-.footer .text {
-    width: 150px;
+.footer .share {
+    background-image: url(/assets/images/share.jpg);
+    width: 158px;
 }
 
-.footer .icon {
+.footer .weibo {
+    background-image: url(/assets/images/share_weibo.jpg);
+    width: 33px;
+}
 
+.footer .weibo:hover {
+    background-image: url(/assets/images/share_weibo_onclick.jpg);
+}
+
+.footer .wechat {
+    background-image: url(/assets/images/share_wechat.jpg);
+    width: 33px;
+}
+
+.footer .wechat:hover {
+    background-image: url(/assets/images/share_wechat_onclick.jpg);
+}
+
+.footer .email {
+    background-image: url(/assets/images/share_email.jpg);
+    width: 33px;
+}
+
+.footer .email:hover {
+    background-image: url(/assets/images/share_email_onclick.jpg);
 }
 
 .footer-line {
     height: 1px;
+    margin-top: 33px;
     /* generated gradients */
     background-image: -webkit-gradient(
         linear,

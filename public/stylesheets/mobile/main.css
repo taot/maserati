@@ -40,6 +40,23 @@ a {
     width: 130px;
 }
 
+.menu-bar {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+
+.menu-bar .menu {
+    display: block;
+    background-color: #CCCCCC;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid;
+    margin: -1px;
+}
 
 .footer-shadow {
     background-image: radial-gradient(400px 25px at center -10px, #e1e1e1, #ffffff);

@@ -8,7 +8,7 @@ object Application extends Controller {
 
   def mobiles = Action { implicit request =>
     if (isMobile(request)) {
-      Ok(views.html.classic.mobiles("Hello"))
+      Ok(views.html.mobile.mobiles("Hello"))
     } else {
       Ok(views.html.classic.mobiles("Hello"))
     }

@@ -1,0 +1,109 @@
+/*
+ * General Styles
+ */
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+ * Layout
+ */
+
+.top-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.menu-btn {
+    background-image: url(http://placehold.it/30x30);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    position: absolute;
+    margin: 10px 10px;
+}
+
+.logo {
+    background-image: url(/assets/images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 59px;
+    margin: 0 auto;
+    width: 130px;
+}
+
+
+.footer-shadow {
+    background-image: radial-gradient(400px 25px at center -10px, #e1e1e1, #ffffff);
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    margin: 0px auto 33px auto;
+    text-align: center;
+    word-spacing: -7px;
+}
+
+.footer .item {
+    border-color: #d6d6d6;
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    padding: 7px 7px;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #F1F1F1),
+        color-stop(0.61, #F7F7F7)
+    );
+    background-image: -o-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
+    background-image: -moz-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
+    background-image: -webkit-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
+    background-image: -ms-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
+    background-image: linear-gradient(to bottom, #F1F1F1 0%, #F7F7F7 61%);
+}
+
+.footer .text {
+    width: 150px;
+}
+
+.footer .icon {
+
+}
+
+.footer-line {
+    height: 1px;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0, #FFFFFF),
+        color-stop(0.25, #FFFFFF),
+        color-stop(0.5, #DBDCE0),
+        color-stop(0.75, #FFFFFF),
+        color-stop(1, #FFFFFF)
+    );
+    background-image: -o-linear-gradient(right, #FFFFFF 0%, #FFFFFF 25%, #DBDCE0 50%, #FFFFFF 75%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(right, #FFFFFF 0%, #FFFFFF 25%, #DBDCE0 50%, #FFFFFF 75%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #FFFFFF 25%, #DBDCE0 50%, #FFFFFF 75%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(right, #FFFFFF 0%, #FFFFFF 25%, #DBDCE0 50%, #FFFFFF 75%, #FFFFFF 100%);
+    background-image: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 25%, #DBDCE0 50%, #FFFFFF 75%, #FFFFFF 100%);
+}
+
+.copyright {
+    color: #555555;
+    margin-top: 33px;
+    text-align: center;
+}

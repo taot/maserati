@@ -1,0 +1,36 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/mobile/main.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/mobile/landing.css")">
+    <script src="@routes.Assets.at("javascripts/jquery-1.11.1.js")" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div class="top-container">
+            <button class="menu-btn"></button>
+            <div class="logo"></div>
+        </div>
+
+        <div class="content">
+            @content
+        </div>
+
+        <div class="footer-shadow"></div>
+
+        <div class="footer">
+            <div class="item text">分享你的激情</div>
+            <div class="item icon">wb</div>
+            <div class="item icon">wx</div>
+            <div class="item icon">em</div>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="copyright">&copy;Maserati 2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy;玛莎拉蒂2014版权所有</div>
+
+    </body>
+</html>

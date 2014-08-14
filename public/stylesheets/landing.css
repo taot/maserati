@@ -1,0 +1,265 @@
+/*
+ * 360车型体验页面
+ */
+
+.content .mobiles-content {
+    background-image: url(/assets/images/mobiles/background.jpg);
+    height: 375px;
+    padding-top: 75px;
+    text-align: center;
+}
+
+.mobiles-content .box {
+    background-color: rgba(221, 221, 221, 0.5); /*#dddcd8;*/
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 240px;
+    margin: 0px 15px;
+    opacity: 1;
+    overflow: hidden;
+    width: 220px;
+}
+
+.mobiles-content .mobile-thumbnail {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 86px;
+    margin-top: 20px;
+    width: inherit;
+}
+
+.mobile-thumbnail .arrow {
+    background-image: url("/assets/images/mobiles/360_arrow.png");
+    position: relative;
+    height: 20px;
+    left: 75px;
+    top: 30px;
+    width: 60px;
+    /*z-index: 2;*/
+}
+
+.mobiles-content .text {
+    color: #565656;
+    margin: 15px auto 10px auto;
+}
+
+.mobiles-content .btn {
+    border: 2px;
+    border-style: solid;
+    color: white;
+    margin: 2px auto;
+    padding: 7px 0;
+    width: 150px;
+}
+
+.mobiles-content .discover-more-btn {
+    border-color: #001a33;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #213F61),
+        color-stop(0.6, #001A35)
+    );
+    background-image: -o-linear-gradient(bottom, #213F61 0%, #001A35 60%);
+    background-image: -moz-linear-gradient(bottom, #213F61 0%, #001A35 60%);
+    background-image: -webkit-linear-gradient(bottom, #213F61 0%, #001A35 60%);
+    background-image: -ms-linear-gradient(bottom, #213F61 0%, #001A35 60%);
+    background-image: linear-gradient(to bottom, #213F61 0%, #001A35 60%);
+}
+
+.mobiles-content .discover-more-btn:hover {
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #213F61),
+        color-stop(0.6, #001A35)
+    );
+    background-image: -o-linear-gradient(top, #213F61 0%, #001A35 60%);
+    background-image: -moz-linear-gradient(top, #213F61 0%, #001A35 60%);
+    background-image: -webkit-linear-gradient(top, #213F61 0%, #001A35 60%);
+    background-image: -ms-linear-gradient(top, #213F61 0%, #001A35 60%);
+    background-image: linear-gradient(to top, #213F61 0%, #001A35 60%);
+}
+
+.mobiles-content .test-drive-btn {
+    border-color: #363636;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #454545),
+        color-stop(0.76, #6C6C6C)
+    );
+    background-image: -o-linear-gradient(top, #454545 0%, #6C6C6C 76%);
+    background-image: -moz-linear-gradient(top, #454545 0%, #6C6C6C 76%);
+    background-image: -webkit-linear-gradient(top, #454545 0%, #6C6C6C 76%);
+    background-image: -ms-linear-gradient(top, #454545 0%, #6C6C6C 76%);
+    background-image: linear-gradient(to top, #454545 0%, #6C6C6C 76%);
+}
+
+.mobiles-content .test-drive-btn:hover {
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #454545),
+        color-stop(0.76, #6C6C6C)
+    );
+    background-image: -o-linear-gradient(bottom, #454545 0%, #6C6C6C 76%);
+    background-image: -moz-linear-gradient(bottom, #454545 0%, #6C6C6C 76%);
+    background-image: -webkit-linear-gradient(bottom, #454545 0%, #6C6C6C 76%);
+    background-image: -ms-linear-gradient(bottom, #454545 0%, #6C6C6C 76%);
+    background-image: linear-gradient(to bottom, #454545 0%, #6C6C6C 76%);
+}
+
+.mobiles-menu-bar {
+    height: 46px;
+    text-align: center;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0, #FAFAFA),
+        color-stop(0.5, #E1E1E1),
+        color-stop(1, #FAFAFA)
+    );
+    background-image: -o-linear-gradient(right, #FAFAFA 0%, #E1E1E1 50%, #FAFAFA 100%);
+    background-image: -moz-linear-gradient(right, #FAFAFA 0%, #E1E1E1 50%, #FAFAFA 100%);
+    background-image: -webkit-linear-gradient(right, #FAFAFA 0%, #E1E1E1 50%, #FAFAFA 100%);
+    background-image: -ms-linear-gradient(right, #FAFAFA 0%, #E1E1E1 50%, #FAFAFA 100%);
+    background-image: linear-gradient(to right, #FAFAFA 0%, #E1E1E1 50%, #FAFAFA 100%);
+}
+
+.mobiles-menu-bar .menu {
+    color: #555555;
+    display: inline-block;
+    font-size: 0.8em;
+    height: 26px;
+    margin-left: -7px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 120px;
+}
+
+.mobiles-menu-bar .menu:hover {
+    background-color: #deddd9;
+}
+
+.mobiles-menu-bar-shadow {
+    background-image: radial-gradient(800px 40px at center -10px, #cacaca, #ffffff);
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+/* 360 窗口 */
+.mobiles-360-container {
+    background-color: white;
+    display: none;
+    height: 480px;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 600px;
+}
+
+.mobiles-360-header {
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    width: inherit;
+    word-spacing: -5px;
+}
+
+.mobiles-360-header .btn {
+    border: 2px;
+    border-color: #d2d2d2;
+    border-style: solid;
+    color: #012c59;
+    margin: 0 3px 0 0;
+    padding: 6px;
+    width: 105px;
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FCFCFC),
+        color-stop(1, #EEEEEE)
+    );
+    background-image: -o-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: -moz-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: -webkit-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: -ms-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: linear-gradient(to bottom, #FCFCFC 0%, #EEEEEE 100%);
+}
+
+.mobiles-360-header .btn:hover {
+    /* generated gradients */
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #EEEEEE),
+        color-stop(1, #FCFCFC)
+    );
+    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: linear-gradient(to bottom, #EEEEEE 0%, #FCFCFC 100%);
+}
+
+.mobiles-360-header .close-360-btn {
+    float: right;
+}
+
+.mobiles-360-body {
+    /*background-color: blue;*/
+    height: inherit;
+    width: inherit;
+}
+
+
+/* 发现更多窗口 */
+
+.discover-container {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: inherit;
+    height: auto;
+}
+
+.discover-container .btn-bar {
+    height: 60px;
+    width: inherit;
+    background-color: #ffffff;
+}
+
+.discover-container .close-discover-btn {
+    height: 30px;
+    width: 60px;
+    background-image: url(http://placehold.it/20x10);
+    float: right;
+}
+
+.discover-container .text-container {
+    text-align: center;
+    width: inherit;
+    background-color: #333333;
+}
+
+.discover-image .image {
+    width: inherit;
+    height: 300px;
+    background-size: contain;
+}

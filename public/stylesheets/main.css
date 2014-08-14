@@ -83,6 +83,11 @@ a {
     background-image: linear-gradient(to bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
 }
 
+.content {
+    margin: 0 auto;
+    width: 80%;
+}
+
 .footer-shadow {
     background-image: radial-gradient(400px 25px at center -10px, #e1e1e1, #ffffff);
     height: 30px;

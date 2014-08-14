@@ -286,45 +286,6 @@ a {
     width: inherit;
     word-spacing: -5px;
 }
-/*
-.mobiles-360-header .btn {
-    border: 2px;
-    border-color: #d2d2d2;
-    border-style: solid;
-    color: #012c59;
-    margin: 0 3px 0 0;
-    padding: 6px;
-    width: 105px;
-    *//* generated gradients *//*
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #FCFCFC),
-        color-stop(1, #EEEEEE)
-    );
-    background-image: -o-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
-    background-image: -moz-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
-    background-image: -webkit-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
-    background-image: -ms-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
-    background-image: linear-gradient(to bottom, #FCFCFC 0%, #EEEEEE 100%);
-}
-
-.mobiles-360-header .btn:hover {
-    *//* generated gradients *//*
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #EEEEEE),
-        color-stop(1, #FCFCFC)
-    );
-    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
-    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
-    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
-    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
-    background-image: linear-gradient(to bottom, #EEEEEE 0%, #FCFCFC 100%);
-}*/
 
 .mobiles-360-header .btn {
     background-color: rgba(0, 0, 0, 0);
@@ -354,7 +315,50 @@ a {
 }
 
 .mobiles-360-body {
-    /*background-color: blue;*/
     height: inherit;
     width: inherit;
+}
+
+.mobiles-discover-container {
+    display: none;
+}
+
+
+/* 车展信息 */
+
+.shows-content {
+    height: auto;
+    width: 1276px;
+    margin: 0 auto;
+}
+
+.shows-top {
+    background-image: url(/assets/images/show_shenzhen_2014_top.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 698px;
+    width: inherit;
+    /*margin: 0 auto;*/
+}
+
+.shows-middle-bar {
+    background-image: url(/assets/images/show_shenzhen_2014_middle_bar.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 98px;
+    width: inherit;
+    /*margin: 0 auto;*/
+}
+
+.shows-bottom-left {
+    background-image: url(/assets/images/show_shenzhen_2014_bottom_left.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 478px;
+    width: 719px;
+}
+
+.shows-text-box {
+    display: inline-block;
 }

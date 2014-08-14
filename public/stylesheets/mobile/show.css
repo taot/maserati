@@ -1,0 +1,34 @@
+.auto-show-360 {
+    width: 100%;
+    height: 300px;
+}
+
+.auto-show-mid-bar {
+    text-color: white;
+    text-align: center;
+    widht: 100%;
+    height: 24px;
+    padding: 18px;
+    background-color: blue;
+    margin-top: -4px;
+}
+
+.auto-show-gallery {
+    width: 100%;
+    height: 300px;
+    background-image: url(http://placehold.it/300x300);
+    background-size: contain;
+}
+
+.auto-show-info {
+    width: 100%;
+}
+
+.auto-show-info .info-box {
+    text-align: center;
+}
+
+.auto-show-map-btn {
+    width: 160px;
+    padding: 10px;
+}

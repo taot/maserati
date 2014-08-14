@@ -16,7 +16,7 @@ object Application extends Controller {
 
   def autoshows = Action { implicit request =>
     if (isMobile(request)) {
-      Ok(views.html.classic.show("Hello"))
+      Ok(views.html.mobile.show("Hello"))
     } else {
       Ok(views.html.classic.show("Hello"))
     }

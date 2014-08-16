@@ -16,7 +16,6 @@ object Application extends Controller {
   }
 
   def mobiles(id: String) = Action { implicit request =>
-
     if (isMobile(request)) {
       Ok(views.html.mobile.mobiles("Hello"))
     } else {

@@ -1,21 +1,19 @@
 package maserati.data
 
-import maserati.model.{MobileDetail2, MobileDetail0, Mobile}
+import maserati.model.{ModelDetail2, ModelDetail0, Model}
 
-object mobiles {
-
-  val list_all = list_qp ++ list_ghibli ++ list_gt ++ list_gc ++ list_concept
+object models {
 
   /**
    * Quattroporte
    */
 
-  val qpzegna = Mobile(
+  val qpzegna = Model(
     id = "qpzegna",
     name = "Quattroporte 杰尼亚限量版",
     subName = "",
     serie = series.qp,
-    detail = MobileDetail0(
+    detail = ModelDetail0(
       emission = 3798,
       maxSpeed = 307,
       acceleration = 4.7
@@ -26,12 +24,12 @@ object mobiles {
     hasTestDrive = true
   )
 
-  val qpv8 = Mobile(
+  val qpv8 = Model(
     id = "qpv8",
     name = "Quattroporte V8",
     subName = "高性能轿车豪华概念",
     serie = series.qp,
-    detail = MobileDetail0(
+    detail = ModelDetail0(
       emission = 3798,
       maxSpeed = 307,
       acceleration = 4.7
@@ -42,12 +40,12 @@ object mobiles {
     hasTestDrive = true
   )
 
-  val qpv6 = Mobile(
+  val qpv6 = Model(
     id = "qpv6",
     name = "Quattroporte V6",
     subName = "高性能轿车豪华概念",
     serie = series.qp,
-    detail = MobileDetail0(
+    detail = ModelDetail0(
       emission = 2979,
       maxSpeed = 263,
       acceleration = 5.6
@@ -64,12 +62,12 @@ object mobiles {
    * Ghibli
    */
 
-  val ghibli = Mobile(
+  val ghibli = Model(
     id = "ghibli",
     name = "Ghibli",
     subName = "每日可享的非凡乐趣",
     serie = series.ghibli,
-    detail = MobileDetail0(
+    detail = ModelDetail0(
       emission = 2979,
       maxSpeed = 263,
       acceleration = 5.6
@@ -80,12 +78,12 @@ object mobiles {
     hasTestDrive = true
   )
 
-  val ghiblisq4 = Mobile(
+  val ghiblisq4 = Model(
     id = "ghiblisq4",
     name = "Ghibli S Q4",
     subName = "每日可享的非凡乐趣",
     serie = series.ghibli,
-    detail = MobileDetail0(
+    detail = ModelDetail0(
       emission = 2979,
       maxSpeed = 284,
       acceleration = 4.8
@@ -102,12 +100,12 @@ object mobiles {
    * GT
    */
 
-  val gtmc = Mobile(
+  val gtmc = Model(
     id = "gtmc",
     name = "全新 GranTurismo MC Stradale 跑车",
     subName = "",
     serie = series.gt,
-    detail = MobileDetail0(
+    detail = ModelDetail0(
       emission = 4691,
       maxSpeed = 303,
       acceleration = 4.5
@@ -118,12 +116,12 @@ object mobiles {
     hasTestDrive = true
   )
 
-  val gtsport = Mobile(
+  val gtsport = Model(
     id = "gtsport",
     name = "GranTurismo Sport",
     subName = "沿袭传统，创意进取",
     serie = series.gt,
-    detail = MobileDetail0(
+    detail = ModelDetail0(
       emission = 4691,
       maxSpeed = 303,
       acceleration = 4.8
@@ -140,12 +138,12 @@ object mobiles {
    * GC
    */
 
-  val gcs = Mobile(
-    id = "gts",
+  val gcs = Model(
+    id = "gcs",
     name = "GranCabrio Sport",
     subName = "",
     serie = series.gc,
-    detail = MobileDetail0(
+    detail = ModelDetail0(
       emission = 4691,
       maxSpeed = 284,
       acceleration = 5.2
@@ -162,12 +160,12 @@ object mobiles {
    * Concept
    */
 
-  val alfieri = Mobile(
+  val alfieri = Model(
     id = "alfieri",
     name = "Alfieri 2+2 概念跑车",
     subName = "传承百年经典 引领创新未来",
     serie = series.concept,
-    detail = MobileDetail2(List(
+    detail = ModelDetail2(List(
       ("气缸数量", "V8引擎"),
       ("最大功率", "460马力"),
       ("最大扭矩转速", "4750转/分")
@@ -180,4 +178,9 @@ object mobiles {
 
   val list_concept = List(alfieri)
 
+
+  /**
+   * All
+   */
+  val list_all = list_qp ++ list_ghibli ++ list_gt ++ list_gc ++ list_concept
 }

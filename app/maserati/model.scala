@@ -1,39 +1,45 @@
 package maserati
 
+import scala.collection.mutable
+
 package object model {
 
   case class Serie(
     id: String,
     name: String,
-    background: String
+    background: String,
+    models: mutable.ListBuffer[Model] = mutable.ListBuffer.empty[Model]
   )
 
-  trait MobileDetail
-  case class MobileDetail0(
+  trait ModelDetail
+  case class ModelDetail0(
     emission: Int,
     maxSpeed: Int,
     acceleration: Double
-  ) extends MobileDetail
-  case class MobileDetail2(
+  ) extends ModelDetail
+  case class ModelDetail2(
     lines: List[(String, String)]
-  ) extends MobileDetail
+  ) extends ModelDetail
 
-  case class Mobile(
+  case class Model(
     id: String,
     name: String,
     subName: String,
     serie: Serie,
-    detail: MobileDetail,
+    detail: ModelDetail,
     detailPicCount: Int,
     exterior360: String,
     interior360: String,
     hasTestDrive: Boolean
   ) {
+
+    serie.models.append(this)
+
     val thumbnail = s"landing/${serie.id}/models_${id}.png"
     val thumbnailDark = s"landing/${serie.id}/models_${id}_onclick.png"
     val detailPics = (1 to detailPicCount).map { i =>
         s"landing/${serie.id}/${id}_details_photo_${i}.jpg"
-      }
+    }
   }
 
   case class Show(

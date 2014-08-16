@@ -31,7 +31,7 @@ object series {
   val concept = Serie(
     id = "concept",
     name = "概念车",
-    background = "Alfieri.jpg"
+    background = "landing/concept/Alfieri.jpg"
   )
 
   val all = List(qp, ghibli, gt, gc, concept)

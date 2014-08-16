@@ -3,10 +3,11 @@
  */
 
 .content .mobiles-content {
-    background-image: url(/assets/images/mobiles/background.jpg);
     height: 375px;
     padding-top: 75px;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .mobiles-content .box {
@@ -22,6 +23,7 @@
 
 .mobiles-content .mobile-thumbnail {
     background-repeat: no-repeat;
+    background-size: contain;
     display: inline-block;
     height: 86px;
     margin-top: 20px;

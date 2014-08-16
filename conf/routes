@@ -1,6 +1,6 @@
 # Home page
-GET     /                           controllers.Application.mobiles
-GET     /mobiles                    controllers.Application.mobiles
+GET     /                           controllers.Application.index
+GET     /mobiles/:serie             controllers.Application.mobiles(serie: String)
 GET     /autoshows                  controllers.Application.autoshows
 
 # Map static resources from the /public folder to the /assets URL path

@@ -37,7 +37,7 @@ object Application extends Controller {
   }
 
   private def isMobile(rh: RequestHeader): Boolean = {
-    return false;
+//    return false;
     rh.headers.get("User-Agent") match {
       case Some(s) =>
         val s1 = s.toLowerCase()

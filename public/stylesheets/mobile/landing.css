@@ -9,6 +9,7 @@
     height: inherit;
     width: 60%;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .mobile-thumbnail .arrow {

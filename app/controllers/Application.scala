@@ -8,16 +8,16 @@ import maserati.data
 object Application extends Controller {
 
   def index = Action {
-    Redirect(routes.Application.mobiles("qp"))
+    Redirect(routes.Application.mobiles(data.series.qp.id))
   }
 
   def mobiles0 = Action {
-    Redirect(routes.Application.mobiles("qp"))
+    Redirect(routes.Application.mobiles(data.series.qp.id))
   }
 
   def mobiles(id: String) = Action { implicit request =>
     if (isMobile(request)) {
-      Ok(views.html.mobile.mobiles("Hello"))
+      Ok(views.html.mobile.mobiles())
     } else {
       val serie = data.series.all.find(_.id == id).getOrElse(data.series.qp)
       Ok(views.html.classic.mobiles(serie))
@@ -25,14 +25,14 @@ object Application extends Controller {
   }
 
   def shows0 = Action { implicit request =>
-    Redirect(routes.Application.shows("szas"))
+    Redirect(routes.Application.shows(data.shows.szas.id))
   }
 
   def shows(id: String) = Action { implicit request =>
+    val show = data.shows.all.find(_.id == id).getOrElse(data.shows.szas)
     if (isMobile(request)) {
-      Ok(views.html.mobile.mobiles("Hello"))
+      Ok(views.html.mobile.show(show))
     } else {
-      val show = data.shows.all.find(_.id == id).getOrElse(data.shows.szas)
       Ok(views.html.classic.show(show))
     }
   }

@@ -3,7 +3,6 @@
 
 @layout("360°车型体验") {
     <style type="text/css">
-
         @for(m <- serie.models) {
         .mobiles-content .mobile-thumbnail.@{m.id} {
             background-image: url(@{"/assets/images/" + m.thumbnail});
@@ -12,14 +11,6 @@
             background-image: url(@{"/assets/images/" + m.thumbnailDark});
         }
         }
-
-        @*.mobiles-content .mobile-thumbnail.quottro {
-            background-image: url(/assets/images/mobiles/maserati-granturismo-sport.png);
-        }
-
-        .mobiles-content .mobile-thumbnail.quottro:hover {
-            background-image: url(/assets/images/mobiles/maserati-granturismo-sport_dark.png);
-        }*@
     </style>
 
     <div class="mobiles-content" style="background-image: url(/assets/images/@{serie.background});">
@@ -30,6 +21,7 @@
                  exterior="/assets/360Panos/@{m.exterior360}"
                  interior="/assets/360Panos/@{m.interior360}">
 
+                <div class="arrow"></div>
             </div>
             <div class="text">@{m.name}</div>
             <button class="btn discover-more-btn">发现更多</button>
@@ -39,37 +31,12 @@
         </div>
         }
 
-        @*<div class="box">
-            <div class="mobile-thumbnail quottro"
-                 exterior="/assets/360Panos/@"
-                 interior="/assets/images/@{serie.background}">
-
-                <div class="arrow"></div>
-
-            </div>
-            <div class="text">Quottroporte<br>杰尼亚限量版</div>
-            <button class="btn discover-more-btn">发现更多</button>
-        </div>
-        <div class="box">
-            <div class="mobile-thumbnail" style="background-image: url(/assets/images/mobiles/Bianco.png);">
-                <div class="arrow"></div>
-            </div>
-            <div class="text">Quottroporte V8</div>
-            <button class="btn discover-more-btn">发现更多</button>
-            <button class="btn test-drive-btn">预约试驾</button>
-        </div>*@
     </div>
 
     <div class="mobiles-menu-bar">
         @for(s <- data.series.all) {
         <a class="menu" href="@{routes.Application.mobiles(s.id)}">@{s.name}</a>
         }
-
-        @*<a class="menu" href="/">QUOTTROPORTE<br>总裁轿车系列</a>
-        <a class="menu" href="/">GHIBLI轿车</a>
-        <a class="menu" href="/">GRANTURISMO<br>跑车系列</a>
-        <a class="menu" href="/">GRANCABRIO<br>敞蓬跑车系列</a>
-        <a class="menu" href="/">概念车</a>*@
     </div>
 
     <div class="mobiles-menu-bar-shadow"></div>

@@ -54,4 +54,6 @@ object shows {
     d360 = "SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/1.html",
     galleryCount = 5
   )
+
+  val all = List(szas, bjas)
 }

@@ -1,11 +1,14 @@
-@(message: String)
+@(show: maserati.model.Show)
 
 @layout("车展信息") {
 
-    <iframe class="auto-show-360" src="/assets/360Panos/SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/1.html">
+    <iframe class="auto-show-360" src="/assets/360Panos/@{show.d360}">
     </iframe>
 
-    <div class="auto-show-mid-bar">2014深港澳国际汽车博览会</div>
+    @*<iframe class="auto-show-360" src="/assets/360Panos/SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/1.html">
+    </iframe>*@
+
+    <div class="auto-show-mid-bar">@{show.fullname}</div>
 
     <div class="auto-show-bottom">
 
@@ -14,6 +17,28 @@
         <div class="auto-show-info">
 
             <div class="auto-show-desc">
+                @{show.desc}
+            </div>
+
+            <div class="shadow"></div>
+
+            <div class="info-box">
+                <div class="title">时间 地址</div>
+                @for(line <- show.schedule) {
+                    @line<br>
+                }
+                @for(line <- show.location) {
+                    @line<br>
+                }
+
+                <button class="auto-show-map-btn">地图</button>
+
+                <div class="stage">
+                    @{show.stage}
+                </div>
+            </div>
+
+            @*<div class="auto-show-desc">
                 在5月29日至6月4日举办的2014年深港澳国际汽车博览会上，玛莎拉蒂携旗下四款
                 重磅车型强势出击本次车展，包括奢华典雅的全新第六代Quattroporte总裁轿车，
                 极速激情的GranTurismo跑车，浪漫阳关的GranCabrio敞蓬跑车以及轻盈动感的全
@@ -40,7 +65,7 @@
                 <div class="stage">
                     玛莎拉蒂展台在4-09
                 </div>
-            </div>
+            </div>*@
 
 
         </div>

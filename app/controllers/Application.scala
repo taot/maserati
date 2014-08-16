@@ -11,20 +11,30 @@ object Application extends Controller {
     Redirect(routes.Application.mobiles("qp"))
   }
 
-  def mobiles(pSerie: String) = Action { implicit request =>
+  def mobiles0 = Action {
+    Redirect(routes.Application.mobiles("qp"))
+  }
+
+  def mobiles(id: String) = Action { implicit request =>
+
     if (isMobile(request)) {
       Ok(views.html.mobile.mobiles("Hello"))
     } else {
-      val serie = data.series.all.find(_.id == pSerie).getOrElse(data.series.qp)
+      val serie = data.series.all.find(_.id == id).getOrElse(data.series.qp)
       Ok(views.html.classic.mobiles(serie))
     }
   }
 
-  def autoshows = Action { implicit request =>
+  def shows0 = Action { implicit request =>
+    Redirect(routes.Application.shows("szas"))
+  }
+
+  def shows(id: String) = Action { implicit request =>
     if (isMobile(request)) {
-      Ok(views.html.mobile.show("Hello"))
+      Ok(views.html.mobile.mobiles("Hello"))
     } else {
-      Ok(views.html.classic.show("Hello"))
+      val show = data.shows.all.find(_.id == id).getOrElse(data.shows.szas)
+      Ok(views.html.classic.show(show))
     }
   }
 }

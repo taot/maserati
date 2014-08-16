@@ -2,7 +2,6 @@ package controllers
 
 import play.api._
 import play.api.mvc._
-import maserati.Util.isMobile
 import maserati.data
 
 object Application extends Controller {
@@ -34,6 +33,16 @@ object Application extends Controller {
       Ok(views.html.mobile.show(show))
     } else {
       Ok(views.html.classic.show(show))
+    }
+  }
+
+  private def isMobile(rh: RequestHeader): Boolean = {
+    return false;
+    rh.headers.get("User-Agent") match {
+      case Some(s) =>
+        val s1 = s.toLowerCase()
+        s1.contains("android") || s1.contains("ios")
+      case None => false
     }
   }
 }

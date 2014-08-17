@@ -110,7 +110,7 @@ $(document).ready(function() {
         show360(src);
     });
 
-    $('.btn.close-360-btn').click(function(event) {
+    $('.close-360-btn').click(function(event) {
         hide360();
     });
 

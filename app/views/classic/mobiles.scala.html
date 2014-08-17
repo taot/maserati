@@ -51,7 +51,7 @@
         <div class="mobiles-360-header">
             <button class="btn exterior-btn">外观360°</button>
             <button class="btn interior-btn">内饰360°</button>
-            <button class="btn close-360-btn">关闭</button>
+            <button class="close-360-btn"></button>
         </div>
 
         <iframe class="mobiles-360-body" src=""></iframe>
@@ -81,7 +81,7 @@
 
         <div class="discover-image">
 
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div id="carousel-@{m.id}" class="carousel slide" data-ride="carousel">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     @for((p, i) <- m.detailPics.zipWithIndex) {
@@ -91,12 +91,12 @@
                     }
                 </div>
                 <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <a class="left carousel-control" href="#carousel-@{m.id}" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <span class="sr-only">Previous</span>
                     </span>
                 </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <a class="right carousel-control" href="#carousel-@{m.id}" role="button" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Next</span>
                 </a>

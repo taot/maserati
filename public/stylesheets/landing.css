@@ -221,6 +221,9 @@
 
 .mobiles-360-header .close-360-btn {
     float: right;
+    height: 30px;
+    width: 60px;
+    background-image: url(/assets/images/btn_layer_close.png);
 }
 
 .mobiles-360-body {
@@ -250,7 +253,7 @@
 .discover-container .close-discover-btn {
     height: 30px;
     width: 60px;
-    background-image: url(http://placehold.it/20x10);
+    background-image: url(/assets/images/btn_layer_close.png);
     float: right;
 }
 

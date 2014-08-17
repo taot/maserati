@@ -27,7 +27,7 @@
                 <!--div class="arrow"></div-->
             </div>
             <div class="text">@{m.name}</div>
-            <button class="btn discover-more-btn">发现更多</button>
+            <button class="btn discover-more-btn" model="@{m.id}">发现更多</button>
             @if(m.hasTestDrive) {
             <button class="btn test-drive-btn">预约试驾</button>
             }
@@ -59,7 +59,7 @@
     </div>
 
     <!-- 发现更多窗口 -->
-    @for(m <- data.models.list_all) {
+    @for((m, i) <- data.models.list_all.zipWithIndex) {
     <div id="discover-container-@{m.id}" class="discover-container">
 
         <div class="btn-bar">
@@ -71,21 +71,28 @@
             <div class="text mobile-name">@{m.name}</div>
             <div class="text mobile-desc">@{m.subName}</div>
             <div class="text shadow"></div>
-            <div class="text emission">排量</div>
+
+            @for((l1, l2) <- m.detail.lines) {
+                <div class="text">@l1</div>
+                <div class="text">@l2</div>
+            }
+
+            @*<div class="text emission">排量</div>
             <div class="text emission-value">3798毫升</div>
             <div class="text max-speed">最高车速</div>
             <div class="text max-speed-value">307公里每小时</div>
             <div class="text accelaration">0至100公里每小时加速</div>
-            <div class="text accelaration-value">4.7秒</div>
+            <div class="text accelaration-value">4.7秒</div>*@
         </div>
 
 
         <div class="discover-image">
 
-            <div class="image" style="background-image: url(http://placehold.it/300x400)">
+            @for((p, i) <- m.detailPics.zipWithIndex) {
+            <div class="image" style="background-image: url(/assets/images/@{p}); display=@{if(i==0) "block" else "none"};">
 
             </div>
-
+            }
         </div>
     </div>
     }

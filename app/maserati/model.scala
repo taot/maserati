@@ -11,15 +11,9 @@ package object model {
     models: mutable.ListBuffer[Model] = mutable.ListBuffer.empty[Model]
   )
 
-  trait ModelDetail
-  case class ModelDetail0(
-    emission: Int,
-    maxSpeed: Int,
-    acceleration: Double
-  ) extends ModelDetail
-  case class ModelDetail2(
+  case class ModelDetail(
     lines: List[(String, String)]
-  ) extends ModelDetail
+  )
 
   case class Model(
     id: String,
@@ -38,7 +32,7 @@ package object model {
     val thumbnail = s"landing/${serie.id}/models_${id}.png"
     val thumbnailDark = s"landing/${serie.id}/models_${id}_onclick.png"
     val detailPics = (1 to detailPicCount).map { i =>
-        s"landing/${serie.id}/${id}_details_photo_${i}.jpg"
+        s"landing/${serie.id}/${id}_details_photo${i}.jpg"
     }
   }
 

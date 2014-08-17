@@ -264,4 +264,5 @@
     width: inherit;
     height: 300px;
     background-size: contain;
+    background-repeat: no-repeat;
 }

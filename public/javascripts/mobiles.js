@@ -56,9 +56,10 @@ function resizeDiscover(container, width, height) {
     container.css('left', left);
 };
 
-function showDiscover(src) {
+function showDiscover(event) {
     console.log("showing discover page");
-    var container = $('.discover-container');
+    var model = event.target.getAttribute('model');
+    var container = $('#discover-container-' + model);
 
     var width = $(window).width();
     var height = $(window).height();
@@ -99,8 +100,7 @@ $(document).ready(function() {
     });
 
     $('.discover-more-btn').click(function(event) {
-        var src = event.target.getAttribute('interior');
-        showDiscover("");
+        showDiscover(event);
     });
 
     $('.close-discover-btn').click(function(event) {

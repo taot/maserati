@@ -1,6 +1,6 @@
 package maserati.data
 
-import maserati.model.{ModelDetail2, ModelDetail0, Model}
+import maserati.model.{ModelDetail, Model}
 
 object models {
 
@@ -13,11 +13,11 @@ object models {
     name = "Quattroporte 杰尼亚限量版",
     subName = "",
     serie = series.qp,
-    detail = ModelDetail0(
-      emission = 3798,
-      maxSpeed = 307,
-      acceleration = 4.7
-    ),
+    detail = ModelDetail(List(
+      ("排量", "3798毫升"),
+      ("最高车速", "307公里每小时"),
+      ("0至100公里每小时加速", "4.7秒")
+    )),
     detailPicCount = 5,
     exterior360 = "",
     interior360 = "QP Zegna_Interior_360 Pano/QP Zegna_Interior_360 Pano_HTML/7-2.html",
@@ -29,11 +29,11 @@ object models {
     name = "Quattroporte V8",
     subName = "高性能轿车豪华概念",
     serie = series.qp,
-    detail = ModelDetail0(
-      emission = 3798,
-      maxSpeed = 307,
-      acceleration = 4.7
-    ),
+    detail = ModelDetail(List(
+      ("排量", "3798毫升"),
+      ("最高车速", "307公里每小时"),
+      ("0至100公里每小时加速", "4.7秒")
+    )),
     detailPicCount = 5,
     exterior360 = "",
     interior360 = "QP V8_Interior_360 Pano/QP V8_Interior_360 Pano_HTML/2-4.html",
@@ -45,11 +45,11 @@ object models {
     name = "Quattroporte V6",
     subName = "高性能轿车豪华概念",
     serie = series.qp,
-    detail = ModelDetail0(
-      emission = 2979,
-      maxSpeed = 263,
-      acceleration = 5.6
-    ),
+    detail = ModelDetail(List(
+      ("排量", "2979毫升"),
+      ("最高车速", "263公里每小时"),
+      ("0至100公里每小时加速", "5.6秒")
+    )),
     detailPicCount = 5,
     exterior360 = "",
     interior360 = "QP V6_Interior_360 Pano/QP V6 360 Pano_HTML/3-3.html",
@@ -67,11 +67,11 @@ object models {
     name = "Ghibli",
     subName = "每日可享的非凡乐趣",
     serie = series.ghibli,
-    detail = ModelDetail0(
-      emission = 2979,
-      maxSpeed = 263,
-      acceleration = 5.6
-    ),
+    detail = ModelDetail(List(
+      ("排量", "2979毫升"),
+      ("最高车速", "263公里每小时"),
+      ("0至100公里每小时加速", "5.6秒")
+    )),
     detailPicCount = 5,
     exterior360 = "",
     interior360 = "Ghibli_Interior_360 Pano/Ghibli Interior 360 Pano_HTML/4-2.html",
@@ -83,11 +83,11 @@ object models {
     name = "Ghibli S Q4",
     subName = "每日可享的非凡乐趣",
     serie = series.ghibli,
-    detail = ModelDetail0(
-      emission = 2979,
-      maxSpeed = 284,
-      acceleration = 4.8
-    ),
+    detail = ModelDetail(List(
+      ("排量", "2979毫升"),
+      ("最高车速", "284公里每小时"),
+      ("0至100公里每小时加速", "4.8秒")
+    )),
     detailPicCount = 5,
     exterior360 = "",
     interior360 = "Ghibli S Q4_Interior_360 Pano/Ghibli S Q4_Interior_360 Pano_HTML/1-2.html",
@@ -105,11 +105,11 @@ object models {
     name = "全新 GranTurismo MC Stradale 跑车",
     subName = "",
     serie = series.gt,
-    detail = ModelDetail0(
-      emission = 4691,
-      maxSpeed = 303,
-      acceleration = 4.5
-    ),
+    detail = ModelDetail(List(
+      ("排量", "4691毫升"),
+      ("最高车速", "303公里每小时"),
+      ("0至100公里每小时加速", "4.5秒")
+    )),
     detailPicCount = 5,
     exterior360 = "",
     interior360 = "GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
@@ -121,11 +121,11 @@ object models {
     name = "GranTurismo Sport",
     subName = "沿袭传统，创意进取",
     serie = series.gt,
-    detail = ModelDetail0(
-      emission = 4691,
-      maxSpeed = 303,
-      acceleration = 4.8
-    ),
+    detail = ModelDetail(List(
+      ("排量", "4691毫升"),
+      ("最高车速", "303公里每小时"),
+      ("0至100公里每小时加速", "4.8秒")
+    )),
     detailPicCount = 5,
     exterior360 = "",
     interior360 = "GT Sport_Interior_360 Pano/GT Sport 360 Pano_HTML/1-2.html",
@@ -143,11 +143,11 @@ object models {
     name = "GranCabrio Sport",
     subName = "",
     serie = series.gc,
-    detail = ModelDetail0(
-      emission = 4691,
-      maxSpeed = 284,
-      acceleration = 5.2
-    ),
+    detail = ModelDetail(List(
+      ("排量", "4691毫升"),
+      ("最高车速", "284公里每小时"),
+      ("0至100公里每小时加速", "5.2秒")
+    )),
     detailPicCount = 5,
     exterior360 = "",
     interior360 = "GC Sport_Interior_360 Pano/GC Sport_Interior_360 Pano_HTML/3-2.html",
@@ -165,7 +165,7 @@ object models {
     name = "Alfieri 2+2 概念跑车",
     subName = "传承百年经典 引领创新未来",
     serie = series.concept,
-    detail = ModelDetail2(List(
+    detail = ModelDetail(List(
       ("气缸数量", "V8引擎"),
       ("最大功率", "460马力"),
       ("最大扭矩转速", "4750转/分")

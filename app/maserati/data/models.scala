@@ -10,6 +10,7 @@ object models {
 
   val qpzegna = Model(
     id = "qpzegna",
+    title = List("Quattroporte", "杰尼亚限量版"),
     name = "Quattroporte 杰尼亚限量版",
     subName = "",
     serie = series.qp,
@@ -21,11 +22,12 @@ object models {
     detailPicCount = 5,
     exterior360 = "",
     interior360 = "QP Zegna_Interior_360 Pano/QP Zegna_Interior_360 Pano_HTML/7-2.html",
-    hasTestDrive = true
+    hasTestDrive = false
   )
 
   val qpv8 = Model(
     id = "qpv8",
+    title = List("Quattroporte V8"),
     name = "Quattroporte V8",
     subName = "高性能轿车豪华概念",
     serie = series.qp,
@@ -42,6 +44,7 @@ object models {
 
   val qpv6 = Model(
     id = "qpv6",
+    title = List("Quattroporte V6"),
     name = "Quattroporte V6",
     subName = "高性能轿车豪华概念",
     serie = series.qp,
@@ -64,6 +67,7 @@ object models {
 
   val ghibli = Model(
     id = "ghibli",
+    title = List("Ghibli"),
     name = "Ghibli",
     subName = "每日可享的非凡乐趣",
     serie = series.ghibli,
@@ -80,6 +84,7 @@ object models {
 
   val ghiblisq4 = Model(
     id = "ghiblisq4",
+    title = List("Ghibli S Q4"),
     name = "Ghibli S Q4",
     subName = "每日可享的非凡乐趣",
     serie = series.ghibli,
@@ -102,6 +107,7 @@ object models {
 
   val gtmc = Model(
     id = "gtmc",
+    title = List("全新GranTurismo MC", "Stradale跑车"),
     name = "全新 GranTurismo MC Stradale 跑车",
     subName = "",
     serie = series.gt,
@@ -118,6 +124,7 @@ object models {
 
   val gtsport = Model(
     id = "gtsport",
+    title = List("GranTurismo Sport"),
     name = "GranTurismo Sport",
     subName = "沿袭传统，创意进取",
     serie = series.gt,
@@ -140,6 +147,7 @@ object models {
 
   val gcs = Model(
     id = "gcs",
+    title = List("GranCabrio Sport"),
     name = "GranCabrio Sport",
     subName = "",
     serie = series.gc,
@@ -162,6 +170,7 @@ object models {
 
   val alfieri = Model(
     id = "alfieri",
+    title = List("Alfieri 2+2", "概念跑车"),
     name = "Alfieri 2+2 概念跑车",
     subName = "传承百年经典 引领创新未来",
     serie = series.concept,
@@ -173,7 +182,7 @@ object models {
     detailPicCount = 5,
     exterior360 = "Alfieri_Exterior_360 Pano/Alfieri Exterior 360 Pano_HTML/_MG_4986_1.html",
     interior360 = "Alfieri_Interior_360 Pano/Alfieri Interior 360 Pano_HTML/6-4.html",
-    hasTestDrive = true
+    hasTestDrive = false
   )
 
   val list_concept = List(alfieri)

@@ -25,26 +25,18 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    height: 86px;
-    margin-top: 20px;
-    width: inherit;
-}
-
-.mobile-thumbnail .arrow {
-    background-image: url("/assets/images/360_arrow.png");
-    position: relative;
-    height: 20px;
-    left: 75px;
-    top: 30px;
-    width: 60px;
+    height: 100px;
+    margin-top: 15px;
+    width: 200px;
 }
 
 .mobiles-content .text {
     color: #565656;
-    margin: 15px auto 10px auto;
+    margin: 5px auto 10px auto;
 }
 
 .mobiles-content .btn {
+    font-size: small;
     border: 2px;
     border-style: solid;
     color: white;

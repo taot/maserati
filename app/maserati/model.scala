@@ -17,6 +17,7 @@ package object model {
 
   case class Model(
     id: String,
+    title: List[String],
     name: String,
     subName: String,
     serie: Serie,

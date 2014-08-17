@@ -43,13 +43,18 @@
     }
 
     <div class="mobiles-menu-bar">
-        @for(s <- data.series.all) {
-        <span class="menu mobiles-content-switch" tgt="mobiles-content-@{s.id}">@{s.name}</span>
-        }
+      <div class="interfaceHolder">
+        <div class="hoverlay" style=""></div>
+        <div class="activeMarker" style="left: 40%;"></div>
+        <ul class="interface">
+          @for(s <- data.series.all) {
+          <li class="interfaceButton">
+            <p class="" tgt="mobiles-content-@{s.id}">@{s.name}</p>
+          </li>
+          }
+        </ul>
+      </div>
     </div>
-
-    <div class="mobiles-menu-bar-shadow"></div>
-
 
     <!-- 360 窗口 -->
     <div class="mobiles-360-container">

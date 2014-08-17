@@ -31,11 +31,13 @@ function show360(src) {
         resize360view(container, width, height);
     });
 
+    $('#mobiles-360-blur').fadeIn('fast');
     container.fadeIn('fast');
 };
 
 function hide360() {
     console.log('hiding 360 view');
+    $('#mobiles-360-blur').fadeOut('slow');
     $('.mobiles-360-container').fadeOut('slow');
 };
 
@@ -134,11 +136,15 @@ $(document).ready(function() {
         rotateDetailPic(event, 1);
     });
 
+    $('.interfaceButton').click(function(event) {
+        switchMobilesContent(event);
+    });
+
     $('.interfaceButton').hover(function(event) {
       var s = $(this).parent().find("li").size();
       var i = $(this).attr('id').split("_").pop();
       var d = i * 100/s;   
       console.log(s);
       $('#hoverlay').css({left: d + "%"});
-    });  
+    });
 });

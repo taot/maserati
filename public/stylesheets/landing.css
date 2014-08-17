@@ -223,6 +223,7 @@ list-style:none;
     position: fixed;
     top: 0px;
     width: 600px;
+    z-index: 99;
 }
 
 .mobiles-360-header {
@@ -277,6 +278,9 @@ list-style:none;
     height: 30px;
     width: 60px;
     background-image: url(/assets/images/btn_layer_close.png);
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .mobiles-360-body {

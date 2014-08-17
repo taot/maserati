@@ -36,7 +36,7 @@ object Application extends Controller {
     rh.headers.get("User-Agent") match {
       case Some(s) =>
         val s1 = s.toLowerCase()
-        s1.contains("android") || s1.contains("ios")
+        s1.contains("android") || s1.contains("iphone")
       case None => false
     }
   }

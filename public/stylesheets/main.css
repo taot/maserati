@@ -138,6 +138,7 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 .content {
     margin: 0 auto;
     width: 1280px;
+    background-color: #f6f6f6;
 }
 
 .footer-shadow {

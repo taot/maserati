@@ -37,8 +37,8 @@ object shows {
     desc =
       """
         |4月20日 北京-玛莎拉蒂Alfieri概念跑车北京国际车展亚洲首发。同时，玛莎拉蒂
-        |GT MC Stradale百年庆典特别版，全新玛莎拉蒂Quattroporte总裁轿车杰尼亚限量
-        |版，及玛莎拉蒂全系车型亮相北京车展。
+        |GT MC Stradale百年庆典特别版，全新玛莎拉蒂Quattroporte总裁轿车杰尼亚限量版，
+        |及玛莎拉蒂全系车型亮相北京车展。
       """.stripMargin,
     schedule = List(
       "时间：",

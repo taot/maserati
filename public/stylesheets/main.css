@@ -48,6 +48,7 @@ a {
 }
 
 .menu-bar .menu {
+/*
     background-color: #ececec;
     border-color: #bbbbbb;
     border-style: solid;
@@ -58,16 +59,55 @@ a {
     padding: 10px;
     text-align: center;
     width: 120px;
+*/
+  display: table-cell;
+  text-align: center;
+  width: 140px;
+  background: url(/assets/images/offical/menu-btbg_140x44.png);
+  background-size: 140px 132px;
+  height: 42px;
+  font-size: 0.85em;
+  vertical-align: middle;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+border-right: 1px solid #c1bfb9;
+}
+
+body a, body a:active, body a:visited {
+  text-decoration: none;
+}
+
+.menu-bar>ul li.menu:first-child>a
+{
+  border-left: 1px solid #c1bfb9;
+}
+
+.menu-bar>ul li.menu>a
+{
+   line-height: 1em;
+   padding: 0 4px;
+   margin: 0;
+   text-align: center;
+   width: 100%;
+   color: #47444b;
+   color: #47444b;
+   letter-spacing: 0.10em;
+} 
+
+.menu-bar>ul li.menu.current>a
+{
+  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  color: white;
 }
 
 .menu-bar .menu:hover {
-    background-color: #e0e0e0;
-    border-top-color: #f8f8f8;
+  background-position: 0 -44px;
 }
 
 .menu-bar .menu.current {
+/**
     color: #f8f8f8;
-    /* generated gradients */
     background-image: -webkit-gradient(
         linear,
         left top,
@@ -81,6 +121,18 @@ a {
     background-image: -webkit-linear-gradient(bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
     background-image: -ms-linear-gradient(bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
     background-image: linear-gradient(to bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
+*/
+-webkit-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+-moz-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+-ms-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+-o-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+height: 44px;
+background-position: 0 -88px;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+-webkit-box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
+-moz-box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
+box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 }
 
 .content {

@@ -44,14 +44,16 @@
 
             <div class="info-box">
                 <div class="title">时间 地址</div>
+                <div class="text schedule-title"></div>
                 @for(line <- show.schedule) {
-                    @line<br>
+                    <div class="text">@line</div>
                 }
+                <div class="text location-title"></div>
                 @for(line <- show.location) {
-                    @line<br>
+                    <div class="text">@line</div>
                 }
 
-                <button class="auto-show-map-btn">地图</button>
+                <button class="auto-show-map-btn"> </button>
 
                 <div class="stage">
                     @{show.stage}

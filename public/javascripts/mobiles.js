@@ -80,6 +80,13 @@ function hideDiscover() {
     $('.discover-container').fadeOut('slow');
 };
 
+function switchMobilesContent(event) {
+    console.log('switching mobile content')
+    var tgt = event.target.getAttribute('tgt');
+    $('.mobiles-content').hide();
+    $('#' + tgt).show();
+};
+
 $(document).ready(function() {
 
     $('.mobile-thumbnail').click(function(event) {
@@ -98,5 +105,9 @@ $(document).ready(function() {
 
     $('.close-discover-btn').click(function(event) {
         hideDiscover();
+    });
+
+    $('.mobiles-content-switch').click(function(event) {
+        switchMobilesContent(event);
     });
 });

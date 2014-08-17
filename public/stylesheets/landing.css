@@ -152,6 +152,7 @@
 
 .mobiles-menu-bar .menu:hover {
     background-color: #deddd9;
+    cursor: default;
 }
 
 .mobiles-menu-bar-shadow {

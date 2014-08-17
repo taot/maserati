@@ -1,7 +1,6 @@
 # Home page
 GET     /                           controllers.Application.index
-GET     /mobiles                    controllers.Application.mobiles0
-GET     /mobiles/:id                controllers.Application.mobiles(id: String)
+GET     /mobiles                    controllers.Application.mobiles
 GET     /shows                      controllers.Application.shows0
 GET     /shows/:id                  controllers.Application.shows(id: String)
 

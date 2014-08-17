@@ -7,19 +7,14 @@ import maserati.data
 object Application extends Controller {
 
   def index = Action {
-    Redirect(routes.Application.mobiles(data.series.qp.id))
+    Redirect(routes.Application.mobiles())
   }
 
-  def mobiles0 = Action {
-    Redirect(routes.Application.mobiles(data.series.qp.id))
-  }
-
-  def mobiles(id: String) = Action { implicit request =>
+  def mobiles = Action { implicit request =>
     if (isMobile(request)) {
       Ok(views.html.mobile.mobiles())
     } else {
-      val serie = data.series.all.find(_.id == id).getOrElse(data.series.qp)
-      Ok(views.html.classic.mobiles(serie))
+      Ok(views.html.classic.mobiles())
     }
   }
 

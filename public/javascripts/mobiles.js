@@ -87,23 +87,9 @@ function switchMobilesContent(event) {
     console.log('switching mobile content');
     var tgt = event.target.getAttribute('tgt');
     $('.mobiles-content').hide();
-    $('#' + tgt).show();
+    $('#' + tgt).fadeIn('slow');
 };
 
-function rotateDetailPic(event, direction) {
-    console.log('rotating detail picture');
-    var model = event.getAttribute('model');
-    var images = $('#discover-container-' + model).find('.image');
-    var displayed = -1;
-    for (var i = 0; i < images.length; i++) {
-        if (!images.getAttribute('style').contains('none')) {
-            displayed = i;
-        }
-    }
-    if (displayed < 0) {
-
-    }
-};
 
 $(document).ready(function() {
 
@@ -124,17 +110,9 @@ $(document).ready(function() {
         hideDiscover();
     });
 
-    $('.mobiles-content-switch').click(function(event) {
-        switchMobilesContent(event);
-    });
-
-    $('.left-arrow').click(function(event) {
-        rotateDetailPic(event, -1);
-    });
-
-    $('.right-arrow').click(function(event) {
-        rotateDetailPic(event, 1);
-    });
+//    $('.mobiles-content-switch').click(function(event) {
+//        switchMobilesContent(event);
+//    });
 
     $('.interfaceButton').click(function(event) {
         switchMobilesContent(event);

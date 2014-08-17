@@ -44,11 +44,11 @@
 
     <div class="mobiles-menu-bar">
       <div class="interfaceHolder">
-        <div class="hoverlay" style=""></div>
+        <div id="hoverlay" class="hoverlay" style=""></div>
         <div class="activeMarker" style="left: 40%;"></div>
         <ul class="interface">
-          @for(s <- data.series.all) {
-          <li class="interfaceButton">
+          @for((s,i) <- data.series.all.zipWithIndex) {
+          <li class="interfaceButton" id=@{"interfacebtn_" + i}>
             <p class="" tgt="mobiles-content-@{s.id}">@{s.name}</p>
           </li>
           }

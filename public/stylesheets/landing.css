@@ -62,7 +62,8 @@
     background-image: linear-gradient(to bottom, #213F61 0%, #001A35 60%);
 }
 
-.mobiles-content .discover-more-btn:hover {
+.mobiles-content .discover-more-btn:hover,
+.mobiles-content .discover-more-btn:active {
     /* generated gradients */
     background-image: -webkit-gradient(
         linear,
@@ -94,6 +95,7 @@
     background-image: -ms-linear-gradient(top, #454545 0%, #6C6C6C 76%);
     background-image: linear-gradient(to top, #454545 0%, #6C6C6C 76%);
 }
+
 
 .mobiles-content .test-drive-btn:hover {
     /* generated gradients */
@@ -153,27 +155,43 @@ list-style:none;
 }
 
 .mobiles-menu-bar .interface li {
--webkit-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
--moz-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
--ms-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
--o-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-overflow: hidden;
-padding: 18px 0 0 0;
-text-align: center;
-font-size: 0.7em;
-height: 28px;
-width: 189px;
-float: left;
-text-transform: uppercase;
-letter-spacing: 0.2em;
+  -webkit-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 18px 0 0 0;
+  text-align: center;
+  font-size: 0.7em;
+  height: 28px;
+  width: 189px;
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
 }
+.mobiles-menu-bar .hoverlay {
+  transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: #d5d3cc;
+  width: 190px;
+  height: 44px;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 1.0;
+  pointer-events: none;
+}
+
 .mobiles-menu-bar .interface li p{
-  color: #47444b;
+  color: rgb(71, 68, 75);
   height: 11px;
+  line-height: 11px;
+  width: 110px;
+  margin: 0 auto;
 }
 .mobiles-menu-bar .menu {
-    color: #555555;
+    color: rgb(71, 68, 75);
     display: inline-block;
     font-size: 0.8em;
     height: 26px;
@@ -277,6 +295,7 @@ letter-spacing: 0.2em;
     left: 0px;
     width: inherit;
     height: auto;
+    z-index: 5;
 }
 
 .discover-container .btn-bar {

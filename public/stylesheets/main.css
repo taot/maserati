@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+body {
+  font-family: "微软雅黑", "Microsoft Yahei", "华文细黑", STXihei !important;
+}
+
 /*
  * Layout
  */
@@ -156,6 +160,7 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
     background-image: radial-gradient(400px 25px at center -10px, #e1e1e1, #ffffff);
     height: 30px;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .footer {
@@ -232,7 +237,8 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 }
 
 .copyright {
-    color: #555555;
+    color: rgb(128, 126, 132);
     margin-top: 33px;
     text-align: center;
+    font-size: 12px;
 }

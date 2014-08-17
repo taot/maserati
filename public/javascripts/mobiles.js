@@ -133,4 +133,12 @@ $(document).ready(function() {
     $('.right-arrow').click(function(event) {
         rotateDetailPic(event, 1);
     });
+
+    $('.interfaceButton').hover(function(event) {
+      var s = $(this).parent().find("li").size();
+      var i = $(this).attr('id').split("_").pop();
+      var d = i * 100/s;   
+      console.log(s);
+      $('#hoverlay').css({left: d + "%"});
+    });  
 });

@@ -1,4 +1,4 @@
-@(title: String)(content: Html)
+@(title: String, showOpt: Option[maserati.model.Show])(content: Html)
 <!DOCTYPE html>
 
 <html>
@@ -35,7 +35,18 @@
             <li class="menu" >
             <a href="/">联系我们</a>
             </li>
+
           </ul>
+          @if(showOpt.isDefined) {
+            <div class="show-menu" >
+              <span>@{showOpt.get.name}</span>\
+              <div>
+                <p>2014深圳车展</p>
+                <p>2014北京车展</p>
+              </div>
+            </div>
+          } else {
+          }
         </div>
 
         <div class="menu-bar-line"></div>

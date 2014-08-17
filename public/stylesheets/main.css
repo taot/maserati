@@ -60,6 +60,20 @@ body {
 .menu-bar {
     text-align: center;
     word-spacing: -7px;
+    position: relative;
+    min-width: 900px;
+}
+.show-menu {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-color: black;
+    color: white;
+}
+
+.show-menu2 {
+  position: relative;
+  top: -20px;
 }
 
 .menu-bar>ul {

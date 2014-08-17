@@ -107,7 +107,7 @@ object models {
 
   val gtmc = Model(
     id = "gtmc",
-    title = List("全新GranTurismo MC", "Stradale跑车"),
+    title = List("GranTurismo MC Stradale"),
     name = "全新 GranTurismo MC Stradale 跑车",
     subName = "",
     serie = series.gt,

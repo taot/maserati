@@ -110,10 +110,6 @@ $(document).ready(function() {
         hideDiscover();
     });
 
-//    $('.mobiles-content-switch').click(function(event) {
-//        switchMobilesContent(event);
-//    });
-
     $('.interfaceButton').click(function(event) {
         switchMobilesContent(event);
     });

@@ -1,6 +1,6 @@
 @(show: maserati.model.Show)
 
-@layout("车展信息", Some(show)) {
+@layout("车展信息", "show", Some(show)) {
 
     <iframe class="auto-show-360" src="/assets/360Panos/@{show.d360}">
     </iframe>
@@ -60,4 +60,6 @@
         </div>
 
     </div>
+
+    <script src="@routes.Assets.at("javascripts/show.js")" type="text/javascript"></script>
 }

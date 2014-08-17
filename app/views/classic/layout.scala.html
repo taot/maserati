@@ -1,4 +1,5 @@
-@(title: String, showOpt: Option[maserati.model.Show])(content: Html)
+@(title: String, current: String, showOpt: Option[maserati.model.Show])(content: Html)
+@import maserati.data
 <!DOCTYPE html>
 
 <html>
@@ -23,10 +24,10 @@
 
         <div class="menu-bar">
           <ul>
-            <li class="menu current" >
+            <li class="menu @{if(current=="mobiles") { "active" } else {} }" >
             <a href="/">360°车型体验</a>
             </li>
-            <li class="menu" >
+            <li class="menu @{if(current=="show") { "active" } else {} }" >
             <a href="/shows">车展信息</a>
             </li>
             <li class="menu" >
@@ -42,10 +43,19 @@
           </ul>
           @if(showOpt.isDefined) {
             <div class="show-menu" >
-              <span>@{showOpt.get.name}</span>\
+              <div>
+                  <div class="show-menu-triangle"></div>
+                  <span class="text">@{showOpt.get.name}</span>
+              </div>
               <div class="show-menu2">
-                <p>2014深圳车展</p>
-                <p>2014北京车展</p>
+                  @for(s <- data.shows.all) {
+                    <div class="show-menu2-item @{s.id}" show="@{s.id}">
+                        <div class="show-menu2-ok glyphicon glyphicon-ok"
+                                style="visibility: @{if(s.id==showOpt.get.id) { "visible" } else { "hidden" } }">
+                        </div>
+                        @{s.name}
+                    </div>
+                  }
               </div>
             </div>
           } else {

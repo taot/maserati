@@ -19,10 +19,13 @@
             <div class="mobile-thumbnail @{m.id}"
                  exterior="/assets/360Panos/@{m.exterior360}"
                  interior="/assets/360Panos/@{m.interior360}">
-                <!--div class="arrow"></div-->
             </div>
             <div class="right-box">
-                <div class="text">@{m.name}</div>
+                <div class="text">
+                    @for((t,i) <- m.title.zipWithIndex) {
+                        @t @if(i != m.title.length - 1) { <br> } else {}
+                    }
+                </div>
                 <button class="btn discover-more-btn">发现更多</button>
                 @if(m.hasTestDrive) {
                 <button class="btn test-drive-btn">预约试驾</button>

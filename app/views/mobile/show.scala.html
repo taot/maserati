@@ -8,7 +8,30 @@
 
     <div class="auto-show-mid-bar">@{show.fullname}</div>
 
-    <div class="auto-show-gallery"></div>
+    <!--<div class="auto-show-gallery"></div>-->
+
+    <div class="auto-show-gallery">
+        <div id="carousel-@{show.id}" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                @for((p, i) <- show.gallery.zipWithIndex) {
+                <div class="item @{if(i==0) "active" else ""}">
+                    <img class="image" src="/assets/images/@{p}">
+                </div>
+                }
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-@{show.id}" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+
+            </a>
+            <a class="right carousel-control" href="#carousel-@{show.id}" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
 
     <div class="auto-show-info">
 
@@ -20,22 +43,23 @@
 
         <div class="info-box">
             <div class="title">时间 地址</div>
-            <div class="time">
+            <div class="schedule text">
                 @for(line <- show.schedule) {
                     @line<br>
                 }
             </div>
-            <div class="location">
+            <div class="location text">
                 @for(line <- show.location) {
                     @line<br>
                 }
             </div>
 
-            <button class="auto-show-map-btn">地图</button>
+            <button class="auto-show-map-btn"></button>
 
             <div class="stage">
                 @{show.stage}
             </div>
         </div>
+
     </div>
 }

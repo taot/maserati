@@ -69,9 +69,9 @@
 
     <!-- 发现更多窗口 -->
     @for((m, i) <- data.models.list_all.zipWithIndex) {
-    <div id="discover-container-@{m.id}" class="discover-container">
-
-        <div class="btn-bar">
+    <div id="discover-container-@{m.id}" class="discover-container" align="center">
+       <div class="discover-content">"
+        <div class="btn-bar" align="right">
             <button class="close-discover-btn" model="@{m.id}"></button>
         </div>
 
@@ -112,6 +112,7 @@
             </div>
 
         </div>
+      </div>
     </div>
     }
 

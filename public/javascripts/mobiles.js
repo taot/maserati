@@ -43,13 +43,14 @@ function hide360() {
 
 function resizeDiscover(container, width, height) {
     // calculate width and height
-    var w = width;
-    var h = height;
-    if (w * 480 > h * 640) {
-        w = h * 640 / 480;
-    } else {
-        h = w * 480 / 640;
-    }
+    var w = width * 0.8;
+    var h = height ;
+    h = w * 480 / 640;
+//    if (w * 480 > h * 640) {
+//        w = h * 640 / 480;
+//    } else {
+//        h = w * 480 / 640;
+//    }
     container.css('width', w);
     container.css('height', h);
 
@@ -62,17 +63,18 @@ function showDiscover(event) {
     console.log("showing discover page");
     var model = event.target.getAttribute('model');
     var container = $('#discover-container-' + model);
+    var content = $('.discover-content', container);
 
     var width = $(window).width();
     var height = $(window).height();
-    resizeDiscover(container, width, height);
+    resizeDiscover(content, width, height);
 
     $(window).resize(function() {
         var width = $(window).width();
         var height = $(window).height();
         console.log("window resized - width: " + width + ", height: " + height);
         var container = $('.discover-container');
-        resizeDiscover(container, width, height);
+        resizeDiscover(content, width, height);
     });
 
     container.fadeIn('fast');

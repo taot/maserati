@@ -300,25 +300,28 @@ list-style:none;
     width: inherit;
     height: auto;
     z-index: 5;
+    background-color: rgba(255,255,255,0.9)
 }
 
 .discover-container .btn-bar {
-    height: 60px;
+    height: 40px;
     width: inherit;
-    background-color: #ffffff;
+    background-color: rgba(0,0,0,0);
 }
 
 .discover-container .close-discover-btn {
     height: 30px;
-    width: 60px;
+    width: 65px;
     background-image: url(/assets/images/btn_layer_close.png);
-    float: right;
+    margin-right: 10px;
+    background-color: rgba(0,0,0,0);
 }
 
 .discover-container .text-container {
     text-align: center;
     width: inherit;
-    background-color: #333333;
+    background-image: url(/assets/images/text-container-bg.png);
+    background-size: contain;
 }
 
 .discover-container .text-container .text {

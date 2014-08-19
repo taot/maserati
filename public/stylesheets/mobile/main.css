@@ -38,12 +38,33 @@ a {
     display: inline-block;
 }
 
+.menu-container {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
 .menu-btn {
     background-image: url(/assets/images/menu_main.jpg);
     width: 44px;
     height: 44px;
     background-size: contain;
     position: absolute;
+    margin-left: 10px;
+    /*position: absolute;*/
+    /*margin: 30px 30px;*/
+}
+
+.show-menu-btn {
+    background-image: url(/assets/images/menu_extra.jpg);
+    width: 130px;
+    height: 130px;
+    background-size: contain;
+    /*position: absolute;*/
+    float: right;
+    margin-right: 10px;
+    /*margin: 30px 30px;*/
 }
 
 .logo {
@@ -76,6 +97,37 @@ a {
 }
 
 .menu-bar .menu.last {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.show-menu-bar {
+    /*display: none;*/
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+
+.show-menu-bar .menu {
+    display: block;
+    background-color: #e5e5e5;
+    color: #555555;
+    padding: 50px;
+    text-align: center;
+    border-top-style: solid;
+    border-top-width: 1px;
+    font-size: 2.6em;
+    text-decoration: none;
+}
+
+.show-menu-bar .menu.current {
+    background-color: #909090;
+    color: white;
+}
+
+.show-menu-bar .menu.last {
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }

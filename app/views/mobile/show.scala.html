@@ -1,7 +1,7 @@
 @(show: maserati.model.Show)
 @import maserati.data
 
-@layout("车展信息") {
+@layout("车展信息", Some(show)) {
 
     <iframe class="auto-show-360" src="/assets/360Panos/@{show.d360}">
     </iframe>

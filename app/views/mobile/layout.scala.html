@@ -1,4 +1,5 @@
-@(title: String)(content: Html)
+@(title: String, showOpt: Option[maserati.model.Show])(content: Html)
+@import maserati.data
 <!DOCTYPE html>
 
 <html>
@@ -17,8 +18,17 @@
 
     <!--<body style="font-size: 42px">-->
     <body style="font-size: 15px">
+
       <div class="body">
         <button class="menu-btn"></button>
+
+        @*<div class="menu-container">
+            <button class="menu-btn"></button>
+            @if(showOpt.isDefined) {
+            <button class="show-menu-btn"></button>
+            }
+        </div>*@
+
         <div class="top-container">
             <div class="logo"></div>
         </div>
@@ -30,6 +40,16 @@
             <a class="menu" href="http://maserati.uncrm.cn/">预约试驾</a>
             <a class="menu last" href="http://www.maserati.com.cn/maserati/cn/zh/index/services/contact.html">联系我们</a>
         </div>
+
+        @if(showOpt.isDefined) {
+        <div class="show-menu-bar">
+            @for(s <- data.shows.all) {
+                <a class="menu @{if(s == showOpt.get) { "current" } else {} }" href="#">@{s.name}</a>
+            }
+            @*<a class="menu" href="#">2014深圳车展</a>
+            <a class="menu last" href="#">2014北京车展</a>*@
+        </div>
+        }
 
         <div class="content">
             @content

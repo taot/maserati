@@ -41,22 +41,24 @@ function hide360() {
     $('.mobiles-360-container').fadeOut('slow');
 };
 
-function resizeDiscover(container, width, height) {
+function resizeDiscover(container, content, width, height) {
     // calculate width and height
     var w = width * 0.8;
+    if (w < 820)
+      w = 820; 
     var h = height ;
-    h = w * 480 / 640;
+    h = w * 450 / 640;
 //    if (w * 480 > h * 640) {
 //        w = h * 640 / 480;
 //    } else {
 //        h = w * 480 / 640;
 //    }
-    container.css('width', w);
-    container.css('height', h);
+    content.css('width', w);
+    content.css('height', h);
 
     // calculate position
     var left = (width - w) / 2;
-    container.css('left', left);
+    content.css('left', left);
 };
 
 function showDiscover(event) {
@@ -67,14 +69,14 @@ function showDiscover(event) {
 
     var width = $(window).width();
     var height = $(window).height();
-    resizeDiscover(content, width, height);
+    resizeDiscover(container, content, width, height);
 
     $(window).resize(function() {
         var width = $(window).width();
         var height = $(window).height();
         console.log("window resized - width: " + width + ", height: " + height);
         var container = $('.discover-container');
-        resizeDiscover(content, width, height);
+        resizeDiscover(container, content, width, height);
     });
 
     container.fadeIn('fast');

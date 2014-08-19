@@ -304,7 +304,7 @@ list-style:none;
 }
 
 .discover-container .btn-bar {
-    height: 40px;
+    height: 6%;
     width: inherit;
     background-color: rgba(0,0,0,0);
 }
@@ -315,17 +315,35 @@ list-style:none;
     background-image: url(/assets/images/btn_layer_close.png);
     margin-right: 10px;
     background-color: rgba(0,0,0,0);
+    border: 0;
 }
 
 .discover-container .text-container {
-    text-align: center;
-    width: inherit;
-    background-image: url(/assets/images/text-container-bg.png);
+    width: 100%;
+    height: 33%;
+    background: url(/assets/images/text-container-bg.png) no-repeat bottom center;
     background-size: contain;
 }
 
+.discover-container .text-head {
+    padding-top: 5px;
+    height: 25%;
+}
+
+.discover-container .mobile-desc {
+   font-size: 12px;
+}
+
+.discover-container .mobile-title {
+   font-size: 10px;
+   padding-top: 12px;
+}
 .discover-container .text-container .text {
     color: white;
+}
+ 
+.discover-image {
+    height: 60%;
 }
 
 .discover-image .image {

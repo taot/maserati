@@ -11,8 +11,8 @@ object models {
   val qpzegna = Model(
     id = "qpzegna",
     title = List("Quattroporte", "杰尼亚限量版"),
-    name = "Quattroporte 杰尼亚限量版",
-    subName = "",
+    name = "Quattroporte",
+    subName = "杰尼亚限量版",
     serie = series.qp,
     detail = ModelDetail(List(
       ("排量", "3798毫升"),

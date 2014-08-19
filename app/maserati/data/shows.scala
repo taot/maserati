@@ -23,7 +23,7 @@ object shows {
     ),
     location = List(
       "地址：",
-      "深圳会展中心 深圳市福田区福画三路"
+      "深圳会展中心 深圳市福田区福华三路"
     ),
     stage = "玛莎拉蒂展台在4-09",
     d360 = "SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/1.html",

@@ -1,21 +1,20 @@
 .auto-show-360 {
     width: 100%;
-    height: 800px;
 }
 
 .auto-show-mid-bar {
     color: white;
     text-align: center;
-    widht: 100%;
-    height: 200px;
-    padding: 60px 0 0;
+    width: 100%;
+    height: 45px;
+    /*padding: 60px 0 0;*/
     background-image: url(/assets/images/show_mid_bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-top: -4px;
+    /*margin-top: -4px; */
     font-size: 1.5em;
-    margin-top: -25px;
-    margin-bottom: -4px;
+    /*margin-top: -25px;*/
+    /*margin-bottom: -4px; */
 }
 
 .auto-show-gallery {
@@ -30,18 +29,13 @@
 
 .auto-show-info {
     width: 100%;
+    padding: 5px 10px;
 }
 
 .auto-show-info .auto-show-desc {
     width: 100%;
-    height: auto;
     font-size: 1em;
-    line-height: 180%;
     color: #555555;
-}
-
-.auto-show-info {
-    padding: 30px 50px;
 }
 
 .auto-show-info .shadow {
@@ -50,7 +44,6 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 20px;
-    margin: 30px auto 20px auto;
 }
 
 .auto-show-info .info-box {
@@ -77,11 +70,10 @@
 
 .auto-show-map-btn {
     background-image: url(/assets/images/btn_map.png);
-    background-size: 100% 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 320px;
-    height: 90px;
-    margin-bottom: 40px;
+    width: 100%;
+    height: 40px;
 }
 
 .auto-show-map-btn:active {

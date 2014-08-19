@@ -35,8 +35,9 @@
 .auto-show-info .auto-show-desc {
     width: 100%;
     height: auto;
-    font-size: larger;
+    font-size: 3em;
     line-height: 160%;
+    color: #555555;
 }
 
 .auto-show-info {
@@ -54,15 +55,16 @@
 
 .auto-show-info .info-box {
     text-align: center;
+    color: #555555;
 }
 
 .info-box .title {
-    font-size: x-large;
+    font-size: 3.8em;
     margin-bottom: 30px;
 }
 
 .info-box .text {
-    font-size: larger;
+    font-size: 3em;
 }
 
 .info-box .schedule {
@@ -70,22 +72,22 @@
 }
 
 .info-box .location {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .auto-show-map-btn {
     background-image: url(/assets/images/btn_map.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 168px;
-    height: 46px;
-    margin-bottom: 30px;
+    width: 320px;
+    height: 90px;
+    margin-bottom: 40px;
 }
 
-.auto-show-map-btn:hover {
+.auto-show-map-btn:active {
     background-image: url(/assets/images/btn_map_onclick.png);
 }
 
 .info-box .stage {
-    font-size: x-large;
+    font-size: 3.8em;
 }

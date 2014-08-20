@@ -58,24 +58,45 @@ function resizeDiscover(container, width, height) {
     container.css('left', left);
 };
 
-function showDiscover(src) {
+function showDiscover(event) {
     console.log("showing discover page");
-    var container = $('.discover-container');
+    var model = event.target.getAttribute('model');
+    var container = $('#discover-container-' + model);
+    var content = $('.discover-content', container);
 
-    var width = $(window).width();
-    var height = $(window).height();
-    resizeDiscover(container, width, height);
+//    var width = $(window).width();
+//    var height = $(window).height();
+//    resizeDiscover(container, content, width, height);
 
-    $(window).resize(function() {
-        var width = $(window).width();
-        var height = $(window).height();
-        console.log("window resized - width: " + width + ", height: " + height);
-        var container = $('.discover-container');
-        resizeDiscover(container, width, height);
-    });
+//    $(window).resize(function() {
+//        var width = $(window).width();
+//        var height = $(window).height();
+//        console.log("window resized - width: " + width + ", height: " + height);
+//        var container = $('.discover-container');
+//        resizeDiscover(container, content, width, height);
+//    });
 
     container.fadeIn('fast');
 };
+
+//function showDiscover(src) {
+//    console.log("showing discover page");
+//    var container = $('.discover-container');
+//
+//    var width = $(window).width();
+//    var height = $(window).height();
+//    resizeDiscover(container, width, height);
+//
+//    $(window).resize(function() {
+//        var width = $(window).width();
+//        var height = $(window).height();
+//        console.log("window resized - width: " + width + ", height: " + height);
+//        var container = $('.discover-container');
+//        resizeDiscover(container, width, height);
+//    });
+//
+//    container.fadeIn('fast');
+//};
 
 function hideDiscover() {
     console.log('hiding discover page');
@@ -95,7 +116,7 @@ $(document).ready(function() {
 
     $('.discover-more-btn').click(function(event) {
         var src = event.target.getAttribute('interior');
-        showDiscover("");
+        showDiscover(event);
     });
 
     $('.close-discover-btn').click(function(event) {

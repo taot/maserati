@@ -311,7 +311,7 @@ list-style:none;
 
 .discover-container .close-discover-btn {
     height: 30px;
-    width: 65px;
+    width: 70px;
     background-image: url(/assets/images/btn_layer_close.png);
     margin-right: 10px;
     background-color: rgba(0,0,0,0);
@@ -346,13 +346,14 @@ list-style:none;
     height: 60%;
 }
 
-.discover-image .image {
+/*.discover-image .image {
     width: inherit;
     height: 300px;
     background-size: contain;
     background-repeat: no-repeat;
-}
+}*/
 
+/*
 .discover-image .arrow-bar {
     position: absolute;
     margin-top: -30%;
@@ -373,3 +374,4 @@ list-style:none;
     float: right;
     background-image: url(/assets/images/right_arrow.png);
 }
+*/

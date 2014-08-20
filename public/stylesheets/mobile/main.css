@@ -49,6 +49,15 @@ a {
     display: inline-block;
 }
 
+.logo {
+    background: url(/assets/images/maserati_header_logo.jpg)top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 60px;
+    width: 100%;
+    margin-top: 20px;
+}
+
 .menu-container {
     display: inline-block;
     width: 100%;
@@ -60,7 +69,6 @@ a {
     width: 40px;
     height: 40px;
     background-size: contain;
-    position: absolute;
 }
 
 .main-menu-btn {
@@ -74,16 +82,7 @@ a {
     margin-right: 8px;
 }
 
-.logo {
-    background: url(/assets/images/maserati_header_logo.jpg)top center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 60px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.menu-bar {
+.main-menu-bar {
     display: none;
     width: 100%;
     height: auto;
@@ -92,7 +91,7 @@ a {
     z-index: 1;
 }
 
-.menu-bar .menu {
+.main-menu-bar .menu {
     display: block;
     background-color: #eeeeee;
     color: #555555;
@@ -104,12 +103,12 @@ a {
     text-decoration: none;
 }
 
-.menu-bar .menu:active {
+.main-menu-bar .menu:active {
     color: white;
     background-color: #333333;
 }
 
-.menu-bar .menu.last {
+.main-menu-bar .menu.last {
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
@@ -125,14 +124,14 @@ a {
 
 .show-menu-bar .menu {
     display: block;
-    background-color: #e5e5e5;
-    color: #555555;
-    padding: 50px;
+    background-color: #e2e2e2;
+    color: #525252;
     text-align: center;
     border-top-style: solid;
     border-top-width: 1px;
-    font-size: 2.6em;
+    font-size: 1em;
     text-decoration: none;
+    padding: 1.2em 0;
 }
 
 .show-menu-bar .menu.current {

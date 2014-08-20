@@ -1,5 +1,6 @@
 .auto-show-360 {
     width: 100%;
+    border: 0 none;
 }
 
 .auto-show-mid-bar {
@@ -7,20 +8,19 @@
     text-align: center;
     width: 100%;
     height: 45px;
-    /*padding: 60px 0 0;*/
     background-image: url(/assets/images/show_mid_bg.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    /*margin-top: -4px; */
-    font-size: 1.5em;
-    /*margin-top: -25px;*/
-    /*margin-bottom: -4px; */
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    font-size: 1.3em;
+    padding: 5px 0;
+    margin-top: -6px;
 }
 
 .auto-show-gallery {
     width: 100%;
     height: auto;
-    /*background-size: contain;*/
+    border: 0 none;
+    margin-top: -1px;
 }
 
 .auto-show-gallery .image {
@@ -34,8 +34,9 @@
 
 .auto-show-info .auto-show-desc {
     width: 100%;
-    font-size: 1em;
+    font-size: 0.85em;
     color: #555555;
+    padding: 5px 10px;
 }
 
 .auto-show-info .shadow {
@@ -44,6 +45,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 20px;
+    margin: 20px auto 10px;
 }
 
 .auto-show-info .info-box {
@@ -52,28 +54,28 @@
 }
 
 .info-box .title {
-    font-size: 1.5em;
-    margin-bottom: 30px;
+    font-size: 1.2em;
 }
 
 .info-box .text {
-    font-size: 1em;
+    font-size: 0.9em;
+    margin-top: 13px;
 }
 
-.info-box .schedule {
+/*.info-box .schedule {
     margin-bottom: 20px;
 }
 
 .info-box .location {
     margin-bottom: 15px;
-}
+}*/
 
 .auto-show-map-btn {
     background-image: url(/assets/images/btn_map.png);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 40px;
+    width: 100px;
+    height: 30px;
 }
 
 .auto-show-map-btn:active {
@@ -81,5 +83,6 @@
 }
 
 .info-box .stage {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin: 12px auto 10px;
 }

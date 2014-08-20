@@ -52,7 +52,7 @@ object shows {
     ),
     stage = "玛莎拉蒂展台在E413",
     d360 = "SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/1.html",
-    galleryCount = 5
+    galleryCount = 4
   )
 
   val all = List(szas, bjas)

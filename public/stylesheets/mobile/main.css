@@ -69,6 +69,7 @@ a {
     width: 40px;
     height: 40px;
     background-size: contain;
+    border: 0 none;
 }
 
 .main-menu-btn {
@@ -99,6 +100,7 @@ a {
     text-align: center;
     border-top-style: solid;
     border-top-width: 1px;
+    border-color: #bbbbbb;
     font-size: 1em;
     text-decoration: none;
 }
@@ -129,6 +131,7 @@ a {
     text-align: center;
     border-top-style: solid;
     border-top-width: 1px;
+    border-color: #bbbbbb;
     font-size: 1em;
     text-decoration: none;
     padding: 1.2em 0;

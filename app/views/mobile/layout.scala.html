@@ -20,14 +20,14 @@
     <body style="font-size: 15px">
 
       <div class="body">
-        <button class="menu-btn"></button>
+        <!--<button class="menu-btn"></button>-->
 
-        @*<div class="menu-container">
-            <button class="menu-btn"></button>
+        <div class="menu-container">
+            <button class="main-menu-btn menu-btn"></button>
             @if(showOpt.isDefined) {
-            <button class="show-menu-btn"></button>
+            <button class="show-menu-btn menu-btn"></button>
             }
-        </div>*@
+        </div>
 
         <div class="top-container">
             <div class="logo"></div>
@@ -55,14 +55,12 @@
             @content
         </div>
 
-        <div class="footer-shadow"></div>
-
-        <div class="footer">
-            <div class="item share"></div>
-            <div class="item icon weibo"></div>
-            <div class="item icon wechat"></div>
-            <div class="item icon email"></div>
-        </div>
+        <span class="footer">
+            <span class="item share"></span>
+            <span class="item icon weibo"></span>
+            <span class="item icon wechat"></span>
+            <span class="item icon email"></span>
+        </span>
 
         @*<div class="footer">
             <div class="item text">分享你的激情</div>

@@ -16,6 +16,7 @@ html body {
   width: 100%;
   height: 100%;
   overflow:scroll;
+  /*background: #333333;*/
 } 
 
 .body {
@@ -41,30 +42,26 @@ a {
 .menu-container {
     display: inline-block;
     width: 100%;
-    position: relative;
+    position: absolute;
     top: 10px;
 }
 
 .menu-btn {
-    background-image: url(/assets/images/menu_main.jpg);
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     background-size: contain;
     position: absolute;
-    margin-left: 10px;
-    /*position: absolute;*/
-    /*margin: 30px 30px;*/
+}
+
+.main-menu-btn {
+    background-image: url(/assets/images/menu_main.jpg);
+    margin-left: 8px;
 }
 
 .show-menu-btn {
     background-image: url(/assets/images/menu_extra.jpg);
-    width: 130px;
-    height: 130px;
-    background-size: contain;
-    /*position: absolute;*/
     float: right;
-    margin-right: 10px;
-    /*margin: 30px 30px;*/
+    margin-right: 8px;
 }
 
 .logo {
@@ -73,6 +70,7 @@ a {
     background-size: contain;
     min-height: 60px;
     width: 100%;
+    margin-top: 20px;
 }
 
 .menu-bar {
@@ -88,12 +86,17 @@ a {
     display: block;
     background-color: #eeeeee;
     color: #555555;
-    padding: 50px;
+    padding: 1.2em 0;
     text-align: center;
     border-top-style: solid;
     border-top-width: 1px;
-    font-size: 2.6em;
+    font-size: 1em;
     text-decoration: none;
+}
+
+.menu-bar .menu:active {
+    color: white;
+    background-color: #333333;
 }
 
 .menu-bar .menu.last {
@@ -102,7 +105,7 @@ a {
 }
 
 .show-menu-bar {
-    /*display: none;*/
+    display: none;
     width: 100%;
     height: auto;
     position: absolute;
@@ -137,42 +140,36 @@ a {
     background-color: #f6f6f6;
 }
 
-.footer-shadow {
-    background-image: radial-gradient(400px 25px at center -10px, #e1e1e1, #ffffff);
-    height: 30px;
-    margin-bottom: 30px;
-}
-
-
 .footer {
-    margin: 0px auto 33px auto;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    margin-top: 18px;
     text-align: center;
-    word-spacing: -7px;
+    word-spacing: -4px;
 }
 
 .footer .item {
     display: inline-block;
+    height: 20px;
 }
 
 .footer .share {
-    width: 100%;
-    min-height: 40px;
+    width: 100px;
+    /*min-height: 40px;*/
     background-image: url(/assets/images/share.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
 }
 
 .footer .icon {
-    width: 85px;
-    height: 40px;
-    margin-left: -7px;
+    width: 20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .footer .weibo {
     background-image: url(/assets/images/share_weibo.jpg);
-    background-size: contain;
-    height: 40px;
-    background-repeat: no-repeat;
 }
 
 .footer .weibo:hover {
@@ -181,8 +178,7 @@ a {
 
 .footer .wechat {
     background-image: url(/assets/images/share_wechat.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+
 }
 
 .footer .wechat:hover {
@@ -199,43 +195,9 @@ a {
     background-image: url(/assets/images/share_email_onclick.jpg);
 }
 
-/*.footer {
-    margin: 0px auto 33px auto;
-    text-align: center;
-    word-spacing: -7px;
-}
-
-.footer .item {
-    border-color: #d6d6d6;
-    border-style: solid;
-    border-width: 2px;
-    display: inline-block;
-    padding: 7px 7px;
-    *//* generated gradients *//*
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #F1F1F1),
-        color-stop(0.61, #F7F7F7)
-    );
-    background-image: -o-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
-    background-image: -moz-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
-    background-image: -webkit-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
-    background-image: -ms-linear-gradient(bottom, #F1F1F1 0%, #F7F7F7 61%);
-    background-image: linear-gradient(to bottom, #F1F1F1 0%, #F7F7F7 61%);
-}
-
-.footer .text {
-    width: 150px;
-}
-
-.footer .icon {
-
-}*/
-
 .footer-line {
     height: 1px;
+    margin: 12px 0;
     /* generated gradients */
     background-image: -webkit-gradient(
         linear,
@@ -256,8 +218,7 @@ a {
 
 .copyright {
     color: #555555;
-    margin-top: 33px;
-    margin-bottom: 33px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 0.75em;
+    font-size: 0.6em;
 }

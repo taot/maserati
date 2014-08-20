@@ -23,6 +23,22 @@ body .btn {
     border-radius: 0;
 }
 
+body .btn:active {
+    outline: 0 none;
+}
+
+body .btn:focus {
+    outline: 0 none;
+}
+
+body a:active {
+    outline: 0 none;
+}
+
+body a:focus {
+    outline: 0 none;
+}
+
 .body {
   min-width: 320px;
   margin: 0 auto;

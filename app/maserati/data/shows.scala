@@ -54,7 +54,7 @@ object shows {
     stage = "玛莎拉蒂展台在E413",
     d360 = "BJAS Booth_360 Pano/BJAS Booth_360 Pano_HTML/1.html",
     galleryCount = 4,
-    mapLink = ""
+    mapLink = "http://j.map.baidu.com/WIkIv"
   )
 
   val all = List(szas, bjas)

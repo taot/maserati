@@ -264,7 +264,8 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 
 .footer .icon {
     width: 29px;
-    height: 30px;
+    height: 29.5px;
+    vertical-align: top;
 }
 
 .footer .weibo {

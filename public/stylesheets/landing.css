@@ -334,6 +334,10 @@ list-style:none;
     border: 0;
 }
 
+.discover-content{
+  margin-top: 30px;
+}
+
 .discover-container .text-container {
     width: 100%;
     height: 33%;

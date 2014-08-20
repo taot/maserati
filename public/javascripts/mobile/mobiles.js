@@ -122,4 +122,22 @@ $(document).ready(function() {
     $('.close-discover-btn').click(function(event) {
         hideDiscover();
     });
+
+    $('.discover-container').click(function(event) {
+      event.stopPropagation();
+      hideDiscover();
+    });
+
+    $('.discover-content').click(function(event) {
+      event.stopPropagation();
+    });
+
+    $('.container-360').click(function(event) {
+      event.stopPropagation();
+      hide360();
+    });
+
+    $('.mobiles-360-content').click(function(event) {
+      event.stopPropagation();
+    });
 });

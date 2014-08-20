@@ -11,6 +11,7 @@
 }
 
 .mobiles-content .box {
+    vertical-align: middle;
     background-color: rgba(221, 221, 221, 0.5); /*#dddcd8;*/
     background-repeat: no-repeat;
     display: inline-block;
@@ -37,12 +38,11 @@
 
 .mobiles-content .btn {
     font-size: small;
-    border: 2px;
-    border-style: solid;
     color: white;
     margin: 2px auto;
     padding: 7px 0;
     width: 150px;
+    border-radius: 0;
 }
 
 .mobiles-content .discover-more-btn {
@@ -291,6 +291,7 @@ list-style:none;
 
 /* 发现更多窗口 */
 
+.container-360,
 .discover-container {
     display: none;
     position: fixed;

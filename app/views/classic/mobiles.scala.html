@@ -57,7 +57,7 @@
     </div>
 
     <!-- 360 窗口 -->
-    <div class="mobiles-360-container discover-container" align="center">
+    <div class="mobiles-360-container container-360" align="center">
       <div class="mobiles-360-content">
         <div class="mobiles-360-header" align="left">
             <a class="btn exterior-btn">外观360°</a>
@@ -71,7 +71,7 @@
 
     <!-- 发现更多窗口 -->
     @for((m, i) <- data.models.list_all.zipWithIndex) {
-    <div id="discover-container-@{m.id}" class="discover-container" align="center">
+    <div id="discover-container-@{m.id}" title="container" class="discover-container" align="center">
        <div class="discover-content">
         <div class="btn-bar" align="right">
             <a class="btn close-discover-btn" model="@{m.id}"></a>

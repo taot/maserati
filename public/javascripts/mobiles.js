@@ -89,6 +89,7 @@ function showDiscover(event) {
     });
 
     container.fadeIn('fast');
+   
 };
 
 function hideDiscover() {
@@ -133,5 +134,23 @@ $(document).ready(function() {
       var d = i * 100/s;   
       console.log(s);
       $('#hoverlay').css({left: d + "%"});
+    });
+
+    $('.discover-container').click(function(event) {
+      event.stopPropagation();
+      hideDiscover();
+    });
+
+    $('.discover-content').click(function(event) {
+      event.stopPropagation();
+    });
+
+    $('.container-360').click(function(event) {
+      event.stopPropagation();
+      hide360();
+    });
+
+    $('.mobiles-360-content').click(function(event) {
+      event.stopPropagation();
     });
 });

@@ -16,6 +16,11 @@ body {
   font-family: "微软雅黑", "Microsoft Yahei", "华文细黑", STXihei !important;
 }
 
+body .btn {
+  border: 0;
+  border-radius: 0;
+}
+
 /*
  * Layout
  */
@@ -297,7 +302,7 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 
 .copyright {
     color: rgb(128, 126, 132);
-    margin-top: 33px;
+    margin: 33px 0;
     text-align: center;
     font-size: 12px;
 }

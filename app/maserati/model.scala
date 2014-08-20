@@ -46,7 +46,8 @@ package object model {
     location: List[String],
     stage: String,
     d360: String,
-    galleryCount: Int
+    galleryCount: Int,
+    mapLink: String
   ) {
     val gallery = (1 to galleryCount).map { i =>
       s"show/${id}/${id}_gallery${i}.jpg"

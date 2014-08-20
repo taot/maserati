@@ -27,7 +27,8 @@ object shows {
     ),
     stage = "玛莎拉蒂展台在4-09",
     d360 = "SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/1.html",
-    galleryCount = 5
+    galleryCount = 5,
+    mapLink = "http://j.map.baidu.com/pvWev"
   )
 
   val bjas = Show(
@@ -51,8 +52,9 @@ object shows {
       "中国国际展览中心（新馆） 北京市顺义区裕祥路88号"
     ),
     stage = "玛莎拉蒂展台在E413",
-    d360 = "SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/1.html",
-    galleryCount = 4
+    d360 = "BJAS Booth_360 Pano/BJAS Booth_360 Pano_HTML/1.html",
+    galleryCount = 4,
+    mapLink = ""
   )
 
   val all = List(szas, bjas)

@@ -78,6 +78,7 @@
     background-image: url(/assets/images/btn_map.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    border: 0 none;
 }
 
 .auto-show-map-btn:hover {

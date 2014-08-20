@@ -1,5 +1,6 @@
 .auto-show-360 {
     width: 100%;
+    height: 300px;
     border: 0 none;
 }
 
@@ -35,7 +36,7 @@
 .auto-show-info .auto-show-desc {
     width: 100%;
     font-size: 0.85em;
-    color: #555555;
+    color: #6f6f6f;
     padding: 5px 10px;
 }
 
@@ -50,25 +51,18 @@
 
 .auto-show-info .info-box {
     text-align: center;
-    color: #555555;
 }
 
 .info-box .title {
     font-size: 1.2em;
+    color: #264a74;
 }
 
 .info-box .text {
     font-size: 0.9em;
     margin-top: 13px;
+    color: #6f6f6f;
 }
-
-/*.info-box .schedule {
-    margin-bottom: 20px;
-}
-
-.info-box .location {
-    margin-bottom: 15px;
-}*/
 
 .auto-show-map-btn {
     background-image: url(/assets/images/btn_map.png);
@@ -85,4 +79,5 @@
 .info-box .stage {
     font-size: 1.2em;
     margin: 12px auto 10px;
+    color: #264a74;
 }

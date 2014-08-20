@@ -46,7 +46,9 @@
         @if(showOpt.isDefined) {
         <div class="show-menu-bar">
             @for(s <- data.shows.all) {
-                <a class="menu @{if(s == showOpt.get) { "current" } else {} }" href="#">@{s.name}</a>
+                <a class="menu @{if(s == showOpt.get) { "current" } else {} }"
+                    href="/shows/@{s.id}">@{s.name}
+                </a>
             }
             @*<a class="menu" href="#">2014深圳车展</a>
             <a class="menu last" href="#">2014北京车展</a>*@

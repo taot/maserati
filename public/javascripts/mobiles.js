@@ -1,4 +1,4 @@
-function resize360view(container, width, height) {
+function resize360view(container, content, width, height) {
     // calculate width and height
     var w = width;
     var h = height;
@@ -7,31 +7,40 @@ function resize360view(container, width, height) {
     } else {
         h = w * 480 / 640;
     }
-    container.css('width', w);
-    container.css('height', h);
+
+    var w = width * 0.6;
+    if (w < 820)
+      w = 820; 
+    var w = width * 0.55;
+    var h = height ;
+    h = w * 0.75;
+
+    content.css('width', w);
+    content.css('height', h);
 
     // calculate position
     var left = (width - w) / 2;
-    container.css('left', left);
+    content.css('left', left);
 };
 
 function show360(src) {
     console.log('showing 360 view: ' + src);
     var container = $('.mobiles-360-container');
+    var content = $('.mobiles-360-content', container);
     $('.mobiles-360-body').attr('src', src);
 
     var width = $(window).width();
     var height = $(window).height();
-    resize360view(container, width, height);
+    resize360view(container, content, width, height);
     $(window).resize(function() {
         var width = $(window).width();
         var height = $(window).height();
         console.log("window resized - width: " + width + ", height: " + height);
         var container = $('.mobiles-360-container');
-        resize360view(container, width, height);
+        resize360view(container, content, width, height);
     });
 
-    $('#mobiles-360-blur').fadeIn('fast');
+    //$('#mobiles-360-blur').fadeIn('fast');
     container.fadeIn('fast');
 };
 
@@ -43,9 +52,9 @@ function hide360() {
 
 function resizeDiscover(container, content, width, height) {
     // calculate width and height
-    var w = width * 0.8;
-    if (w < 820)
-      w = 820; 
+    var w = width * 0.7;
+    if (w < 500)
+      w = 500; 
     var h = height ;
     h = w * 450 / 640;
 //    if (w * 480 > h * 640) {
@@ -57,8 +66,8 @@ function resizeDiscover(container, content, width, height) {
     content.css('height', h);
 
     // calculate position
-    var left = (width - w) / 2;
-    content.css('left', left);
+    //var left = (width - w) / 2;
+    //content.css('left', left);
 };
 
 function showDiscover(event) {

@@ -26,12 +26,12 @@
     display: inline-block;
     width: 56.25%;
     height: 480px;
+    vertical-align: top;
 }
 
 .auto-show-info {
     display: inline-block;
-    width: 43.5%;
-    float: right;
+    width: 42%;
 }
 
 .auto-show-info .auto-show-desc {

@@ -219,18 +219,18 @@ list-style:none;
     background-color: white;
     display: none;
     height: 480px;
-    left: 0px;
-    position: fixed;
-    top: 0px;
     width: 600px;
     z-index: 99;
+}
+.mobiles-360-content {
+  margin-top: 30px;
+  min-width: 500px;
 }
 
 .mobiles-360-header {
     display: inline-block;
     padding-bottom: 15px;
-    padding-top: 30px;
-    width: inherit;
+    width: 100%;
     word-spacing: -5px;
 }
 
@@ -278,7 +278,6 @@ list-style:none;
     height: 30px;
     width: 60px;
     background-image: url(/assets/images/btn_layer_close.png);
-    background-color: white;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -286,7 +285,7 @@ list-style:none;
 .mobiles-360-body {
     /*background-color: blue;*/
     height: inherit;
-    width: inherit;
+    width: 100%;
 }
 
 
@@ -299,6 +298,7 @@ list-style:none;
     left: 0px;
     width: inherit;
     height: auto;
+    height: 100%;
     z-index: 5;
     background-color: rgba(255,255,255,0.9)
 }

@@ -120,7 +120,8 @@ body a, body a:active, body a:visited, body a:hover {
 
 .menu-bar>ul li.menu.active>a
 {
-  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+/*  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+*/
   color: white;
 }
 
@@ -144,18 +145,19 @@ body a, body a:active, body a:visited, body a:hover {
     background-image: -webkit-linear-gradient(bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
     background-image: -ms-linear-gradient(bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
     background-image: linear-gradient(to bottom, #8D8D8D 0%, #999999 53%, #8D8D8D 100%);
-*/
 -webkit-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 -moz-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 -ms-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 -o-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+*/
 height: 44px;
 background-position: 0 -88px;
 text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
--webkit-box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
+/*-webkit-box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 -moz-box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
+*/
 }
 
 .show-menu {

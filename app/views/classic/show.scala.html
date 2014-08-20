@@ -10,7 +10,7 @@
     <div class="auto-show-bottom">
 
         <div class="auto-show-gallery">
-            <div id="carousel-@{show.id}" class="carousel slide" data-ride="carousel">
+            <div id="carousel-@{show.id}" class="carousel slide" data-ride="carousel" style="max-width: 715px; min-height: 477px;">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     @for((p, i) <- show.gallery.zipWithIndex) {
@@ -51,12 +51,13 @@
                     <div class="text">@line</div>
                 }
 
-                <button class="auto-show-map-btn"> </button>
+                <a class="btn auto-show-map-btn"> </a>
 
                 <div class="stage">
                     @{show.stage}
                 </div>
             </div>
+            <div style="clear:both"></div>
         </div>
 
     </div>

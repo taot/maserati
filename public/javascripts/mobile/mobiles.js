@@ -31,11 +31,13 @@ function show360(src) {
         resize360view(container, width, height);
     });
 
+    $('#mobiles-360-blur').fadeIn('fast');
     container.fadeIn('fast');
 };
 
 function hide360() {
     console.log('hiding 360 view');
+    $('#mobiles-360-blur').fadeOut('slow');
     $('.mobiles-360-container').fadeOut('slow');
 };
 
@@ -87,7 +89,7 @@ $(document).ready(function() {
         show360(src);
     });
 
-    $('.btn.close-360-btn').click(function(event) {
+    $('.close-360-btn').click(function(event) {
         hide360();
     });
 

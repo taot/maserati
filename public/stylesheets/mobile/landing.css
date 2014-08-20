@@ -116,14 +116,13 @@
     position: fixed;
     top: 0px;
     width: 600px;
+    z-index: 99;
 }
 
 .mobiles-360-header {
     display: inline-block;
-    padding-bottom: 15px;
-    padding-top: 30px;
+    padding: 20px 8px 5px;
     width: inherit;
-    word-spacing: -5px;
 }
 
 .mobiles-360-header .btn {
@@ -131,9 +130,9 @@
     border-color: #d2d2d2;
     border-style: solid;
     color: #012c59;
-    margin: 0 3px 0 0;
-    padding: 6px;
-    width: 105px;
+    font-size: 0.85em;
+    padding: 4px;
+    width: 85px;
     /* generated gradients */
     background-image: -webkit-gradient(
         linear,
@@ -147,6 +146,10 @@
     background-image: -webkit-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
     background-image: -ms-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
     background-image: linear-gradient(to bottom, #FCFCFC 0%, #EEEEEE 100%);
+}
+
+.mobiles-360-header .btn:focus {
+    outline: 0 none;
 }
 
 .mobiles-360-header .btn:hover {
@@ -167,6 +170,13 @@
 
 .mobiles-360-header .close-360-btn {
     float: right;
+    background-image: url(/assets/images/btn_layer_close.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: white;
+    height: 28px;
+    width: 58px;
+    border: 0 none;
 }
 
 .mobiles-360-body {

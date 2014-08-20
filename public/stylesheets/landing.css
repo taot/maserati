@@ -273,6 +273,21 @@ list-style:none;
     background-image: linear-gradient(to bottom, #EEEEEE 0%, #FCFCFC 100%);
 }
 
+.mobiles-360-header .btn.active {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #EEEEEE),
+        color-stop(1, #FCFCFC)
+    );
+    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FCFCFC 100%);
+    background-image: linear-gradient(to bottom, #EEEEEE 0%, #FCFCFC 100%);
+}
+
 .mobiles-360-header .close-360-btn {
     float: right;
     height: 30px;

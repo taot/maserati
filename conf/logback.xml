@@ -11,14 +11,6 @@
         <appender-ref ref="STDOUT"/>
     </root>
 
-    <logger name="com.taot.pms" level="DEBUG"/>
-
-    <logger name="com.taot.pms.common.config" level="INFO"/>
-
-    <logger name="com.jolbox" level="TRACE"/>
-
-    <logger name="scala.slick" level="INFO"/>
-
-    <logger name="scala.slick.jdbc.JdbcBackend.statement" level="INFO"/>
+    <logger name="maserati" level="INFO"/>
 
 </configuration>

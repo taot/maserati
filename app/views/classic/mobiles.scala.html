@@ -21,8 +21,8 @@
         @for(m <- serie.models) {
         <div class="box">
             <div class="mobile-thumbnail @{m.id}"
-                 exterior="/assets/360Panos/@{m.exterior360}"
-                 interior="/assets/360Panos/@{m.interior360}">
+                 exterior="@{m.exterior360}"
+                 interior="@{m.interior360}">
             </div>
             <div class="text">
                 @for((t, i) <- m.title.zipWithIndex) {

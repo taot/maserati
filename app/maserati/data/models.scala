@@ -117,7 +117,7 @@ object models {
       ("0至100公里每小时加速", "4.5秒")
     )),
     detailPicCount = 5,
-    exterior360 = "",
+    exterior360 = "GranTurismo MC Stradale Exterior/output/GranTurismo MC Stradale.html",
     interior360 = "GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
     hasTestDrive = true
   )
@@ -157,7 +157,7 @@ object models {
       ("0至100公里每小时加速", "5.2秒")
     )),
     detailPicCount = 5,
-    exterior360 = "",
+    exterior360 = "GranCabrio Sport Exterior/output/Maserati Apperance 360 GranCabrio Sport.html",
     interior360 = "GC Sport_Interior_360 Pano/GC Sport_Interior_360 Pano_HTML/3-2.html",
     hasTestDrive = true
   )

@@ -79,31 +79,39 @@ function resizeDiscover(container, content, width, height) {
 
 function showDiscover(event) {
     console.log("showing discover page");
+//    var container = $('#discover-container-' + model);
+//    var content = $('.discover-content', container);
+//
+//    var width = $(window).width();
+//    var height = $(window).height();
+//    resizeDiscover(container, content, width, height);
+//
+//    $(window).resize(function() {
+//        var width = $(window).width();
+//        var height = $(window).height();
+//        console.log("window resized - width: " + width + ", height: " + height);
+//        var container = $('.discover-container');
+//        resizeDiscover(container, content, width, height);
+//    });
+
+
     var model = event.target.getAttribute('model');
-    var container = $('#discover-container-' + model);
-    var content = $('.discover-content', container);
-
-    var width = $(window).width();
-    var height = $(window).height();
-    resizeDiscover(container, content, width, height);
-
-    $(window).resize(function() {
-        var width = $(window).width();
-        var height = $(window).height();
-        console.log("window resized - width: " + width + ", height: " + height);
-        var container = $('.discover-container');
-        resizeDiscover(container, content, width, height);
+    var iframe = $('.discover-container-iframe');
+    iframe.attr('src', '/mobiles/detail/' + model);
+    iframe.fadeIn('slow', function() {
+        $('.close-discover-btn').click(function(event) {
+//            hideDiscover();
+            $(document.body).hide();
+        });
     });
-
-    container.fadeIn('fast');
-    $(document.body).css({'overflow': 'hidden'});
+//    $(document.body).css({'overflow': 'hidden'});
    
 };
 
 function hideDiscover() {
     console.log('hiding discover page');
-    $('.discover-container').fadeOut('slow');
-    $(document.body).css({'overflow': 'scroll'});
+    $('.discover-container-iframe').fadeOut('slow');
+//    $(document.body).css({'overflow': 'scroll'});
 };
 
 function switchMobilesContent(event) {
@@ -156,10 +164,6 @@ $(document).ready(function() {
     /* Discover */
     $('.discover-more-btn').click(function(event) {
         showDiscover(event);
-    });
-
-    $('.close-discover-btn').click(function(event) {
-        hideDiscover();
     });
 
     $('.interfaceButton').click(function(event) {

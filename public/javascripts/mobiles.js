@@ -8,7 +8,7 @@ function resize360view(container, content, width, height) {
         h = w * 480 / 640;
     }
 
-    var w = width * 0.6;
+    var w = width;
     if (w < 820)
       w = 820; 
     var w = width * 0.55;
@@ -43,6 +43,7 @@ function show360(src) {
 
     //$('#mobiles-360-blur').fadeIn('fast');
     container.fadeIn('fast');
+    $(document.body).css({'overflow': 'hidden'});
 };
 
 function showExt360(src) {
@@ -61,13 +62,14 @@ function hide360() {
     console.log('hiding 360 view');
     $('#mobiles-360-blur').fadeOut('slow');
     $('.mobiles-360-container').fadeOut('slow');
+    $(document.body).css({'overflow': 'scroll'});
 };
 
 function resizeDiscover(container, content, width, height) {
     // calculate width and height
     var w = width * 0.7;
-    if (w < 500)
-      w = 500; 
+    if (w < 850)
+      w = 850; 
     var h = height ;
     h = w * 450 / 640;
 
@@ -94,12 +96,14 @@ function showDiscover(event) {
     });
 
     container.fadeIn('fast');
+    $(document.body).css({'overflow': 'hidden'});
    
 };
 
 function hideDiscover() {
     console.log('hiding discover page');
     $('.discover-container').fadeOut('slow');
+    $(document.body).css({'overflow': 'scroll'});
 };
 
 function switchMobilesContent(event) {
@@ -128,10 +132,10 @@ $(document).ready(function() {
         } else {
             $('.exterior-btn').attr('disabled', true);
         }
-        if (src1 != '') {
-            showInt360(src1);
-        } else if (src2 != '') {
+        if (src2 != '') {
             showExt360(src2);
+        } else if (src1 != '') {
+            showInt360(src1);
         }
     });
 

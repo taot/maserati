@@ -14,6 +14,7 @@ a {
 
 body {
   font-family: "微软雅黑", "Microsoft Yahei", "华文细黑", STXihei !important;
+  min-width: 1024px;
 }
 
 body .btn {

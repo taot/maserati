@@ -1,6 +1,12 @@
 @(show: maserati.model.Show)
 
 @layout("车展信息", "show", Some(show)) {
+<style type="text/css">
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
+</style>
 
     <iframe class="auto-show-360" src="/assets/360Panos/@{show.d360}">
     </iframe>
@@ -10,7 +16,7 @@
     <div class="auto-show-bottom">
 
         <div class="auto-show-gallery">
-            <div id="carousel-@{show.id}" class="carousel slide" data-ride="carousel" style="max-width: 715px; min-height: 477px;">
+            <div id="carousel-@{show.id}" class="carousel slide" data-ride="carousel" style="max-width: 720px; max-height: 480px;">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     @for((p, i) <- show.gallery.zipWithIndex) {

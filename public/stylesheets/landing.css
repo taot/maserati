@@ -187,7 +187,7 @@ list-style:none;
   color: rgb(71, 68, 75);
   height: 11px;
   line-height: 11px;
-  width: 110px;
+  width: 95px;
   margin: 0 auto;
 }
 .mobiles-menu-bar .menu {
@@ -316,7 +316,8 @@ list-style:none;
     height: auto;
     height: 100%;
     z-index: 5;
-    background-color: rgba(255,255,255,0.9)
+    background-color: rgba(255,255,255,0.9);
+    overflow: scroll;
 }
 
 .discover-container .btn-bar {
@@ -335,7 +336,7 @@ list-style:none;
 }
 
 .discover-content{
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 .discover-container .text-container {

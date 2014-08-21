@@ -18,6 +18,16 @@ object Application extends Controller {
     }
   }
 
+  def mobileDetail(id: String) = Action { implicit request =>
+    data.models.list_all.find(_.id == id) match {
+      case Some(m) =>
+        Ok(views.html.classic.mobile_detail(m))
+      case None =>
+        NotFound
+    }
+
+  }
+
   def shows0 = Action { implicit request =>
     Redirect(routes.Application.shows(data.shows.szas.id))
   }

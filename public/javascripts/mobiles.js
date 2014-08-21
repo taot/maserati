@@ -174,21 +174,21 @@ $(document).ready(function() {
       $('#hoverlay').css({left: d + "%"});
     });
 
-    $('.discover-container').click(function(event) {
-      event.stopPropagation();
-      hideDiscover();
-    });
+//    $('.discover-container').click(function(event) {
+//      event.stopPropagation();
+//      hideDiscover();
+//    });
 
-    $('.discover-content').click(function(event) {
-      event.stopPropagation();
-    });
-
-    $('.container-360').click(function(event) {
-      event.stopPropagation();
-      hide360();
-    });
-
-    $('.mobiles-360-content').click(function(event) {
-      event.stopPropagation();
-    });
+//    $('.discover-content').click(function(event) {
+//      event.stopPropagation();
+//    });
+//
+//    $('.container-360').click(function(event) {
+//      event.stopPropagation();
+//      hide360();
+//    });
+//
+//    $('.mobiles-360-content').click(function(event) {
+//      event.stopPropagation();
+//    });
 });

@@ -195,4 +195,21 @@ $(document).ready(function() {
 //    $('.mobiles-360-content').click(function(event) {
 //      event.stopPropagation();
 //    });
+    /***
+    $('.discover-container').click(function(event) {
+      hideDiscover();
+    });
+
+    $('.discover-content').click(function(event) {
+      event.stopPropagation();
+    });
+    */
+
+    $('.container-360').click(function(event) {
+      hide360();
+    });
+
+    $('.mobiles-360-content').click(function(event) {
+      event.stopPropagation();
+    });/
 });

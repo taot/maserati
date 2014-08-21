@@ -358,10 +358,10 @@ list-style:none;
 }
 
 .discover-content {
-    margin: 30px 0;
-    height: inherit;
-    width: 70%;
-    min-width: 600px;
+    /*margin: 30px 0;*/
+    /*height: inherit;*/
+    /*width: 70%;*/
+    /*min-width: 600px;*/
 }
 
 .discover-container .text-container {
@@ -391,7 +391,7 @@ list-style:none;
 }
  
 .discover-image {
-    height: 60%;
+    height: 100%;
 }
 
 /*.discover-image .image {

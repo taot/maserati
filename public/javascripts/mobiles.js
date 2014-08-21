@@ -73,45 +73,47 @@ function resizeDiscover(container, content, width, height) {
     var h = height ;
     h = w * 450 / 640;
 
+    hImage = w * 534 / 1280;
+    
+    var ifm = $('.discover-image-iframe', container);
+    ifm.height = hImage;
+    ifm.width = w;
+    $('.discover-image-iframe', container).css('height', hImage);
+    
     content.css('width', w);
     content.css('height', h);
 };
 
 function showDiscover(event) {
     console.log("showing discover page");
-//    var container = $('#discover-container-' + model);
-//    var content = $('.discover-content', container);
-//
-//    var width = $(window).width();
-//    var height = $(window).height();
-//    resizeDiscover(container, content, width, height);
-//
-//    $(window).resize(function() {
-//        var width = $(window).width();
-//        var height = $(window).height();
-//        console.log("window resized - width: " + width + ", height: " + height);
-//        var container = $('.discover-container');
-//        resizeDiscover(container, content, width, height);
-//    });
-
-
     var model = event.target.getAttribute('model');
-    var iframe = $('.discover-container-iframe');
-    iframe.attr('src', '/mobiles/detail/' + model);
-    iframe.fadeIn('slow', function() {
-        $('.close-discover-btn').click(function(event) {
-//            hideDiscover();
-            $(document.body).hide();
-        });
+    var container = $('#discover-container-' + model);
+    var content = $('.discover-content', container);
+
+    var src0 = '/mobiles/detail/' + model;
+    $('.discover-image-iframe', container).attr('src', src0);
+
+    var width = $(window).width();
+    var height = $(window).height();
+    resizeDiscover(container, content, width, height);
+
+    $(window).resize(function() {
+        var width = $(window).width();
+        var height = $(window).height();
+        console.log("window resized - width: " + width + ", height: " + height);
+        var container = $('.discover-container');
+        resizeDiscover(container, content, width, height);
     });
-//    $(document.body).css({'overflow': 'hidden'});
+
+    container.fadeIn('fast');
+    $(document.body).css({'overflow': 'hidden'});
    
 };
 
 function hideDiscover() {
     console.log('hiding discover page');
-    $('.discover-container-iframe').fadeOut('slow');
-//    $(document.body).css({'overflow': 'scroll'});
+    $('.discover-container').fadeOut('slow');
+    $(document.body).css({'overflow': 'scroll'});
 };
 
 function switchMobilesContent(event) {
@@ -166,6 +168,10 @@ $(document).ready(function() {
         showDiscover(event);
     });
 
+    $('.close-discover-btn').click(function(event) {
+        hideDiscover();
+    });
+
     $('.interfaceButton').click(function(event) {
         switchMobilesContent(event);
     });
@@ -178,38 +184,22 @@ $(document).ready(function() {
       $('#hoverlay').css({left: d + "%"});
     });
 
-//    $('.discover-container').click(function(event) {
-//      event.stopPropagation();
-//      hideDiscover();
-//    });
-
-//    $('.discover-content').click(function(event) {
-//      event.stopPropagation();
-//    });
-//
-//    $('.container-360').click(function(event) {
-//      event.stopPropagation();
-//      hide360();
-//    });
-//
-//    $('.mobiles-360-content').click(function(event) {
-//      event.stopPropagation();
-//    });
-    /***
     $('.discover-container').click(function(event) {
+      event.stopPropagation();
       hideDiscover();
     });
 
     $('.discover-content').click(function(event) {
       event.stopPropagation();
     });
-    */
 
     $('.container-360').click(function(event) {
+      event.stopPropagation();
       hide360();
     });
 
     $('.mobiles-360-content').click(function(event) {
       event.stopPropagation();
-    });/
+    });
 });
+

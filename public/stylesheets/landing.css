@@ -323,9 +323,11 @@ list-style:none;
     border: 0 none;
     position: absolute;
     top: 0px;
-    right: 0px;
+    left: 0px;
     height: 100%;
-    width: 100%
+    width: 100%;
+    z-index: 90;
+    display: none;
 }
 
 .discover-container {
@@ -334,10 +336,10 @@ list-style:none;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: auto;
     z-index: 5;
     background-color: rgba(255,255,255,0.9);
-    overflow: scroll;
+    /*overflow: auto;*/
 }
 
 .discover-container .btn-bar {
@@ -364,8 +366,8 @@ list-style:none;
 
 .discover-container .text-container {
     width: 100%;
-    /*height: 33%;*/
-    height: 220px;
+    height: 33%;
+    /*height: 220px;*/
     background-image: url(/assets/images/text-container-bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;

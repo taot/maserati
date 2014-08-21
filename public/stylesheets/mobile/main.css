@@ -184,11 +184,11 @@ a {
 
 .footer .item {
     display: inline-block;
-    height: 20px;
+    height: 30px;
 }
 
 .footer .share {
-    width: 100px;
+    width: 120px;
     /*min-height: 40px;*/
     background-image: url(/assets/images/share.jpg);
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@ a {
 }
 
 .footer .icon {
-    width: 20px;
+    width: 30px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

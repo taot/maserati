@@ -62,7 +62,17 @@
         <span class="footer">
             <span class="item share"></span>
             <a class="item icon weibo" href="@{data.share.weiboUrl}"></a>
-            <a class="item icon wechat"></a>
+            <a class="item icon wechat" tabindex="0" class="btn btn-lg btn-danger"
+               data-toggle="popover" data-trigger="focus" data-placement="top">
+                <!--<div class="qrcode"></div>-->
+            </a>
+            <div style="display: none;" id="promoteQrcode">
+                <div align="center" style="width: auto; height: auto;">
+                    <p style="font-size: 20px;">微信扫一扫</p >
+                    <img style="height: 200px; width: 200px; min-height: 200px; min-width: 200px;"
+                         src="/assets/images/qrcode.png">
+                </div>
+            </div>
             <a class="item icon email" href="mailto:@{data.share.email}"></a>
         </span>
 

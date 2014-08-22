@@ -51,4 +51,9 @@ $(document).ready(function() {
     $('.show-menu-btn').click(function(event) {
         toggleShowMenuBar(event);
     });
+
+    $(".wechat").popover({
+      content: $("#promoteQrcode").html()
+      , html: true
+    });
 });

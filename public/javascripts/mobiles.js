@@ -74,7 +74,6 @@ function resizeDiscover(container, content, width, height) {
     h = w * 450 / 640;
 
     hImage = w * 534 / 1280;
-    
     var ifm = $('.discover-image-iframe', container);
     ifm.height = hImage;
     ifm.width = w;

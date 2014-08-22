@@ -1,4 +1,4 @@
-function resize360view(container, width, height) {
+function resize360view(container, content, width, height) {
     // calculate width and height
     var w = width;
     var h = height;
@@ -7,12 +7,15 @@ function resize360view(container, width, height) {
     } else {
         h = w * 480 / 640;
     }
-    container.css('width', w);
-    container.css('height', h);
+    content.css('width', w);
+    content.css('height', h);
+
+    container.css('width', width);
+    container.css('height', height);
 
     // calculate position
     var left = (width - w) / 2;
-    container.css('left', left);
+    content.css('left', left);
 };
 
 function show360(src) {
@@ -20,24 +23,30 @@ function show360(src) {
     var container = $('.mobiles-360-container');
     $('.mobiles-360-body').attr('src', src);
 
+    var content = $('.mobiles-360-content', container );
     var width = $(window).width();
     var height = $(window).height();
-    resize360view(container, width, height);
+    resize360view(container, content, width, height);
     $(window).resize(function() {
         var width = $(window).width();
         var height = $(window).height();
         console.log("window resized - width: " + width + ", height: " + height);
         var container = $('.mobiles-360-container');
-        resize360view(container, width, height);
+        resize360view(container, content, width, height);
     });
 
-    $('#mobiles-360-blur').fadeIn('fast');
+    //$('#mobiles-360-blur').fadeIn('fast');
     container.fadeIn('fast');
+
+    var h1 = container.height();
+    var h2 = content.height();
+    var mTop = (h1 - h2) / 2;  
+    content.css('margin-top', mTop);
 };
 
 function hide360() {
     console.log('hiding 360 view');
-    $('#mobiles-360-blur').fadeOut('slow');
+    //$('#mobiles-360-blur').fadeOut('slow');
     $('.mobiles-360-container').fadeOut('slow');
 };
 
@@ -53,6 +62,12 @@ function resizeDiscover(container, width, height) {
     container.css('width', w);
     container.css('height', h);
 
+    hImage = w * 534 / 1280;
+    var ifm = $('.discover-image-iframe', container);
+    ifm.height = hImage;
+    ifm.width = w;
+    $('.discover-image-iframe', container).css('height', hImage);
+    
     // calculate position
     var left = (width - w) / 2;
     container.css('left', left);
@@ -77,8 +92,13 @@ function showDiscover(event) {
 //    });
     var src0 = '/mobiles/detail/' + model;
     $('.discover-image-iframe', container).attr('src', src0);
-
     container.fadeIn('fast');
+
+     var h1 = container.height();
+     var h2 = content.height();
+    var mTop = (h1 - h2) / 2;  
+    content.css('margin-top', mTop);
+
 };
 
 //function showDiscover(src) {
@@ -125,21 +145,21 @@ $(document).ready(function() {
         hideDiscover();
     });
 
-//    $('.discover-container').click(function(event) {
-//      event.stopPropagation();
-//      hideDiscover();
-//    });
-//
-//    $('.discover-content').click(function(event) {
-//      event.stopPropagation();
-//    });
-//
-//    $('.container-360').click(function(event) {
-//      event.stopPropagation();
-//      hide360();
-//    });
-//
-//    $('.mobiles-360-content').click(function(event) {
-//      event.stopPropagation();
-//    });
+    $('.discover-container').click(function(event) {
+      event.stopPropagation();
+      hideDiscover();
+    });
+
+    $('.discover-content').click(function(event) {
+      event.stopPropagation();
+    });
+
+    $('.container-360').click(function(event) {
+      event.stopPropagation();
+      hide360();
+    });
+
+    $('.mobiles-360-content').click(function(event) {
+      event.stopPropagation();
+    });
 });

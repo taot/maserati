@@ -28,6 +28,15 @@ object Application extends Controller {
 
   }
 
+  def mobileExt360(id: String) = Action { implicit request =>
+    data.models.list_all.find(_.id == id) match {
+      case Some(m) =>
+        Ok(views.html.ext360(m))
+      case None =>
+        NotFound
+    }
+  }
+
   def shows0 = Action { implicit request =>
     Redirect(routes.Application.shows(data.shows.szas.id))
   }

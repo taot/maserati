@@ -200,5 +200,7 @@ $(document).ready(function() {
     $('.mobiles-360-content').click(function(event) {
       event.stopPropagation();
     });
+
+
 });
 

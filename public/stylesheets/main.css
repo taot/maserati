@@ -289,19 +289,6 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
     background-image: url(/assets/images/share_wechat_onclick.jpg);
 }
 
-.footer .wechat .qrcode {
-    display: none;
-    border: 1px solid;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-image: url(/assets/images/qrcode.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin: -110px 0 0 -40px;
-    z-index: 80;
-}
-
 .footer .email {
     background-image: url(/assets/images/share_email.jpg);
     background-size: contain;

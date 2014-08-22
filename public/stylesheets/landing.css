@@ -215,6 +215,7 @@ list-style:none;
 */
 
 /* 360 窗口 */
+
 .mobiles-360-container {
     background-color: white;
     display: none;
@@ -298,6 +299,12 @@ list-style:none;
 }
 
 .mobiles-360-body {
+    /*background-color: blue;*/
+    height: inherit;
+    width: 100%;
+}
+
+.mobiles-360-ext {
     /*background-color: blue;*/
     height: inherit;
     width: 100%;

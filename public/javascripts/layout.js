@@ -5,8 +5,4 @@ $(document).ready(function() {
       content: $("#promoteQrcode").html()
       , html: true
     });
-
-//    $('.wechat').click(function(event) {
-//        $('.qrcode').fadeToggle('fast');
-//    });
 });

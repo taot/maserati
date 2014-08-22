@@ -1,7 +1,12 @@
 
 $(document).ready(function() {
 
-    $('.wechat').click(function(event) {
-        $('.qrcode').fadeToggle('fast');
+    $(".wechat").popover({
+      content: $("#promoteQrcode").html()
+      , html: true
     });
+
+//    $('.wechat').click(function(event) {
+//        $('.qrcode').fadeToggle('fast');
+//    });
 });

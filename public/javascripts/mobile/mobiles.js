@@ -75,6 +75,8 @@ function showDiscover(event) {
 //        var container = $('.discover-container');
 //        resizeDiscover(container, content, width, height);
 //    });
+    var src0 = '/mobiles/detail/' + model;
+    $('.discover-image-iframe', container).attr('src', src0);
 
     container.fadeIn('fast');
 };

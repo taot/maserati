@@ -45,6 +45,18 @@ function show360(src) {
     content.css('margin-top', mTop);
 };
 
+function showExt360(src) {
+    $('.exterior-btn').addClass('active');
+    $('.interior-btn').removeClass('active');
+    show360(src);
+};
+
+function showInt360(src) {
+    $('.interior-btn').addClass('active');
+    $('.exterior-btn').removeClass('active');
+    show360(src);
+};
+
 function hide360() {
     console.log('hiding 360 view');
     //$('#mobiles-360-blur').fadeOut('slow');
@@ -129,8 +141,35 @@ function hideDiscover() {
 $(document).ready(function() {
 
     $('.mobile-thumbnail').click(function(event) {
+        var src1 = event.target.getAttribute('interior');
+        if (src1 != '') {
+            $('.interior-btn').attr('disabled', false);
+            $('.interior-btn').attr('interior', src1);
+        } else {
+            $('.interior-btn').attr('disabled', false);
+        }
+        var src2 = event.target.getAttribute('exterior');
+        if (src2 != '') {
+            $('.exterior-btn').attr('disabled', false);
+            $('.exterior-btn').attr('exterior', src2);
+        } else {
+            $('.exterior-btn').attr('disabled', true);
+        }
+        if (src2 != '') {
+            showExt360(src2);
+        } else if (src1 != '') {
+            showInt360(src1);
+        }
+    });
+
+    $('.interior-btn').click(function(event) {
         var src = event.target.getAttribute('interior');
-        show360(src);
+        showInt360(src);
+    });
+
+    $('.exterior-btn').click(function(event) {
+        var src = event.target.getAttribute('exterior');
+        showExt360(src);
     });
 
     $('.close-360-btn').click(function(event) {

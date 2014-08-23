@@ -122,7 +122,7 @@
 
 .mobiles-360-header {
     display: inline-block;
-    padding: 20px 8px 5px;
+    padding: 0 5px;
     width: 100%;
 }
 
@@ -174,9 +174,8 @@
     background-image: url(/assets/images/btn_layer_close.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-color: white;
-    height: 28px;
-    width: 58px;
+    height: 30px;
+    width: 60px;
     border: 0 none;
 }
 
@@ -287,3 +286,23 @@
     height: 300px;
     background-size: contain;
 }*/
+  #mcover {
+     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+     height: 100%;
+     left: 0;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 20000;
+   }
+ 
+   #mcover-img {
+     height: 180px;
+     position: fixed;
+     right: 18px;
+     top: 5px;
+     width: 260px;
+     z-index: 20001;
+     background: url(/assets/images/guide.png) no-repeat ;
+     background-size: contain;
+   }

@@ -2,20 +2,21 @@ function resize360view(container, content, width, height) {
     // calculate width and height
     var w = width;
     var h = height;
-    if (w * 480 > h * 640) {
-        w = h * 640 / 480;
-    } else {
-        h = w * 480 / 640;
-    }
-    content.css('width', w);
+    //if (w * 480 > h * 640) {
+    //    w = h * 640 / 480;
+    //} else {
+    //    h = w * 480 / 640;
+    //}
+    h = w * 570 / 720;
+    //content.css('width', w);
     content.css('height', h);
 
     container.css('width', width);
     container.css('height', height);
 
     // calculate position
-    var left = (width - w) / 2;
-    content.css('left', left);
+    //var left = (width - w) / 2;
+    //content.css('left', left);
 };
 
 function show360(src) {
@@ -40,7 +41,7 @@ function show360(src) {
 
     var h1 = container.height();
     var h2 = content.height();
-    var mTop = (h1 - h2) / 2;  
+    var mTop = (height - h2) / 3;  
     content.css('margin-top', mTop);
 };
 

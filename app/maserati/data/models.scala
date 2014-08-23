@@ -77,7 +77,7 @@ object models {
       ("0至100公里每小时加速", "5.6秒")
     )),
     detailPicCount = 5,
-    exterior360 = "",
+    exterior360 = "exterior/ghibli/pc/ghibli.html",
     interior360 = "Ghibli_Interior_360 Pano/Ghibli Interior 360 Pano_HTML/4-2.html",
     hasTestDrive = true
   )

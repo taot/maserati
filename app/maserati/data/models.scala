@@ -20,9 +20,8 @@ object models {
       ("0至100公里每小时加速", "4.7秒")
     )),
     detailPicCount = 5,
-    exterior360 = "",
-    exterior360Phone = "",
-    interior360 = "QP Zegna_Interior_360 Pano/QP Zegna_Interior_360 Pano_HTML/7-2.html",
+    interior360 = "/assets/360Panos/QP Zegna_Interior_360 Pano/QP Zegna_Interior_360 Pano_HTML/7-2.html",
+    hasExterior360 = true,
     hasTestDrive = false
   )
 
@@ -38,9 +37,8 @@ object models {
       ("0至100公里每小时加速", "4.7秒")
     )),
     detailPicCount = 5,
-    exterior360 = "",
-    exterior360Phone = "",
-    interior360 = "QP V8_Interior_360 Pano/QP V8_Interior_360 Pano_HTML/2-4.html",
+    interior360 = "/assets/360Panos/QP V8_Interior_360 Pano/QP V8_Interior_360 Pano_HTML/2-4.html",
+    hasExterior360 = true,
     hasTestDrive = true
   )
 
@@ -56,9 +54,8 @@ object models {
       ("0至100公里每小时加速", "5.6秒")
     )),
     detailPicCount = 5,
-    exterior360 = "",
-    exterior360Phone = "",
-    interior360 = "QP V6_Interior_360 Pano/QP V6 360 Pano_HTML/3-3.html",
+    interior360 = "/assets/360Panos/QP V6_Interior_360 Pano/QP V6 360 Pano_HTML/3-3.html",
+    hasExterior360 = true,
     hasTestDrive = true
   )
 
@@ -80,9 +77,8 @@ object models {
       ("0至100公里每小时加速", "5.6秒")
     )),
     detailPicCount = 5,
-    exterior360 = "exterior/ghibli/pc/ghibli.html",
-    exterior360Phone = "exterior/ghibli/phone/ghibli.html",
-    interior360 = "Ghibli_Interior_360 Pano/Ghibli Interior 360 Pano_HTML/4-2.html",
+    interior360 = "/assets/360Panos/Ghibli_Interior_360 Pano/Ghibli Interior 360 Pano_HTML/4-2.html",
+    hasExterior360 = true,
     hasTestDrive = true
   )
 
@@ -98,9 +94,8 @@ object models {
       ("0至100公里每小时加速", "4.8秒")
     )),
     detailPicCount = 5,
-    exterior360 = "",
-    exterior360Phone = "",
-    interior360 = "Ghibli S Q4_Interior_360 Pano/Ghibli S Q4_Interior_360 Pano_HTML/1-2.html",
+    interior360 = "/assets/360Panos/Ghibli S Q4_Interior_360 Pano/Ghibli S Q4_Interior_360 Pano_HTML/1-2.html",
+    hasExterior360 = false,
     hasTestDrive = true
   )
 
@@ -122,9 +117,8 @@ object models {
       ("0至100公里每小时加速", "4.5秒")
     )),
     detailPicCount = 5,
-    exterior360 = "GranTurismo MC Stradale Exterior/output/GranTurismo MC Stradale.html",
-    exterior360Phone = "",
-    interior360 = "GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
+    interior360 = "/assets/360Panos/GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
+    hasExterior360 = false,
     hasTestDrive = true
   )
 
@@ -140,9 +134,8 @@ object models {
       ("0至100公里每小时加速", "4.8秒")
     )),
     detailPicCount = 5,
-    exterior360 = "",
-    exterior360Phone = "",
-    interior360 = "GT Sport_Interior_360 Pano/GT Sport 360 Pano_HTML/1-2.html",
+    interior360 = "/assets/360Panos/GT Sport_Interior_360 Pano/GT Sport 360 Pano_HTML/1-2.html",
+    hasExterior360 = false,
     hasTestDrive = true
   )
 
@@ -164,9 +157,8 @@ object models {
       ("0至100公里每小时加速", "5.2秒")
     )),
     detailPicCount = 5,
-    exterior360 = "GranCabrio Sport Exterior/output/Maserati Apperance 360 GranCabrio Sport.html",
-    exterior360Phone = "",
-    interior360 = "GC Sport_Interior_360 Pano/GC Sport_Interior_360 Pano_HTML/3-2.html",
+    interior360 = "/assets/360Panos/GC Sport_Interior_360 Pano/GC Sport_Interior_360 Pano_HTML/3-2.html",
+    hasExterior360 = true,
     hasTestDrive = true
   )
 
@@ -188,9 +180,8 @@ object models {
       ("最大扭矩转速", "4750转/分")
     )),
     detailPicCount = 5,
-    exterior360 = "Alfieri_Exterior_360 Pano/Alfieri Exterior 360 Pano_HTML/_MG_4986_1.html",
-    exterior360Phone = "",
-    interior360 = "Alfieri_Interior_360 Pano/Alfieri Interior 360 Pano_HTML/6-4.html",
+    interior360 = "/assets/360Panos/Alfieri_Interior_360 Pano/Alfieri Interior 360 Pano_HTML/6-4.html",
+    hasExterior360 = false,
     hasTestDrive = false
   )
 

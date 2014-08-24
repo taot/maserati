@@ -24,7 +24,7 @@ function resize360view(container, content, width, height) {
 };
 
 function show360(src) {
-    var src0 = '/assets/360Panos/' + src
+    var src0 = src
     console.log('showing 360 view: ' + src0);
     var container = $('.mobiles-360-container');
     var content = $('.mobiles-360-content', container);

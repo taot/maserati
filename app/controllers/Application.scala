@@ -25,7 +25,21 @@ object Application extends Controller {
       case None =>
         NotFound
     }
+  }
 
+  def ext360(id: String) = Action { implicit request =>
+    data.models.list_all.find(_.id == id) match {
+      case Some(m) =>
+        val device = if (isMobile(request)) {
+          "phone"
+        } else {
+          "pc"
+        }
+        val imagePath = s"/assets/3dEyeExterior/${m.id}/${device}/images/"
+        Ok(views.html.exterior360(imagePath))
+      case None =>
+        NotFound
+    }
   }
 
   def shows0 = Action { implicit request =>
@@ -42,7 +56,7 @@ object Application extends Controller {
   }
 
   private def isMobile(rh: RequestHeader): Boolean = {
-//    return true;
+    return true;
     rh.headers.get("User-Agent") match {
       case Some(s) =>
         val s1 = s.toLowerCase()

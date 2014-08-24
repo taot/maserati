@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <style type="text/css">
+            * {
+                border: 0;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+            }
+            .menu-bar {
+                min-width: 900px;
+                min-height: 60px;
+                height: 60px;
+                width: 100%;
+                background-image: url("http://placehold.it/30x30");
+                
+            }
+            .container {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 5;
+                background-color: rgba(255, 255, 255, 0.9);
+                overflow: scroll;
+            }
+            .content {
+                margin-top: 30px;
+                min-width: 500px;
+                width:750px;
+                height: 560px;
+                margin: 0 auto  ;
+            }
+            .header {
+                display: inline-block;
+                padding-bottom: 15px;
+                width: 100%;
+                word-spacing: -5px;
+            }
+            .btn {
+                border: 2px solid #D2D2D2;
+                color: #012C59;
+                margin: 0px 3px 0px 0px;
+                padding: 6px;
+                width: 105px;
+                background-image: linear-gradient(to bottom, #FCFCFC 0%, #EEE 100%);
+            }
+            .close-btn {
+                float: right;
+                height: 30px;
+                width: 60px;
+                background-image: url('http://placehold.it/60x30');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+            .body {
+                /*height: 100%;*/
+                height: calc(100% - 30px);
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu-bar"></div>
+        <div class="container" align="center">
+            <div class="content">
+                <div class="header" align="left">
+                    <a class="btn">外观360°</a>
+                    <a class="btn">内饰360°</a>
+                    <a class="close-btn"></a>
+                </div>
+                <iframe class="body" src="ghibli.html"></iframe>
+            </div>
+        </div>
+    </body>
+</html>

@@ -23,9 +23,8 @@ package object model {
     serie: Serie,
     detail: ModelDetail,
     detailPicCount: Int,
-    exterior360: String,
-    exterior360Phone: String,
     interior360: String,
+    hasExterior360: Boolean,
     hasTestDrive: Boolean
   ) {
 
@@ -35,6 +34,11 @@ package object model {
     val thumbnailDark = s"landing/${serie.id}/models_${id}_onclick.png"
     val detailPics = (1 to detailPicCount).map { i =>
         s"landing/${serie.id}/${id}_details_photo${i}.jpg"
+    }
+    val exterior360 = if (hasExterior360) {
+      s"/ext360/${id}"
+    } else {
+      ""
     }
   }
 

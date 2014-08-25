@@ -26,7 +26,9 @@ package object model {
     interior360: String,
     interior360PC: String,
     hasExterior360: Boolean,
-    hasTestDrive: Boolean
+    hasExterior360PC: Boolean,
+    hasTestDrive: Boolean,
+    exterior360Count: Int = 24
   ) {
 
     serie.models.append(this)
@@ -37,6 +39,11 @@ package object model {
         s"landing/${serie.id}/${id}_details_photo${i}.jpg"
     }
     val exterior360 = if (hasExterior360) {
+      s"/ext360/${id}"
+    } else {
+      ""
+    }
+    val exterior360PC = if (hasExterior360PC) {
       s"/ext360/${id}"
     } else {
       ""

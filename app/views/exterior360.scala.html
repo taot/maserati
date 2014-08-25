@@ -1,4 +1,4 @@
-@(imagePath: String)
+@(model: maserati.model.Model, imagePath: String)
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +18,7 @@
 
             $("#myCar").vc3dEye({
                 imagePath:"@{imagePath}",
-                totalImages:24,
+                totalImages: @{model.exterior360Count},
                 imageExtension:"jpg"
             });
 

@@ -6,10 +6,6 @@ import maserati.data
 
 object Application extends Controller {
 
-//  def index = Action {
-//    Redirect(routes.Application.mobiles())
-//  }
-
   def index = Action { implicit request =>
     if (isMobile(request)) {
       Ok(views.html.mobile.mobiles())
@@ -36,7 +32,7 @@ object Application extends Controller {
           "pc"
         }
         val imagePath = s"/assets/3dEyeExterior/${m.id}/${device}/images/"
-        Ok(views.html.exterior360(imagePath))
+        Ok(views.html.exterior360(m, imagePath))
       case None =>
         NotFound
     }

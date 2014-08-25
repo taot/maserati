@@ -88,8 +88,8 @@ object models {
 
   val ghiblisq4 = Model(
     id = "ghiblisq4",
-    title = List("Ghibli S Q4"),
-    name = "Ghibli S Q4",
+    title = List("Ghibli S"),
+    name = "Ghibli S",
     subName = "每日可享的非凡乐趣",
     serie = series.ghibli,
     detail = ModelDetail(List(

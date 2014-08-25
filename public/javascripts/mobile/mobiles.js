@@ -41,7 +41,7 @@ function show360(src) {
 
     var h1 = container.height();
     var h2 = content.height();
-    var mTop = (height - h2) / 3;  
+    var mTop = Math.abs((height - h2)) / 3;  
     content.css('margin-top', mTop);
 };
 

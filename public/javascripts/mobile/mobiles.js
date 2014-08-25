@@ -107,9 +107,11 @@ function showDiscover(event) {
     $('.discover-image-iframe', container).attr('src', src0);
     container.fadeIn('fast');
 
-     var h1 = container.height();
-     var h2 = content.height();
-    var mTop = (h1 - h2) / 2;  
+    var h1 = container.height();
+//    var h1 = $(window).height();
+    var h2 = content.height();
+//    alert("h1=" + h1 + " h2=" + h2);
+    var mTop = (h1 - h2) / 2 - 20;
     content.css('margin-top', mTop);
 
 };

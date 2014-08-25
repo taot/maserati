@@ -16,5 +16,5 @@ object share {
     sinaShareLink + queryStrings.map { case (k, v) => k + "=" + URLEncoder.encode(v, "UTF-8") }.mkString("&")
   }
 
-  val email = "support@maserati.com"
+//  val email = "support@maserati.com"
 }

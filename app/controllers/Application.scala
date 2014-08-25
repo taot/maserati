@@ -6,11 +6,11 @@ import maserati.data
 
 object Application extends Controller {
 
-  def index = Action {
-    Redirect(routes.Application.mobiles())
-  }
+//  def index = Action {
+//    Redirect(routes.Application.mobiles())
+//  }
 
-  def mobiles = Action { implicit request =>
+  def index = Action { implicit request =>
     if (isMobile(request)) {
       Ok(views.html.mobile.mobiles())
     } else {
@@ -43,7 +43,7 @@ object Application extends Controller {
   }
 
   def shows0 = Action { implicit request =>
-    Redirect(routes.Application.shows(data.shows.szas.id))
+    Redirect(routes.Application.shows(data.shows.all.head.id))
   }
 
   def shows(id: String) = Action { implicit request =>

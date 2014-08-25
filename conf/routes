@@ -1,6 +1,5 @@
 # Home page
 GET     /                           controllers.Application.index
-GET     /mobiles                    controllers.Application.mobiles
 GET     /mobiles/detail/:id         controllers.Application.mobileDetail(id: String)
 GET     /ext360/:id                 controllers.Application.ext360(id: String)
 GET     /shows                      controllers.Application.shows0

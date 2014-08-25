@@ -31,6 +31,9 @@
     width: 200px;
 }
 
+.mobiles-content .mobile-thumbnail:hover {
+    cursor: pointer;
+}
 .mobiles-content .text {
     color: #565656;
     margin: 5px auto 10px auto;

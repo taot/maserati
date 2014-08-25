@@ -4,6 +4,32 @@ import maserati.model.Show
 
 object shows {
 
+  val cdas = Show(
+    id = "cdas",
+    name = "2014成都车展",
+    fullname = "2014年第十七届成都国际汽车展览会",
+    desc =
+      """
+        |8月29日至9月7日，2014年第十七届成都国际汽车展览会盛大开幕，玛莎拉蒂携旗下四款重磅车型强势亮相，
+        |包括奢华典雅的Quattroporte总裁轿车、极速激情的GranTurismo跑车、浪漫阳光的GranCabrio敞蓬跑
+        |车以及轻盈动感的Ghibli运动轿车。在玛莎拉蒂品牌一百周年之际，重新诠释玛莎拉蒂品牌传承百年的优雅、
+        |奢华、运动与激情。
+      """.stripMargin,
+    schedule = List(
+      "时间：",
+      "新闻媒体日 8月29日",
+      "公众参观日 8月30日-9月7日"
+    ),
+    location = List(
+      "地址：",
+      "成都世纪城新国际会展中心 成都市武侯区世纪城路198号"
+    ),
+    stage = "玛莎拉蒂展台在H9-03",
+    d360 = "SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/1.html",
+    galleryCount = 5,
+    mapLink = "http://j.map.baidu.com/1cORv"
+  )
+
   val szas = Show(
     id = "szas",
     name = "2014深圳车展",
@@ -57,5 +83,5 @@ object shows {
     mapLink = "http://j.map.baidu.com/WIkIv"
   )
 
-  val all = List(szas, bjas)
+  val all = List(cdas, szas, bjas)
 }

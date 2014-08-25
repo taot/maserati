@@ -61,6 +61,7 @@ function hide360() {
     console.log('hiding 360 view');
     //$('#mobiles-360-blur').fadeOut('slow');
     $('.mobiles-360-container').fadeOut('slow');
+    $('.mobiles-360-body').attr('src', '');
 };
 
 function resizeDiscover(container, width, height) {
@@ -138,6 +139,7 @@ function showDiscover(event) {
 function hideDiscover() {
     console.log('hiding discover page');
     $('.discover-container').fadeOut('slow');
+    $('.discover-image-iframe').attr('src', '');
 };
 
 $(document).ready(function() {

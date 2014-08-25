@@ -248,7 +248,7 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 .footer {
     margin: 0px auto 33px auto;
     text-align: center;
-    word-spacing: -7px;
+    /*word-spacing: -7px;*/
 }
 
 .footer .item {
@@ -260,7 +260,7 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
     height: 30px;
     background-image: url(/assets/images/share.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
 }
 
 .footer .icon {
@@ -271,7 +271,7 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 
 .footer .weibo {
     background-image: url(/assets/images/share_weibo.jpg);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -281,7 +281,7 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 
 .footer .wechat {
     background-image: url(/assets/images/share_wechat.jpg);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -304,7 +304,7 @@ box-shadow: rgba(100,100,100,0.9) 0px 5px 6px inset;
 
 .footer .email {
     background-image: url(/assets/images/share_email.jpg);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 

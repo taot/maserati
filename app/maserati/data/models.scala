@@ -124,7 +124,7 @@ object models {
     detailPicCount = 5,
     interior360 = "/assets/360Panos/GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
     interior360PC = "/assets/360PanosPC/GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
-    hasExterior360 = false,
+    hasExterior360 = true,
     hasTestDrive = true
   )
 

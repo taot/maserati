@@ -24,6 +24,7 @@ package object model {
     detail: ModelDetail,
     detailPicCount: Int,
     interior360: String,
+    interior360PC: String,
     hasExterior360: Boolean,
     hasTestDrive: Boolean
   ) {

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama>
+<!-- Pano2VR 3.1.4 panorama configuration -->
+<view fovmode="0">
+<start pan="233" tilt="1" fov="69"/>
+<min pan="0" tilt="-90" fov="35"/>
+<max pan="360" tilt="90" fov="120"/>
+</view>
+<input tilesize="2000" tilescale="1.005" tile0url="images/2_o_0.jpg" tile1url="images/2_o_1.jpg" tile2url="images/2_o_2.jpg" tile3url="images/2_o_3.jpg" tile4url="images/2_o_4.jpg" tile5url="images/2_o_5.jpg" />
+<userdata title="" description="" author="" datetime="" copyright="" source="" info="" comment="" />
+<control sensitivity="8" simulatemass="1" lockedmouse="0" lockedkeyboard="0" lockedwheel="0" invertwheel="0" speedwheel="1" dblclickfullscreen="1" invertcontrol="1" />
+<hotspots width="180" height="20" wordwrap="1" >
+<hotspot id="new" skinid="" pan="-129.28" tilt="0.378617" title="QP" url="4.swf" target="" />
+<hotspot id="new" skinid="" pan="-65.9234" tilt="0.680546" title="Center Stage" url="1.swf" target="" />
+</hotspots>
+<sounds>
+</sounds>
+</panorama>

@@ -21,6 +21,7 @@ object models {
     )),
     detailPicCount = 5,
     interior360 = "/assets/360Panos/QP Zegna_Interior_360 Pano/QP Zegna_Interior_360 Pano_HTML/7-2.html",
+    interior360PC = "/assets/360PanosPC/QP Zegna_Interior_360 Pano/QP Zegna_Interior_360 Pano_HTML/7-2.html",
     hasExterior360 = true,
     hasTestDrive = false
   )
@@ -38,6 +39,7 @@ object models {
     )),
     detailPicCount = 5,
     interior360 = "/assets/360Panos/QP V8_Interior_360 Pano/QP V8_Interior_360 Pano_HTML/2-4.html",
+    interior360PC = "/assets/360PanosPC/QP V8_Interior_360 Pano/QP V8_Interior_360 Pano_HTML/2-4.html",
     hasExterior360 = true,
     hasTestDrive = true
   )
@@ -55,6 +57,7 @@ object models {
     )),
     detailPicCount = 5,
     interior360 = "/assets/360Panos/QP V6_Interior_360 Pano/QP V6 360 Pano_HTML/3-3.html",
+    interior360PC = "/assets/360PanosPC/QP V6_Interior_360 Pano/QP V6 360 Pano_HTML/3-3.html",
     hasExterior360 = true,
     hasTestDrive = true
   )
@@ -78,6 +81,7 @@ object models {
     )),
     detailPicCount = 5,
     interior360 = "/assets/360Panos/Ghibli_Interior_360 Pano/Ghibli Interior 360 Pano_HTML/4-2.html",
+    interior360PC = "/assets/360PanosPC/Ghibli_Interior_360 Pano/Ghibli Interior 360 Pano_HTML/4-2.html",
     hasExterior360 = true,
     hasTestDrive = true
   )
@@ -95,6 +99,7 @@ object models {
     )),
     detailPicCount = 5,
     interior360 = "/assets/360Panos/Ghibli S Q4_Interior_360 Pano/Ghibli S Q4_Interior_360 Pano_HTML/1-2.html",
+    interior360PC = "/assets/360PanosPC/Ghibli S Q4_Interior_360 Pano/Ghibli S Q4_Interior_360 Pano_HTML/1-2.html",
     hasExterior360 = false,
     hasTestDrive = true
   )
@@ -118,6 +123,7 @@ object models {
     )),
     detailPicCount = 5,
     interior360 = "/assets/360Panos/GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
+    interior360PC = "/assets/360PanosPC/GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
     hasExterior360 = false,
     hasTestDrive = true
   )
@@ -135,6 +141,7 @@ object models {
     )),
     detailPicCount = 5,
     interior360 = "/assets/360Panos/GT Sport_Interior_360 Pano/GT Sport 360 Pano_HTML/1-2.html",
+    interior360PC = "/assets/360PanosPC/GT Sport_Interior_360 Pano/GT Sport 360 Pano_HTML/1-2.html",
     hasExterior360 = false,
     hasTestDrive = true
   )
@@ -158,6 +165,7 @@ object models {
     )),
     detailPicCount = 5,
     interior360 = "/assets/360Panos/GC Sport_Interior_360 Pano/GC Sport_Interior_360 Pano_HTML/3-2.html",
+    interior360PC = "/assets/360PanosPC/GC Sport_Interior_360 Pano/GC Sport_Interior_360 Pano_HTML/3-2.html",
     hasExterior360 = true,
     hasTestDrive = true
   )
@@ -181,6 +189,7 @@ object models {
     )),
     detailPicCount = 5,
     interior360 = "/assets/360Panos/Alfieri_Interior_360 Pano/Alfieri Interior 360 Pano_HTML/6-4.html",
+    interior360PC = "/assets/360PanosPC/Alfieri_Interior_360 Pano/Alfieri Interior 360 Pano_HTML/6-4.html",
     hasExterior360 = false,
     hasTestDrive = false
   )

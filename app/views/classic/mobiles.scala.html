@@ -48,7 +48,7 @@
         <div class="activeMarker" style="left: 40%;"></div>
         <ul class="interface">
           @for((s,i) <- data.series.all.zipWithIndex) {
-          <li class="interfaceButton" id=@{"interfacebtn_" + i}>
+          <li class="interfaceButton" id=@{"interfacebtn_" + i} tgt="mobiles-content-@{s.id}">
             <p class="" tgt="mobiles-content-@{s.id}">@{s.name}</p>
           </li>
           }

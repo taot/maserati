@@ -118,7 +118,7 @@ function hideDiscover() {
 function switchMobilesContent(event) {
     console.log('switching mobile content');
     var tgt = event.target.getAttribute('tgt');
-    $('.mobiles-content').hide();
+    $('.mobiles-content:visible').hide();
     $('#' + tgt).fadeIn('slow');
 };
 

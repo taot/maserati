@@ -2,7 +2,7 @@
 <panorama>
 <!-- Pano2VR 3.1.4 panorama configuration -->
 <view fovmode="0">
-<start pan="233" tilt="1" fov="69"/>
+<start pan="175" tilt="1" fov="69"/>
 <min pan="0" tilt="-90" fov="35"/>
 <max pan="360" tilt="90" fov="120"/>
 </view>

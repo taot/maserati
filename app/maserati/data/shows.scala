@@ -25,7 +25,7 @@ object shows {
       "成都世纪城新国际会展中心 成都市武侯区世纪城路198号"
     ),
     stage = "玛莎拉蒂展台在H9-03",
-    d360 = "SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/1.html",
+    d360 = "SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/2.html",
     galleryCount = 5,
     mapLink = "http://j.map.baidu.com/1cORv"
   )
@@ -52,7 +52,7 @@ object shows {
       "深圳会展中心 深圳市福田区福华三路"
     ),
     stage = "玛莎拉蒂展台在4-09",
-    d360 = "SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/1.html",
+    d360 = "SZAS Booth_360 Pano/SZAS Booth_360 Pano_HTML5/2.html",
     galleryCount = 5,
     mapLink = "http://j.map.baidu.com/pvWev"
   )
@@ -78,7 +78,7 @@ object shows {
       "中国国际展览中心（新馆） 北京市顺义区裕祥路88号"
     ),
     stage = "玛莎拉蒂展台在E413",
-    d360 = "BJAS Booth_360 Pano/BJAS Booth_360 Pano_HTML/1.html",
+    d360 = "BJAS Booth_360 Pano/BJAS Booth_360 Pano_HTML/2-1.html",
     galleryCount = 4,
     mapLink = "http://j.map.baidu.com/WIkIv"
   )

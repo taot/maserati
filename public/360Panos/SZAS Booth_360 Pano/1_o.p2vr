@@ -73,8 +73,8 @@
         <filename>SZAS Booth_360 Pano_HTML5/1.xml</filename>
         <resize>
           <screensize>500</screensize>
-          <tilesize>400</tilesize>
-          <quality>90</quality>
+          <tilesize>480</tilesize>
+          <quality>75</quality>
           <cubefilename>images/$n_o_$x.jpg</cubefilename>
         </resize>
         <tilesize>2000</tilesize>

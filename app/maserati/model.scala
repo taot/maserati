@@ -43,11 +43,11 @@ package object model {
     } else {
       ""
     }
-    val exterior360PC = if (hasExterior360PC) {
+    val exterior360PC = if (id == "alfieri") {
+      s"/assets/360PanosPC/Alfieri_Exterior_360 Pano/Alfieri Exterior 360 Pano_HTML/_MG_4986_1.html"
+    } else if (hasExterior360PC) {
       s"/ext360/${id}"
-    } else {
-      ""
-    }
+    } else ""
   }
 
   case class Show(

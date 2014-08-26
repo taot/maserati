@@ -59,6 +59,7 @@ package object model {
     location: List[String],
     stage: String,
     d360: String,
+    d360PC: String,
     galleryCount: Int,
     mapLink: String
   ) {

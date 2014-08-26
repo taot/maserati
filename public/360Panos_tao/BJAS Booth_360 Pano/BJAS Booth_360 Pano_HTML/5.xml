@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama>
+<!-- Pano2VR 3.1.4 panorama configuration -->
+<view fovmode="0">
+<start pan="295" tilt="4" fov="70"/>
+<min pan="0" tilt="-90" fov="35"/>
+<max pan="360" tilt="90" fov="120"/>
+</view>
+<input tilesize="2000" tilescale="1.005" tile0url="images/5_o_0.jpg" tile1url="images/5_o_1.jpg" tile2url="images/5_o_2.jpg" tile3url="images/5_o_3.jpg" tile4url="images/5_o_4.jpg" tile5url="images/5_o_5.jpg" />
+<userdata title="" description="" author="" datetime="" copyright="" source="" info="" comment="" />
+<control sensitivity="8" simulatemass="1" lockedmouse="0" lockedkeyboard="0" lockedwheel="0" invertwheel="0" speedwheel="1" dblclickfullscreen="1" invertcontrol="1" />
+<hotspots width="180" height="20" wordwrap="1" >
+<hotspot id="new" skinid="" pan="-96.0085" tilt="-4.6037" title="Centennial Logo" url="2-1.swf" target="" />
+<hotspot id="new" skinid="" pan="-20.7229" tilt="-3.54908" title="Center Stage" url="1.swf" target="" />
+<hotspot id="new" skinid="" pan="-48.0156" tilt="1.59843" title="QP Zegna" url="4.swf" target="" />
+</hotspots>
+<sounds>
+</sounds>
+</panorama>

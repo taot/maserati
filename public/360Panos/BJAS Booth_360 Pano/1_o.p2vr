@@ -72,12 +72,12 @@
         </hotspotstyle>
         <filename>BJAS Booth_360 Pano_HTML/1.xml</filename>
         <resize>
-          <screensize>640</screensize>
-          <tilesize>560</tilesize>
-          <quality>82</quality>
+          <screensize>900</screensize>
+          <tilesize>800</tilesize>
+          <quality>50</quality>
           <cubefilename>images/$n_o_$x.jpg</cubefilename>
         </resize>
-        <tilesize>1000</tilesize>
+        <tilesize>2000</tilesize>
         <quality>90</quality>
         <progressivejpeg>0</progressivejpeg>
         <cubefilename>images/$n_o.jpg</cubefilename>

@@ -72,9 +72,9 @@
         </hotspotstyle>
         <filename>SZAS Booth_360 Pano_HTML5/3.xml</filename>
         <resize>
-          <screensize>720</screensize>
-          <tilesize>640</tilesize>
-          <quality>90</quality>
+          <screensize>900</screensize>
+          <tilesize>800</tilesize>
+          <quality>50</quality>
           <cubefilename>images/$n_o_$x.jpg</cubefilename>
         </resize>
         <tilesize>2000</tilesize>

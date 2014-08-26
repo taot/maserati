@@ -104,8 +104,8 @@ object models {
     detailPicCount = 5,
     interior360 = "/assets/360Panos/Ghibli S Q4_Interior_360 Pano/Ghibli S Q4_Interior_360 Pano_HTML/1-2.html",
     interior360PC = "/assets/360PanosPC/Ghibli S Q4_Interior_360 Pano/Ghibli S Q4_Interior_360 Pano_HTML/1-2.html",
-    hasExterior360 = false,
-    hasExterior360PC = false,
+    hasExterior360 = true,
+    hasExterior360PC = true,
     hasTestDrive = true
   )
 
@@ -148,8 +148,8 @@ object models {
     detailPicCount = 5,
     interior360 = "/assets/360Panos/GT Sport_Interior_360 Pano/GT Sport 360 Pano_HTML/1-2.html",
     interior360PC = "/assets/360PanosPC/GT Sport_Interior_360 Pano/GT Sport 360 Pano_HTML/1-2.html",
-    hasExterior360 = false,
-    hasExterior360PC = false,
+    hasExterior360 = true,
+    hasExterior360PC = true,
     hasTestDrive = true
   )
 
@@ -198,7 +198,7 @@ object models {
     detailPicCount = 5,
     interior360 = "/assets/360Panos/Alfieri_Interior_360 Pano/Alfieri Interior 360 Pano_HTML/6-4.html",
     interior360PC = "/assets/360PanosPC/Alfieri_Interior_360 Pano/Alfieri Interior 360 Pano_HTML/6-4.html",
-    hasExterior360 = false,
+    hasExterior360 = true,
     hasExterior360PC = true,
     hasTestDrive = false,
     exterior360Count = 60

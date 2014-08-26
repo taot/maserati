@@ -293,11 +293,11 @@ list-style:none;
 
 .mobiles-360-header .close-360-btn {
     float: right;
-    height: 30px;
-    width: 60px;
     background-image: url(/assets/images/btn_layer_close.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 40px;
 }
 
 .mobiles-360-body {
@@ -352,9 +352,11 @@ list-style:none;
 }
 
 .discover-container .close-discover-btn {
-    height: 30px;
-    width: 70px;
     background-image: url(/assets/images/btn_layer_close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 40px;
     margin-right: 10px;
     background-color: rgba(0,0,0,0);
     border: 0;

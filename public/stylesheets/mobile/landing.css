@@ -173,10 +173,10 @@
     float: right;
     background-image: url(/assets/images/btn_layer_close.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: contain;
     background-color: rgba(255, 255, 255, 0.0);
-    height: 30px;
-    width: 60px;
+    height: 20px;
+    width: 40px;
     border: 0 none;
 }
 
@@ -214,9 +214,11 @@
 }
 
 .discover-container .close-discover-btn {
-    height: 30px;
-    width: 70px;
     background-image: url(/assets/images/btn_layer_close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 40px;
     margin-right: 10px;
     background-color: rgba(0,0,0,0);
     border: 0;

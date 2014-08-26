@@ -23,7 +23,8 @@
 			}
 			body {
 			  font-size: 10pt;
-			  background : #ffffff;margin:0;padding:0;border:0; 
+			  background : #ffffff; margin:0;padding:0;border:0;
+
 			}
 			table,tr,td {
 				font-size: 10pt;
@@ -57,7 +58,6 @@
 	<body>
 		<script type="text/javascript" src="pano2vr_player.js">
 		</script>
-
                 <div id="container" style="width:100%; vertical-align: top;">
                 </div>
                 <script type="text/javascript">
@@ -67,7 +67,6 @@
                   document.getElementById('container').style.height= h + "px";
                 </script>
 
-
 		<script type="text/javascript">
 	
 		// check for CSS3 3D transformations and WebGL
@@ -76,7 +75,7 @@
 	
 			// create the panorama player with the container
 			pano=new pano2vrPlayer("container");
-			pano.readConfigUrl("1-2.xml");
+			pano.readConfigUrl("Ghibli S_o_out.xml");
 			// hide the URL bar on the iPhone
 			setTimeout(function() { hideUrlBar(); }, 10);
 		} else 
@@ -93,7 +92,7 @@
 			attributes.id = "pano";
 			attributes.name = "pano";
 			attributes.align = "middle";
-			flashvars.panoxml="1-2.xml";
+			flashvars.panoxml="Ghibli S_o_out.xml";
 			params.base=".";
 			swfobject.embedSWF(
 				"pano2vr_player.swf", "container", 

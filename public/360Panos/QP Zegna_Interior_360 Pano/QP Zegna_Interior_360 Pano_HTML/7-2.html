@@ -23,10 +23,8 @@
 			}
 			body {
 			  font-size: 10pt;
-			  background : #ffffff; 
-margin:0;
-padding:0;
-border:0;
+			  background : #ffffff; margin:0;padding:0;border:0;
+
 			}
 			table,tr,td {
 				font-size: 10pt;
@@ -35,7 +33,7 @@ border:0;
 				color: #000000; 
 				border-style : solid;
 				border-width : 2px;
-				padding: 0;
+				padding: 5px;
 				border-collapse:collapse;
 			}
 			h1 {
@@ -60,14 +58,16 @@ border:0;
 	<body>
 		<script type="text/javascript" src="pano2vr_player.js">
 		</script>
-		<div id="container" style="width:100%; vertical-align: top;">
-		</div>
-		<script type="text/javascript">
+
+                <div id="container" style="width:100%; vertical-align: top;">
+                </div>
+                <script type="text/javascript">
                   var w = document.body.clientWidth; 
                   var h = w * 480 / 640; 
                   document.getElementById('container').style.width = w + "px";
                   document.getElementById('container').style.height= h + "px";
                 </script>
+
 		<script type="text/javascript">
 	
 		// check for CSS3 3D transformations and WebGL
@@ -76,7 +76,7 @@ border:0;
 	
 			// create the panorama player with the container
 			pano=new pano2vrPlayer("container");
-			pano.readConfigUrl("7-2.xml");
+			pano.readConfigUrl("QP Zegna_o_out.xml");
 			// hide the URL bar on the iPhone
 			setTimeout(function() { hideUrlBar(); }, 10);
 		} else 
@@ -93,7 +93,7 @@ border:0;
 			attributes.id = "pano";
 			attributes.name = "pano";
 			attributes.align = "middle";
-			flashvars.panoxml="7-2.xml";
+			flashvars.panoxml="QP Zegna_o_out.xml";
 			params.base=".";
 			swfobject.embedSWF(
 				"pano2vr_player.swf", "container", 

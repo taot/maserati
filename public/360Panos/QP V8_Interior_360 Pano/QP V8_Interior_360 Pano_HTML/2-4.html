@@ -23,7 +23,8 @@
 			}
 			body {
 			  font-size: 10pt;
-			  background : #ffffff;margin:0;padding:0;border:0; 
+			  background : #ffffff; margin:0;padding:0;border:0;
+
 			}
 			table,tr,td {
 				font-size: 10pt;
@@ -74,7 +75,7 @@
 	
 			// create the panorama player with the container
 			pano=new pano2vrPlayer("container");
-			pano.readConfigUrl("2-4.xml");
+			pano.readConfigUrl("QP V8_o_out.xml");
 			// hide the URL bar on the iPhone
 			setTimeout(function() { hideUrlBar(); }, 10);
 		} else 
@@ -91,7 +92,7 @@
 			attributes.id = "pano";
 			attributes.name = "pano";
 			attributes.align = "middle";
-			flashvars.panoxml="2-4.xml";
+			flashvars.panoxml="QP V8_o_out.xml";
 			params.base=".";
 			swfobject.embedSWF(
 				"pano2vr_player.swf", "container", 

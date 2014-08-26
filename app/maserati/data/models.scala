@@ -58,7 +58,7 @@ object models {
       ("0至100公里每小时加速", "5.6秒")
     )),
     detailPicCount = 5,
-    interior360 = "/assets/360Panos/QP V6_Interior_360 Pano/QP V6 360 Pano_HTML/3-3.html",
+    interior360 = "/assets/360Panos/QP V6_Interior_360 Pano/QP V6_Interior_360 Pano_HTML/3-3.html",
     interior360PC = "/assets/360PanosPC/QP V6_Interior_360 Pano/QP V6 360 Pano_HTML/3-3.html",
     hasExterior360 = true,
     hasExterior360PC = true,
@@ -83,7 +83,7 @@ object models {
       ("0至100公里每小时加速", "5.6秒")
     )),
     detailPicCount = 5,
-    interior360 = "/assets/360Panos/Ghibli_Interior_360 Pano/Ghibli Interior 360 Pano_HTML/4-2.html",
+    interior360 = "/assets/360Panos/Ghibli_Interior_360 Pano/Ghibli_Interior_360 Pano_HTML/4-2.html",
     interior360PC = "/assets/360PanosPC/Ghibli_Interior_360 Pano/Ghibli Interior 360 Pano_HTML/4-2.html",
     hasExterior360 = true,
     hasExterior360PC = true,
@@ -127,7 +127,7 @@ object models {
       ("0至100公里每小时加速", "4.5秒")
     )),
     detailPicCount = 5,
-    interior360 = "/assets/360Panos/GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
+    interior360 = "/assets/360Panos/GT MC Stradale_360 Pano/GT MC Stradale_360 Pano_HTML/2-3.html",
     interior360PC = "/assets/360PanosPC/GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
     hasExterior360 = true,
     hasExterior360PC = true,
@@ -146,7 +146,7 @@ object models {
       ("0至100公里每小时加速", "4.8秒")
     )),
     detailPicCount = 5,
-    interior360 = "/assets/360Panos/GT Sport_Interior_360 Pano/GT Sport 360 Pano_HTML/1-2.html",
+    interior360 = "/assets/360Panos/GT Sport_Interior_360 Pano/GT Sport_Interior_360 Pano_HTML/1-2.html",
     interior360PC = "/assets/360PanosPC/GT Sport_Interior_360 Pano/GT Sport 360 Pano_HTML/1-2.html",
     hasExterior360 = true,
     hasExterior360PC = true,
@@ -196,7 +196,7 @@ object models {
       ("最大扭矩转速", "4750转/分")
     )),
     detailPicCount = 5,
-    interior360 = "/assets/360Panos/Alfieri_Interior_360 Pano/Alfieri Interior 360 Pano_HTML/6-4.html",
+    interior360 = "/assets/360Panos/Alfieri_Interior_360 Pano/Alfieri_Interior_360 Pano_HTML/6-4.html",
     interior360PC = "/assets/360PanosPC/Alfieri_Interior_360 Pano/Alfieri Interior 360 Pano_HTML/6-4.html",
     hasExterior360 = true,
     hasExterior360PC = true,

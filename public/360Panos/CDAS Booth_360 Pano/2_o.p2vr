@@ -72,9 +72,9 @@
         </hotspotstyle>
         <filename>SZAS Booth_360 Pano_HTML5/2.xml</filename>
         <resize>
-          <screensize>720</screensize>
-          <tilesize>640</tilesize>
-          <quality>90</quality>
+          <screensize>700</screensize>
+          <tilesize>600</tilesize>
+          <quality>50</quality>
           <cubefilename>images/$n_o_$x.jpg</cubefilename>
         </resize>
         <tilesize>2000</tilesize>
@@ -82,8 +82,8 @@
         <progressivejpeg>0</progressivejpeg>
         <cubefilename>images/$n_o.jpg</cubefilename>
         <cubefacenaming>_5</cubefacenaming>
-        <windowwidth>640</windowwidth>
-        <windowheight>480</windowheight>
+        <windowwidth>320</windowwidth>
+        <windowheight>240</windowheight>
         <fovmode>vertical</fovmode>
         <sensitivity>8</sensitivity>
         <masssimulation>1</masssimulation>

@@ -62,7 +62,7 @@
                 </div>
                 <script type="text/javascript">
                   var w = document.body.clientWidth; 
-                  var h = w * 480 / 480; 
+                  var h = w * 480 / 640; 
                   document.getElementById('container').style.width = w + "px";
                   document.getElementById('container').style.height= h + "px";
                 </script>
@@ -96,7 +96,7 @@
 			params.base=".";
 			swfobject.embedSWF(
 				"pano2vr_player.swf", "container", 
-				"640", "480",
+				"320", "240",
 				"9.0.0", "", 
 				flashvars, params, attributes);
 			

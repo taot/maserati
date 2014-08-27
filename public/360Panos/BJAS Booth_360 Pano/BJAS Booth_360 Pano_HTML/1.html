@@ -24,6 +24,7 @@
 			body {
 			  font-size: 10pt;
 			  background : #ffffff;margin:0;padding:0;border:0;
+ 
 			}
 			table,tr,td {
 				font-size: 10pt;
@@ -57,8 +58,7 @@
 	<body>
 		<script type="text/javascript" src="pano2vr_player.js">
 		</script>
-
-                <div id="container" style="width:100%; vertical-align: top;">
+               <div id="container" style="width:100%; vertical-align: top;">
                 </div>
                 <script type="text/javascript">
                   var w = document.body.clientWidth; 
@@ -96,7 +96,7 @@
 			params.base=".";
 			swfobject.embedSWF(
 				"pano2vr_player.swf", "container", 
-				"640", "480",
+				"320", "240",
 				"9.0.0", "", 
 				flashvars, params, attributes);
 			

@@ -25,7 +25,8 @@
 			}
 			body {
 			  font-size: 10pt;
-			  background : #ffffff; 
+			  background : #ffffff; margin:0;padding:0;border:0;
+
 			}
 			table,tr,td {
 				font-size: 10pt;
@@ -49,13 +50,19 @@
 		</style>	
 	</head>
 	<body onorientationchange="hideUrlBar();">
-		<h1></h1>
-		<br>
 		<script type="text/javascript" src="object2vr_player.js">
 		</script>
-		<div id="container" style="width:640px;height:426px;">
-		This content requires HTML5 &amp; Javascript or Adobe Flash Player Version 9 or higher.
-		</div>
+
+                <div id="container" style="width:100%; vertical-align: top;">
+                </div>
+                <script type="text/javascript">
+                  var w = document.body.clientWidth; 
+                  var h = w * 480 / 640; 
+                  document.getElementById('container').style.width = w + "px";
+                  document.getElementById('container').style.height= h + "px";
+                </script>
+
+
 		<script type="text/javascript">
 	
 			// create the object player with the container
@@ -68,6 +75,5 @@
 		<noscript>
 			<p><b>Please enable Javascript!</b></p>
 		</noscript>
-		
 	</body>
 </html>

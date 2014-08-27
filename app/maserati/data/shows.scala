@@ -22,7 +22,8 @@ object shows {
     ),
     location = List(
       "地址：",
-      "成都世纪城新国际会展中心 成都市武侯区世纪城路198号"
+      "成都世纪城新国际会展中心",
+      "成都市武侯区世纪城路198号"
     ),
     stage = "玛莎拉蒂展台在H9-03",
     d360 = "CDAS Booth_360 Pano/CDAS Booth_360 Pano_HTML5/1.html",

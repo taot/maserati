@@ -8,3 +8,5 @@ GET     /shows/:id                  controllers.Application.shows(id: String)
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 GET     /$file<favicon.ico>         controllers.Assets.at(path="/public", file)
+GET     /$file<.htaccess>           controllers.Assets.at(path="/public", file)
+GET     /$file<backgroundsize.htc>  controllers.Assets.at(path="/public", file)

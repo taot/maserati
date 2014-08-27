@@ -1,5 +1,5 @@
-import com.typesafe.sbt.SbtNativePackager._
-import NativePackagerKeys._
+//import com.typesafe.sbt.SbtNativePackager._
+//import NativePackagerKeys._
 
 name := """maserati"""
 
@@ -17,10 +17,10 @@ libraryDependencies ++= Seq(
   // ws
 )
 
-doc in Compile <<= target.map(_ / "none")
+//doc in Compile <<= target.map(_ / "none")
 
-packageArchetype.java_server
+//packageArchetype.java_server
 
-packageDescription in Debian := "Maserati 360 Site"
+//packageDescription in Debian := "Maserati 360 Site"
 
-maintainer in Debian := "Terry Tao"
+//maintainer in Debian := "Terry Tao"

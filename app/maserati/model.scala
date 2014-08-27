@@ -25,6 +25,8 @@ package object model {
     detailPicCount: Int,
     interior360: String,
     interior360PC: String,
+    exterior360: String,
+    exterior360PC: String,
     hasExterior360: Boolean,
     hasExterior360PC: Boolean,
     hasTestDrive: Boolean,
@@ -38,6 +40,7 @@ package object model {
     val detailPics = (1 to detailPicCount).map { i =>
         s"landing/${serie.id}/${id}_details_photo${i}.jpg"
     }
+    /*
     val exterior360 = if (hasExterior360) {
       s"/ext360/${id}"
     } else {
@@ -48,6 +51,7 @@ package object model {
     } else if (hasExterior360PC) {
       s"/ext360/${id}"
     } else ""
+    */
   }
 
   case class Show(

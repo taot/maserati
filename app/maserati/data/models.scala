@@ -23,6 +23,10 @@ object models {
     interior360 = "/assets/360Panos/QP Zegna_Interior_360 Pano/QP Zegna_Interior_360 Pano_HTML/7-2.html",
     //interior360PC = "/assets/360PanosPC/QP Zegna_Interior_360 Pano/QP Zegna_Interior_360 Pano_HTML/7-2.html",
     interior360PC = "/assets/360PanosPC/Maserati revised/QP Zegna.html",
+
+    exterior360 = "/assets/360Ext/qpzegna/mobile/output/QP Zegna.html",
+    exterior360PC = "/assets/360Ext/qpzegna/pc/output/QP Zegna.html",
+
     hasExterior360 = true,
     hasExterior360PC = true,
     hasTestDrive = false
@@ -43,6 +47,10 @@ object models {
     interior360 = "/assets/360Panos/QP V8_Interior_360 Pano/QP V8_Interior_360 Pano_HTML/2-4.html",
     //interior360PC = "/assets/360PanosPC/QP V8_Interior_360 Pano/QP V8_Interior_360 Pano_HTML/2-4.html",
     interior360PC = "/assets/360PanosPC/Maserati revised/QP V8.html",
+
+    exterior360 = "/assets/360Ext/qpv8/mobile/output/Quattroport V8.html",
+    exterior360PC = "/assets/360Ext/qpv8/pc/output/Quattroport V8.html",
+
     hasExterior360 = true,
     hasExterior360PC = true,
     hasTestDrive = true
@@ -63,6 +71,8 @@ object models {
     interior360 = "/assets/360Panos/QP V6_Interior_360 Pano/QP V6_Interior_360 Pano_HTML/3-3.html",
   //  interior360PC = "/assets/360PanosPC/QP V6_Interior_360 Pano/QP V6 360 Pano_HTML/3-3.html",
     interior360PC = "/assets/360PanosPC/Maserati revised/QP V6.html",
+    exterior360 = "/assets/360Ext/qpv6/mobile/output/Quattroport V6.html",
+    exterior360PC = "/assets/360Ext/qpv6/pc/output/Quattroport V6.html",
     hasExterior360 = true,
     hasExterior360PC = true,
     hasTestDrive = true
@@ -89,6 +99,9 @@ object models {
     interior360 = "/assets/360Panos/Ghibli_Interior_360 Pano/Ghibli_Interior_360 Pano_HTML/4-2.html",
     //interior360PC = "/assets/360PanosPC/Ghibli_Interior_360 Pano/Ghibli Interior 360 Pano_HTML/4-2.html",
     interior360PC = "/assets/360PanosPC/Maserati revised/Ghibli.html",
+    exterior360 = "/assets/360Ext/ghibli/mobile/output/Ghibli.html",
+    exterior360PC = "/assets/360Ext/ghibli/pc/output/Ghibli.html",
+
     hasExterior360 = true,
     hasExterior360PC = true,
     hasTestDrive = true
@@ -109,6 +122,8 @@ object models {
     interior360 = "/assets/360Panos/Ghibli S Q4_Interior_360 Pano/Ghibli S Q4_Interior_360 Pano_HTML/1-2.html",
     //interior360PC = "/assets/360PanosPC/Ghibli S Q4_Interior_360 Pano/Ghibli S Q4_Interior_360 Pano_HTML/1-2.html",
     interior360PC = "/assets/360PanosPC/Maserati revised/Ghibli S.html",
+    exterior360 = "/assets/360Ext/ghiblisq4/mobile/output/Ghibli S.html",
+    exterior360PC = "/assets/360Ext/ghiblisq4/pc/output/Ghibli S.html",
     hasExterior360 = true,
     hasExterior360PC = true,
     hasTestDrive = true
@@ -137,6 +152,8 @@ object models {
     interior360PC = "/assets/360PanosPC/Maserati revised/GT MC Stradale.html",
     hasExterior360 = true,
     hasExterior360PC = true,
+    exterior360 = "/assets/360Ext/gtmc/mobile/output/GranTurismo MC Stradale.html",
+    exterior360PC = "/assets/360Ext/gtmc/pc/output/GranTurismo MC Stradale.html",
     hasTestDrive = true
   )
 
@@ -155,6 +172,9 @@ object models {
     interior360 = "/assets/360Panos/GT Sport_Interior_360 Pano/GT Sport_Interior_360 Pano_HTML/1-2.html",
 //    interior360PC = "/assets/360PanosPC/GT Sport_Interior_360 Pano/GT Sport 360 Pano_HTML/1-2.html",
     interior360PC = "/assets/360PanosPC/Maserati revised/GT Sport.html",
+
+    exterior360 = "/assets/360Ext/gtsport/mobile/output/GranTurismo Sport.html",
+    exterior360PC = "/assets/360Ext/gtsport/pc/output/GranTurismo Sport.html",
     hasExterior360 = true,
     hasExterior360PC = true,
     hasTestDrive = true
@@ -183,6 +203,8 @@ object models {
     interior360PC = "/assets/360PanosPC/Maserati revised/GC.html",
     hasExterior360 = true,
     hasExterior360PC = true,
+    exterior360 = "/assets/360Ext/gcs/mobile/output/GranCabrio Sport.html",
+    exterior360PC = "/assets/360Ext/gcs/pc/output/GranCabrio Sport.html",
     hasTestDrive = true
   )
 
@@ -207,6 +229,8 @@ object models {
     interior360 = "/assets/360Panos/Alfieri_Interior_360 Pano/Alfieri_Interior_360 Pano_HTML/6-4.html",
     //interior360PC = "/assets/360PanosPC/Alfieri_Interior_360 Pano/Alfieri Interior 360 Pano_HTML/6-4.html",
     interior360PC = "/assets/360PanosPC/Maserati revised/Alfieri.html",
+    exterior360 = "/assets/360Ext/alfieri/mobile/output/images.html",
+    exterior360PC = "/assets/360Ext/alfieri/pc/output/images.html",
     hasExterior360 = true,
     hasExterior360PC = true,
     hasTestDrive = false,

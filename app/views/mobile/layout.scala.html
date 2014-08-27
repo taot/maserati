@@ -72,14 +72,14 @@
 
         <script src="@routes.Assets.at("javascripts/mobile/layout.js")" type="text/javascript"></script>
 
-        @*<script type="text/javascript">
+        <script type="text/javascript">
         //<![CDATA[
         var dataForWeixin={
            appId:"",
-           MsgImg: "",  //http://360.iuseipad.com.cn/assets/images/maserati_header_logo.jpg",
+           MsgImg: "http://360.iuseipad.com.cn/assets/images/logo_big.jpg",
            TLImg:"",  //http://360.iuseipad.com.cn/assets/images/maserati_header_logo.jpg",
            url:"http://360.iuseipad.com.cn",
-           title:"玛莎拉蒂",
+           title:"玛莎拉蒂 360°车型体验",
            desc:"",
            fakeid:"",
            callback:function(){}
@@ -93,7 +93,7 @@
                  "img_url":dataForWeixin.MsgImg,
                  "img_width":"120",
                  "img_height":"120",
-                 "link":dataForWeixin.url,
+                 @*"link":dataForWeixin.url,*@
                  "desc":dataForWeixin.desc,
                  "title":dataForWeixin.title
               }, function(res){(dataForWeixin.callback)();});
@@ -138,7 +138,7 @@
         }
         })();
         //]]>
-        </script>*@
+        </script>
       </div>
     </body>
 </html>

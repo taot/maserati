@@ -25,7 +25,6 @@ function resize360view(container, content, width, height) {
 
 function show360(src) {
     var src0 = src
-    console.log('showing 360 view: ' + src0);
     var container = $('.mobiles-360-container');
     var content = $('.mobiles-360-content', container);
     $('.mobiles-360-body').attr('src', src0);
@@ -36,7 +35,6 @@ function show360(src) {
     $(window).resize(function() {
         var width = $(window).width();
         var height = $(window).height();
-        console.log("window resized - width: " + width + ", height: " + height);
         var container = $('.mobiles-360-container');
         resize360view(container, content, width, height);
     });
@@ -59,7 +57,6 @@ function showInt360(src) {
 };
 
 function hide360() {
-    console.log('hiding 360 view');
     $('#mobiles-360-blur').fadeOut('slow');
     $('.mobiles-360-container').fadeOut('slow');
     $(document.body).css({'overflow': 'scroll'});
@@ -84,7 +81,6 @@ function resizeDiscover(container, content, width, height) {
 };
 
 function showDiscover(event) {
-    console.log("showing discover page");
     var model = event.target.getAttribute('model');
     var container = $('#discover-container-' + model);
     var content = $('.discover-content', container);
@@ -99,7 +95,6 @@ function showDiscover(event) {
     $(window).resize(function() {
         var width = $(window).width();
         var height = $(window).height();
-        console.log("window resized - width: " + width + ", height: " + height);
         var container = $('.discover-container');
         resizeDiscover(container, content, width, height);
     });
@@ -110,13 +105,11 @@ function showDiscover(event) {
 };
 
 function hideDiscover() {
-    console.log('hiding discover page');
     $('.discover-container').fadeOut('slow');
     $(document.body).css({'overflow': 'scroll'});
 };
 
 function switchMobilesContent(event) {
-    console.log('switching mobile content');
     var tgt = event.target.getAttribute('tgt');
     $('.mobiles-content:visible').hide();
     $('#' + tgt).fadeIn('slow');
@@ -179,7 +172,6 @@ $(document).ready(function() {
       var s = $(this).parent().find("li").size();
       var i = $(this).attr('id').split("_").pop();
       var d = i * 100/s;   
-      console.log(s);
       $('#hoverlay').css({left: d + "%"});
     });
 

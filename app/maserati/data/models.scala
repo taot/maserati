@@ -71,8 +71,8 @@ object models {
     interior360 = "/assets/360Panos/QP V6_Interior_360 Pano/QP V6_Interior_360 Pano_HTML/3-3.html",
   //  interior360PC = "/assets/360PanosPC/QP V6_Interior_360 Pano/QP V6 360 Pano_HTML/3-3.html",
     interior360PC = "/assets/360PanosPC/Maserati revised/QP V6.html",
-    exterior360 = "/assets/360Ext/qpv6/mobile/output/Quattroport V6.html",
-    exterior360PC = "/assets/360Ext/qpv6/pc/output/Quattroport V6.html",
+    exterior360 = "/assets/360Ext/qpv6/mobile/output/Quattroporte V6.html",
+    exterior360PC = "/assets/360Ext/qpv6/pc/output/Quattroporte V6.html",
     hasExterior360 = true,
     hasExterior360PC = true,
     hasTestDrive = true

@@ -49,8 +49,6 @@
 		</style>	
 	</head>
 	<body onorientationchange="hideUrlBar();">
-		<h1></h1>
-		<br>
 		<script type="text/javascript" src="object2vr_player.js">
 		</script>
 		<div id="container" style="width:1024px;height:683px;">
@@ -63,30 +61,12 @@
 			obj.readConfigUrl("Untitled_out.xml");
 			// hide the URL bar on the iPhone
 			hideUrlBar();
-		
+	setTimeout(function() { obj.setFullscreen(1); },500); 
+	
 		</script>
 		<noscript>
 			<p><b>Please enable Javascript!</b></p>
 		</noscript>
 		
-		<p>
-		<table>
-			<tr>
-				<td><b>Description</b></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td><b>Author</b></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td><b>Date/Time</b></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td><b>Copyright</b></td>
-				<td></td>
-			</tr>
-		</table>
 	</body>
 </html>

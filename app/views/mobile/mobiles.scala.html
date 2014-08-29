@@ -28,7 +28,8 @@
                 </div>
                 <button class="btn discover-more-btn" model="@{m.id}">发现更多</button>
                 @if(m.hasTestDrive) {
-                <a class="btn test-drive-btn" href="http://maserati.uncrm.cn/">预约试驾</a>
+                <a class="btn test-drive-btn" onclick="_hmt.push(['_trackEvent', 'jump', 'testdrive', 'http://maserati.uncrm.cn/']);"
+                   href="http://maserati.uncrm.cn/">预约试驾</a>
                 }
             </div>
         </div>

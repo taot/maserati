@@ -13,6 +13,7 @@
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/landing.css")">
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/show.css")">
         <script type="text/javascript">
+            var _hmt = _hmt || [];
             var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
             document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9b45cb77811de21dc8084d27b427ef38' type='text/javascript'%3E%3C/script%3E"));
         </script>
@@ -38,7 +39,8 @@
             <a  href="http://www.maserati.com.cn/maserati/cn/zh/index/dealer-locator.html" target="_blank">查找经销商</a>
             </li>
             <li class="menu" >
-            <a href="http://www.maseraticampaign.cn/test-drive/test-drive.html" target="_blank">预约试驾</a>
+            <a onclick="_hmt.push(['_trackEvent', 'jump', 'testdrive', 'http://www.maseraticampaign.cn/test-drive/test-drive.html']);"
+                href="http://www.maseraticampaign.cn/test-drive/test-drive.html" target="_blank">预约试驾</a>
             </li>
             <li class="menu" >
             <a href="http://www.maserati.com.cn/maserati/cn/zh/index/services/contact.html" target="_blank">联系我们</a>

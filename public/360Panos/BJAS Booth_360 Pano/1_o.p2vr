@@ -9,12 +9,81 @@
       <hfov>360</hfov>
     </input>
     <viewingparameter>
-      <pan/>
-      <tilt/>
-      <fov/>
+      <pan>
+        <start>33</start>
+        <min>0</min>
+        <max>360</max>
+      </pan>
+      <tilt>
+        <start>8</start>
+        <min>-90</min>
+        <max>90</max>
+      </tilt>
+      <fov>
+        <start>70</start>
+        <minunit>degrees</minunit>
+        <min>5</min>
+        <max>120</max>
+      </fov>
+      <pannorth>0</pannorth>
     </viewingparameter>
     <userdata/>
-    <hotspots/>
+    <hotspots>
+      <hotspot>
+        <position>
+          <pan>71.9371</pan>
+          <tilt>2.09685</tilt>
+        </position>
+        <next>
+          <pan>0</pan>
+          <tilt>0</tilt>
+          <fov>0</fov>
+        </next>
+        <polygon/>
+        <type>point</type>
+        <id>QP Zegna</id>
+        <title>QP Zegna</title>
+        <url>4.html</url>
+        <target>_self</target>
+        <skinid>QP Zegna</skinid>
+      </hotspot>
+      <hotspot>
+        <position>
+          <pan>15.7354</pan>
+          <tilt>0.102898</tilt>
+        </position>
+        <next>
+          <pan>0</pan>
+          <tilt>0</tilt>
+          <fov>0</fov>
+        </next>
+        <polygon/>
+        <type>point</type>
+        <id>Centennial Logo</id>
+        <title>Centennial Logo</title>
+        <url>2.html</url>
+        <target>_self</target>
+        <skinid>Centennial Logo</skinid>
+      </hotspot>
+      <hotspot>
+        <position>
+          <pan>-52.6443</pan>
+          <tilt>-1.90346</tilt>
+        </position>
+        <next>
+          <pan>0</pan>
+          <tilt>0</tilt>
+          <fov>0</fov>
+        </next>
+        <polygon/>
+        <type>point</type>
+        <id>Merchandise Area </id>
+        <title>Merchandise Area </title>
+        <url>5_o.html</url>
+        <target>_self</target>
+        <skinid>Merchandise Area </skinid>
+      </hotspot>
+    </hotspots>
     <output>
       <htmlcss>
         <html>
@@ -23,7 +92,7 @@
           <template>normal.ggt</template>
           <values>
             <value id="bgcolor">#ffffff</value>
-            <value id="fullscreen">false</value>
+            <value id="fullscreen">true</value>
             <value id="gyro">false</value>
             <value id="gyrodisable">false</value>
             <value id="gyronorth">false</value>
@@ -32,14 +101,14 @@
             <value id="maps">false</value>
             <value id="parseanchor">false</value>
             <value id="showuserdata">false</value>
-            <value id="swf"></value>
+            <value id="swf"/>
             <value id="swffirst">false</value>
             <value id="swfgeneric">true</value>
             <value id="tablebgcolor">#dddddd</value>
             <value id="tablebordercolor">#777777</value>
             <value id="tabletextcolor">#000000</value>
             <value id="textcolor">#000000</value>
-            <value id="touchicon"></value>
+            <value id="touchicon"/>
           </values>
         </html>
         <facequality/>

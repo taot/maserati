@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <panorama id="">
   <view fovmode="0" pannorth="0">
-    <start pan="0" fov="70" tilt="0"/>
+    <start pan="183" fov="100" tilt="-11.5"/>
     <min pan="0" fov="5" tilt="-90"/>
     <max pan="360" fov="120" tilt="90"/>
   </view>
@@ -9,6 +9,9 @@
   <hotspots width="180" height="20" wordwrap="1">
     <label width="180" backgroundalpha="1" enabled="1" height="20" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
     <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+    <hotspot title="Centennial Logo" target="_self" pan="-96.2538" skinid="" url="2.html" id="Centennial Logo" tilt="1.63576"/>
+    <hotspot title="QP Zegna" target="_self" pan="-51.2497" skinid="" url="4.html" id="QP Zegna" tilt="7.01097"/>
+    <hotspot title="Center Stage" target="_self" pan="-18.2678" skinid="" url="1.html" id="Center Stage" tilt="-4.39165"/>
   </hotspots>
   <media/>
   <input tile0url="images/5_o_o_0.jpg" prev5url="images/5_o_o_preview_5.jpg" prev4url="images/5_o_o_preview_4.jpg" prev3url="images/5_o_o_preview_3.jpg" prev2url="images/5_o_o_preview_2.jpg" prev1url="images/5_o_o_preview_1.jpg" prev0url="images/5_o_o_preview_0.jpg" tile5url="images/5_o_o_5.jpg" tilesize="2000" tile4url="images/5_o_o_4.jpg" tile3url="images/5_o_o_3.jpg" tilescale="1.005" tile2url="images/5_o_o_2.jpg" tile1url="images/5_o_o_1.jpg">

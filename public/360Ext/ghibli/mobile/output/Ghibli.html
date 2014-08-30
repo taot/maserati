@@ -9,11 +9,26 @@
 		<script type="text/javascript">
 			// hide URL field on the iPhone/iPod touch
 			function hideUrlBar() {
+				if (((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)))) {
+					container = document.getElementById("container");
+					if (container) {
+						var cheight;
+						switch(window.innerHeight) {
+							case 208:cheight=268; break; // landscape
+							case 336:cheight=396; break; // portrait, in call status bar
+							case 356:cheight=416; break; // portrait 
+							default:
+								cheight=window.innerHeight;
+						}
+						if ((container.offsetHeight!=cheight) || (window.innerHeight!=cheight)) {
+							container.style.height=cheight + "px";
+							setTimeout(function() { hideUrlBar(); }, 1000);
+						}
+					}
+				}
 				
 				if (window.pageYOffset==0) {
 					window.scrollTo(0, 1);
-					// repeat every second for slow rendering pages
-					setTimeout(function() { hideUrlBar(); }, 3000);
 				
 				}
 			}
@@ -23,10 +38,18 @@
 				font-family: Verdana,Arial,Helvetica,sans-serif;
 				color: #000000; 
 			}
+			/* fullscreen */
+			html {
+				height:100%;
+			}
+			body {
+				height:100%;
+				margin: 0px;
+				overflow:hidden; /* disable scrollbars */
+			}
 			body {
 			  font-size: 10pt;
-			  background : #ffffff; margin:0;padding:0;border:0;
-
+			  background : #ffffff; 
 			}
 			table,tr,td {
 				font-size: 10pt;
@@ -52,15 +75,9 @@
 	<body onorientationchange="hideUrlBar();">
 		<script type="text/javascript" src="object2vr_player.js">
 		</script>
-                <div id="container" style="width:100%; vertical-align: top;">
-                </div>
-                <script type="text/javascript">
-                  var w = document.body.clientWidth; 
-                  var h = w * 480 / 640; 
-                  document.getElementById('container').style.width = w + "px";
-                  document.getElementById('container').style.height= h + "px";
-                </script>
-
+		<div id="container" style="width:100%;height:100%;">
+		This content requires HTML5 &amp; Javascript or Adobe Flash Player Version 9 or higher.
+		</div>
 		<script type="text/javascript">
 	
 			// create the object player with the container
@@ -73,6 +90,5 @@
 		<noscript>
 			<p><b>Please enable Javascript!</b></p>
 		</noscript>
-		
 	</body>
 </html>

@@ -7,7 +7,7 @@ function resize360view(container, content, width, height) {
     //} else {
     //    h = w * 480 / 640;
     //}
-    h = w * 570 / 720;
+    h = w * 427 / 640;
     //content.css('width', w);
     content.css('height', h);
 

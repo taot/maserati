@@ -4,9 +4,9 @@
   <control simulatemass="1" lockedmouse="0" swapxy="0" lockedkeyboard="0" dblclickfullscreen="1" revx="1" invertwheel="0" revy="0" wrapx="1" wrapy="0" trapwheel="1" automovemode="1" lockedwheel="0" speedwheel="1" controller="1" sensitivity="10"/>
   <autorotate speed="1" delay="5" start="0"/>
   <view>
-    <start row="0" column="19" state="0"/>
+    <start row="0" column="15" state="0"/>
     <zoom default="1" centerx="0" centery="0" min="1" max="2"/>
-    <viewer imagescaling="1" backgroundcolor="0xffffff" background="1"/>
+    <viewer imagescaling="1" backgroundcolor="0xffffff" background="0"/>
   </view>
   <userdata title="" datetime="" description="" copyright="" author="" source="" comment="" info=""/>
   <qthotspots enabled="0" reuse="8">

@@ -68,9 +68,13 @@ object models {
       ("0至100公里每小时加速", "5.6秒")
     )),
     detailPicCount = 5,
-    interior360 = "/assets/360Panos/QP V6_Interior_360 Pano/QP V6_Interior_360 Pano_HTML/3-3.html",
-  //  interior360PC = "/assets/360PanosPC/QP V6_Interior_360 Pano/QP V6 360 Pano_HTML/3-3.html",
-    interior360PC = "/assets/360PanosPC/Maserati revised/QP V6.html",
+    //wuhuajie: change panos between qpv6 and ghibli
+    interior360 = "/assets/360Panos/Ghibli_Interior_360 Pano/Ghibli_Interior_360 Pano_HTML/4-2.html",
+    interior360PC = "/assets/360PanosPC/Maserati revised/Ghibli.html",
+
+//    interior360 = "/assets/360Panos/QP V6_Interior_360 Pano/QP V6_Interior_360 Pano_HTML/3-3.html",
+//    interior360PC = "/assets/360PanosPC/Maserati revised/QP V6.html",
+
     exterior360 = "/assets/360Ext/qpv6/mobile/output/Quattroporte V6.html",
     exterior360PC = "/assets/360Ext/qpv6/pc/output/Quattroporte V6.html",
     hasExterior360 = true,
@@ -96,9 +100,13 @@ object models {
       ("0至100公里每小时加速", "5.6秒")
     )),
     detailPicCount = 5,
-    interior360 = "/assets/360Panos/Ghibli_Interior_360 Pano/Ghibli_Interior_360 Pano_HTML/4-2.html",
-    //interior360PC = "/assets/360PanosPC/Ghibli_Interior_360 Pano/Ghibli Interior 360 Pano_HTML/4-2.html",
-    interior360PC = "/assets/360PanosPC/Maserati revised/Ghibli.html",
+    //wuhuajie: change panos between qpv6 and ghibli
+//    interior360 = "/assets/360Panos/Ghibli_Interior_360 Pano/Ghibli_Interior_360 Pano_HTML/4-2.html",
+//    interior360PC = "/assets/360PanosPC/Maserati revised/Ghibli.html",
+
+    interior360 = "/assets/360Panos/QP V6_Interior_360 Pano/QP V6_Interior_360 Pano_HTML/3-3.html",
+    interior360PC = "/assets/360PanosPC/Maserati revised/QP V6.html",
+
     exterior360 = "/assets/360Ext/ghibli/mobile/output/Ghibli.html",
     exterior360PC = "/assets/360Ext/ghibli/pc/output/Ghibli.html",
 

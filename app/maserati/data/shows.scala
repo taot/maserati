@@ -28,7 +28,7 @@ object shows {
     stage = "玛莎拉蒂展台在H9-03",
     d360 = "CDAS Booth_360 Pano/CDAS Booth_360 Pano_HTML5/1.html",
     d360PC = "CDAS Booth_360 Pano/CDAS Booth_360 Pano_HTML5/1.html",
-    galleryCount = 5,
+    galleryCount = 4,
     mapLink = "http://j.map.baidu.com/1cORv"
   )
 

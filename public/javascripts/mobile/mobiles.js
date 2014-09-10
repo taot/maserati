@@ -22,6 +22,7 @@ function resize360view(container, content, width, height) {
 function show360(src) {
     console.log('showing 360 view: ' + src);
     var container = $('.mobiles-360-container');
+    _hmt.push(['_trackPageview', src]);
     $('.mobiles-360-body').attr('src', src);
 
     var content = $('.mobiles-360-content', container );
@@ -105,6 +106,7 @@ function showDiscover(event) {
 //        resizeDiscover(container, content, width, height);
 //    });
     var src0 = '/mobiles/detail/' + model;
+    _hmt.push(['_trackPageview', src0]);
     $('.discover-image-iframe', container).attr('src', src0);
     container.fadeIn('fast');
 

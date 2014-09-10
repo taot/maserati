@@ -28,6 +28,7 @@ function show360(src) {
     var container = $('.mobiles-360-container');
     var content = $('.mobiles-360-content', container);
     $('.mobiles-360-body').attr('src', src0);
+    _hmt.push(['_trackPageview', src0]);
 
     var width = $(window).width();
     var height = $(window).height();
@@ -86,6 +87,7 @@ function showDiscover(event) {
     var content = $('.discover-content', container);
 
     var src0 = '/mobiles/detail/' + model;
+    _hmt.push(['_trackPageview', src0]);
     $('.discover-image-iframe', container).attr('src', src0);
 
     var width = $(window).width();

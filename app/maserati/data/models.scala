@@ -143,6 +143,28 @@ object models {
    * GT
    */
 
+  val gtmcce = Model(
+    id = "gtmcce",
+    title = List("GT MC Centennial Edition"),
+    name = "GT MC Centennial Edition",
+    subName = "",
+    serie = series.gt,
+    detail = ModelDetail(List(
+      ("排量", "4691毫升"),
+      ("最高车速", "303公里每小时"),
+      ("0至100公里每小时加速", "4.5秒")
+    )),
+    detailPicCount = 5,
+    interior360 = "/assets/360Panos/GT MC Stradale_360 Pano/GT MC Stradale_360 Pano_HTML/2-3.html",
+    //interior360PC = "/assets/360PanosPC/GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
+    interior360PC = "/assets/360PanosPC/Maserati revised/GT MC Stradale.html",
+    hasExterior360 = true,
+    hasExterior360PC = true,
+    exterior360 = "/assets/360Ext/gtmc/mobile/output/GranTurismo MC Stradale.html",
+    exterior360PC = "/assets/360Ext/gtmc/pc/output/GranTurismo MC Stradale.html",
+    hasTestDrive = true
+  )
+
   val gtmc = Model(
     id = "gtmc",
     title = List("GranTurismo MC Stradale"),
@@ -188,11 +210,33 @@ object models {
     hasTestDrive = true
   )
 
-  val list_gt = List(gtmc, gtsport)
+  val list_gt = List(gtmcce, gtmc, gtsport)
 
   /**
    * GC
    */
+
+  val gcmcce = Model(
+    id = "gcmcce",
+    title = List("GC MC Centennial Edition"),
+    name = "GC MC Centennial Edition",
+    subName = "",
+    serie = series.gc,
+    detail = ModelDetail(List(
+      ("排量", "4691毫升"),
+      ("最高车速", "289公里每小时"),
+      ("0至100公里每小时加速", "4.9秒")
+    )),
+    detailPicCount = 5,
+    interior360 = "/assets/360Panos/GC Sport_Interior_360 Pano/GC Sport_Interior_360 Pano_HTML/3-2.html",
+    //interior360PC = "/assets/360PanosPC/GC Sport_Interior_360 Pano/GC Sport_Interior_360 Pano_HTML/3-2.html",
+    interior360PC = "/assets/360PanosPC/Maserati revised/GC.html",
+    hasExterior360 = true,
+    hasExterior360PC = true,
+    exterior360 = "/assets/360Ext/gcs/mobile/output/GranCabrio Sport.html",
+    exterior360PC = "/assets/360Ext/gcs/pc/output/GranCabrio Sport.html",
+    hasTestDrive = true
+  )
 
   val gcs = Model(
     id = "gcs",
@@ -216,7 +260,7 @@ object models {
     hasTestDrive = true
   )
 
-  val list_gc = List(gcs)
+  val list_gc = List(gcmcce, gcs)
 
   /**
    * Concept

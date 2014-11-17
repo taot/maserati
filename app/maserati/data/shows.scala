@@ -4,6 +4,33 @@ import maserati.model.Show
 
 object shows {
 
+  val gzas = Show(
+    id = "gzas",
+    name = "2014广州车展",
+    fullname = "2014广州国际汽车展览会",
+    desc =
+      """
+        |11月20日至29日，第12届中国（广州）国际汽车展览会盛大开幕，玛莎拉蒂在本次车展隆重揭幕了
+        |玛莎拉蒂GC MC百年纪念版敞蓬跑车，并携全系车型亮相展台，倾情诠释玛莎拉蒂品牌传承百年的
+        |优雅、奢华、运动与激情。
+      """.stripMargin,
+    schedule = List(
+      "时间：",
+      "新闻媒体日 11月20日",
+      "公众参观日 11月24日-28日"
+    ),
+    location = List(
+      "地址：",
+      "广州中国进出口商品交易会展馆",
+      "海珠区阅江中路380号"
+    ),
+    stage = "玛莎拉蒂展台在待定",
+    d360 = "CDAS Booth_360 Pano/CDAS Booth_360 Pano_HTML5/1.html",
+    d360PC = "CDAS Booth_360 Pano/CDAS Booth_360 Pano_HTML5/1.html",
+    galleryCount = 4,
+    mapLink = "http://j.map.baidu.com/dK-3y"
+  )
+
   val cdas = Show(
     id = "cdas",
     name = "2014成都车展",
@@ -87,5 +114,5 @@ object shows {
     mapLink = "http://j.map.baidu.com/WIkIv"
   )
 
-  val all = List(cdas, szas, bjas)
+  val all = List(gzas, cdas, szas, bjas)
 }

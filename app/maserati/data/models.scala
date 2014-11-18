@@ -155,13 +155,13 @@ object models {
       ("0至100公里每小时加速", "4.5秒")
     )),
     detailPicCount = 5,
-    interior360 = "/assets/360Panos/GT MC Stradale_360 Pano/GT MC Stradale_360 Pano_HTML/2-3.html",
+    interior360 = "/assets/360Panos/GT_MC_CE_Interior/mobile/5-rui.html",
     //interior360PC = "/assets/360PanosPC/GT MC Stradale_360 Pano/GT MC Stradale 360 Pano_HTML/2-3.html",
-    interior360PC = "/assets/360PanosPC/Maserati revised/GT MC Stradale.html",
+    interior360PC = "/assets/360PanosPC/GT_MC_CE_Interior/pc/5-rui.html",
     hasExterior360 = true,
     hasExterior360PC = true,
-    exterior360 = "/assets/360Ext/gtmc/mobile/output/GranTurismo MC Stradale.html",
-    exterior360PC = "/assets/360Ext/gtmc/pc/output/GranTurismo MC Stradale.html",
+    exterior360 = "/assets/360Ext/gtmcce/moblie/output/GT STRADALE.html",
+    exterior360PC = "/assets/360Ext/gtmcce/pc/output/GT STRADALE.html",
     hasTestDrive = true
   )
 
@@ -228,13 +228,13 @@ object models {
       ("0至100公里每小时加速", "4.9秒")
     )),
     detailPicCount = 5,
-    interior360 = "/assets/360Panos/GC Sport_Interior_360 Pano/GC Sport_Interior_360 Pano_HTML/3-2.html",
+    interior360 = "/assets/360Panos/GC_MC_CE_Interior/mobile/7-rui.html",
     //interior360PC = "/assets/360PanosPC/GC Sport_Interior_360 Pano/GC Sport_Interior_360 Pano_HTML/3-2.html",
-    interior360PC = "/assets/360PanosPC/Maserati revised/GC.html",
+    interior360PC = "/assets/360PanosPC/GC_MC_CE_Interior/pc/Untitled.html",
     hasExterior360 = true,
     hasExterior360PC = true,
-    exterior360 = "/assets/360Ext/gcs/mobile/output/GranCabrio Sport.html",
-    exterior360PC = "/assets/360Ext/gcs/pc/output/GranCabrio Sport.html",
+    exterior360 = "/assets/360Ext/gcmcce/moblie/output/Grancabrio.html",
+    exterior360PC = "/assets/360Ext/gcmcce/pc/output/Grancabrio.html",
     hasTestDrive = true
   )
 

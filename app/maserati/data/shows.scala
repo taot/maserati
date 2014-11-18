@@ -24,7 +24,7 @@ object shows {
       "广州中国进出口商品交易会展馆",
       "海珠区阅江中路380号"
     ),
-    stage = "玛莎拉蒂展台在待定",
+    stage = "玛莎拉蒂展台在8.1展馆T804展台",
     d360 = "CDAS Booth_360 Pano/CDAS Booth_360 Pano_HTML5/1.html",
     d360PC = "CDAS Booth_360 Pano/CDAS Booth_360 Pano_HTML5/1.html",
     galleryCount = 4,

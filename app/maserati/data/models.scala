@@ -296,4 +296,6 @@ object models {
    * All
    */
   val list_all = list_qp ++ list_ghibli ++ list_gt ++ list_gc ++ list_concept
+
+  val list_all_mobile = gcmcce :: gtmcce :: list_all.filter { m => m != gcmcce && m != gtmcce }
 }

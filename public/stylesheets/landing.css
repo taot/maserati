@@ -392,12 +392,13 @@ list-style:none;
 }
 
 .discover-container .text-head {
-    padding-top: 5px;
+    padding-top: 0px;
     height: 25%;
 }
 
 .discover-container .mobile-desc {
    font-size: 12px;
+   min-height: 16px; 
 }
 
 .discover-container .mobile-title {

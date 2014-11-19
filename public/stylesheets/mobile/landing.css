@@ -232,12 +232,13 @@
 }
 
 .discover-container .text-head {
-    padding-top: 5px;
-    height: 25%;
+    padding-top: 0px;
+    height: 10px;
 }
 
 .discover-container .mobile-desc {
    font-size: 12px;
+   min-height: 10px; 
 }
 
 .discover-container .mobile-title {
@@ -249,12 +250,14 @@
 }
 
 .discover-image {
+    vertical-align: top;
     height: 75%;
 }
 
 .discover-image-iframe {
     width: 100%;
     height: auto;
+    vertical-align: top;
 }
 
 /*.discover-detail {

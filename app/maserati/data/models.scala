@@ -147,7 +147,7 @@ object models {
     id = "gtmcce",
     title = List("GT MC Centennial Edition"),
     name = "GT MC Centennial Edition",
-    subName = "",
+    subName = " ",
     serie = series.gt,
     detail = ModelDetail(List(
       ("排量", "4691毫升"),
@@ -220,7 +220,7 @@ object models {
     id = "gcmcce",
     title = List("GC MC Centennial Edition"),
     name = "GC MC Centennial Edition",
-    subName = "",
+    subName = "  ",
     serie = series.gc,
     detail = ModelDetail(List(
       ("排量", "4691毫升"),

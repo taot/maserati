@@ -1,0 +1,57 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, input, textarea, fieldset, blockquote 
+{
+    margin: 0; padding: 0; border: 0;
+}
+
+html, body {
+    background-color: grey;
+    height: 97%;
+    width: 94%;
+    padding: 3%;
+}
+
+.container {
+    background-color: white;
+    height: inherit;
+    /*margin: 5%;
+    width: 90%;
+    height: 90%;*/
+}
+
+.bigbox {
+    padding: 10px;
+    height: 200px;
+    border: solid red;
+    border-width: 0 0 1px 0;
+}
+
+.innerbox {
+    width: inherit;
+    height: 100%;
+    background: url(http://placehold.it/100x100) no-repeat;
+    background-size: contain;
+}
+
+.smallbox {
+    padding: 10px;
+    border: solid red;
+    height: 50px;
+    border-width: 0 0 1px 0;
+}
+
+.smallbox .img {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+.smallbox .img-personalize {
+    background: url(http://placehold.it/50x50);
+    background-size: contain;
+}
+
+.smallbox .img-360show {
+    background: url(http://placehold.it/50x50);
+    background-size: contain;
+}

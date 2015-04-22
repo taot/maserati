@@ -1,57 +1,74 @@
-body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, input, textarea, fieldset, blockquote 
-{
-    margin: 0; padding: 0; border: 0;
+*, *:before, *:after {
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:visited, a:link {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
 }
 
 html, body {
-    background-color: grey;
-    height: 97%;
-    width: 94%;
-    padding: 3%;
+    background-color: #D0D0D0;
+    height: 100%;
+    width: 100%;
+    padding: 7px;
 }
 
 .container {
     background-color: white;
     height: inherit;
-    /*margin: 5%;
-    width: 90%;
-    height: 90%;*/
 }
 
 .bigbox {
-    padding: 10px;
-    height: 200px;
-    border: solid red;
+    padding: 7px;
+    height: auto;
+    border: solid #D0D0D0;
     border-width: 0 0 1px 0;
 }
 
 .innerbox {
-    width: inherit;
-    height: 100%;
-    background: url(http://placehold.it/100x100) no-repeat;
-    background-size: contain;
+    width: 100%;
+    height: auto;
+    /*background: url(test_drive_pic.png) no-repeat;*/
+    /*background-size: contain;*/
 }
 
 .smallbox {
-    padding: 10px;
-    border: solid red;
-    height: 50px;
+    padding: 7px;
+    border: solid #D0D0D0;
+    height: auto;
     border-width: 0 0 1px 0;
 }
 
 .smallbox .img {
-    margin-right: 5px;
-    width: 40px;
-    height: 40px;
+    /*margin-right: 5px;*/
+    width: auto;
+    height: 50px;
     float: right;
 }
 
 .smallbox .img-personalize {
-    background: url(http://placehold.it/50x50);
-    background-size: contain;
+    /*background: url(http://placehold.it/50x50);
+    background-size: contain;*/
 }
 
 .smallbox .img-360show {
-    background: url(http://placehold.it/50x50);
-    background-size: contain;
+    /*background: url(http://placehold.it/50x50);
+    background-size: contain;*/
+}
+
+.smallbox .text {
+    margin: 13px 0;
+    display: inline-block;
+    font-size: 20px;
 }

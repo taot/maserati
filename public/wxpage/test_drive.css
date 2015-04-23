@@ -23,6 +23,7 @@ html, body {
     height: 100%;
     width: 100%;
     padding: 7px;
+    font-family: "微软雅黑", "Microsoft Yahei", "华文细黑", STXihei !important;
 }
 
 .container {
